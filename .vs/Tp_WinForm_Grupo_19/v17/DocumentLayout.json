@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\Tp_WinForm_Grupo_19\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp_winform_grupo_19\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "viewPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\Tp_WinForm_Grupo_19\\viewPrincipal.cs",
+              "RelativeDocumentMoniker": "viewPrincipal.cs",
+              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\Tp_WinForm_Grupo_19\\viewPrincipal.cs [Design]",
+              "RelativeToolTip": "viewPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:23:08.236Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
