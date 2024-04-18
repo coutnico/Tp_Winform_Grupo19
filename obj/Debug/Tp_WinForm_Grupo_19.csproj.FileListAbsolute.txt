@@ -8,3 +8,5 @@ C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winf
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CoreCompileInputs.cache
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.exe
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CopyComplete

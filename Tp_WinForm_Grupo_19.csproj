@@ -89,5 +89,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras-moviles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compras-movilesBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\degradadoAzulVioleta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logotienda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandera argentina.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
