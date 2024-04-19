@@ -25,9 +25,11 @@ namespace Tp_WinForm_Grupo_19
 
         //Sets
         public void setCodigo (int Cod) { Codigo = Cod ;}
-        public void setCodigo(string Nom) { Nombre = Nom; }
-        public void setDescripcion(string descripcion) { Descripcion = descripcion;}
-        public void setMarca(int marca) { Marca = marca; }
+        public void setNombre(string Nom) { Nombre = Nom; }
+        public void setDescripcion(string Des) { Descripcion = Des;}
+        public void setMarca(int Mar) { Marca = Mar; }
+        public void setPrecio(float Pre) { Precio = Pre; }
+
 
         //Gets
 
