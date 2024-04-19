@@ -54,6 +54,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CATALOGO_P3_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Articulo.cs" />
     <Compile Include="viewPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,17 @@
     <EmbeddedResource Include="viewPrincipal.resx">
       <DependentUpon>viewPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="CATALOGO_P3_DBDataSet.xsc">
+      <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CATALOGO_P3_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CATALOGO_P3_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CATALOGO_P3_DBDataSet.xss">
+      <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -58,5 +58,10 @@ namespace Tp_WinForm_Grupo_19
         {
             dragging = false;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

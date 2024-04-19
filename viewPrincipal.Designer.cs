@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.panelBorderStyle = new System.Windows.Forms.Panel();
-            this.panelLeft = new System.Windows.Forms.Panel();
-            this.panelMenu2 = new System.Windows.Forms.Panel();
-            this.panelMenu1 = new System.Windows.Forms.Panel();
-            this.panelPicture = new System.Windows.Forms.Panel();
-            this.panelHome = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.lbltitulo = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ibSocialNetworks = new FontAwesome.Sharp.IconButton();
-            this.ibMoreInformation = new FontAwesome.Sharp.IconButton();
-            this.ibUs = new FontAwesome.Sharp.IconButton();
-            this.ibaAddArticles = new FontAwesome.Sharp.IconButton();
-            this.ibviewArticles = new FontAwesome.Sharp.IconButton();
-            this.ibArticles = new FontAwesome.Sharp.IconButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ibHome = new FontAwesome.Sharp.IconButton();
             this.ibMinimize = new FontAwesome.Sharp.IconButton();
             this.ibMaximize = new FontAwesome.Sharp.IconButton();
             this.ibExit = new FontAwesome.Sharp.IconButton();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelMenu2 = new System.Windows.Forms.Panel();
+            this.ibSocialNetworks = new FontAwesome.Sharp.IconButton();
+            this.ibMoreInformation = new FontAwesome.Sharp.IconButton();
+            this.ibUs = new FontAwesome.Sharp.IconButton();
+            this.panelMenu1 = new System.Windows.Forms.Panel();
+            this.ibaAddArticles = new FontAwesome.Sharp.IconButton();
+            this.ibviewArticles = new FontAwesome.Sharp.IconButton();
+            this.ibArticles = new FontAwesome.Sharp.IconButton();
+            this.panelPicture = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelHome = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbltitulo = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelBorderStyle.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panelMenu2.SuspendLayout();
             this.panelMenu1.SuspendLayout();
             this.panelPicture.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBorderStyle
@@ -74,6 +74,69 @@
             this.panelBorderStyle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBorderStyle_MouseDown);
             this.panelBorderStyle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBorderStyle_MouseMove);
             this.panelBorderStyle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelBorderStyle_MouseUp);
+            // 
+            // ibHome
+            // 
+            this.ibHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ibHome.FlatAppearance.BorderSize = 0;
+            this.ibHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibHome.IconChar = FontAwesome.Sharp.IconChar.House;
+            this.ibHome.IconColor = System.Drawing.Color.White;
+            this.ibHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibHome.IconSize = 40;
+            this.ibHome.Location = new System.Drawing.Point(12, 12);
+            this.ibHome.Name = "ibHome";
+            this.ibHome.Size = new System.Drawing.Size(34, 32);
+            this.ibHome.TabIndex = 4;
+            this.ibHome.UseVisualStyleBackColor = true;
+            // 
+            // ibMinimize
+            // 
+            this.ibMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ibMinimize.FlatAppearance.BorderSize = 0;
+            this.ibMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
+            this.ibMinimize.IconColor = System.Drawing.Color.White;
+            this.ibMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibMinimize.IconSize = 34;
+            this.ibMinimize.Location = new System.Drawing.Point(1152, 9);
+            this.ibMinimize.Name = "ibMinimize";
+            this.ibMinimize.Size = new System.Drawing.Size(34, 32);
+            this.ibMinimize.TabIndex = 2;
+            this.ibMinimize.UseVisualStyleBackColor = true;
+            this.ibMinimize.Click += new System.EventHandler(this.ibMinimize_Click);
+            // 
+            // ibMaximize
+            // 
+            this.ibMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ibMaximize.FlatAppearance.BorderSize = 0;
+            this.ibMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.ibMaximize.IconColor = System.Drawing.Color.White;
+            this.ibMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibMaximize.IconSize = 34;
+            this.ibMaximize.Location = new System.Drawing.Point(1190, 9);
+            this.ibMaximize.Name = "ibMaximize";
+            this.ibMaximize.Size = new System.Drawing.Size(34, 32);
+            this.ibMaximize.TabIndex = 3;
+            this.ibMaximize.UseVisualStyleBackColor = true;
+            this.ibMaximize.Click += new System.EventHandler(this.ibMaximize_Click);
+            // 
+            // ibExit
+            // 
+            this.ibExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ibExit.FlatAppearance.BorderSize = 0;
+            this.ibExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibExit.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
+            this.ibExit.IconColor = System.Drawing.Color.White;
+            this.ibExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibExit.IconSize = 34;
+            this.ibExit.Location = new System.Drawing.Point(1227, 9);
+            this.ibExit.Name = "ibExit";
+            this.ibExit.Size = new System.Drawing.Size(34, 32);
+            this.ibExit.TabIndex = 1;
+            this.ibExit.UseVisualStyleBackColor = true;
+            this.ibExit.Click += new System.EventHandler(this.ibExit_Click);
             // 
             // panelLeft
             // 
@@ -97,71 +160,6 @@
             this.panelMenu2.Name = "panelMenu2";
             this.panelMenu2.Size = new System.Drawing.Size(240, 178);
             this.panelMenu2.TabIndex = 5;
-            // 
-            // panelMenu1
-            // 
-            this.panelMenu1.Controls.Add(this.ibaAddArticles);
-            this.panelMenu1.Controls.Add(this.ibviewArticles);
-            this.panelMenu1.Controls.Add(this.ibArticles);
-            this.panelMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu1.Location = new System.Drawing.Point(0, 145);
-            this.panelMenu1.Name = "panelMenu1";
-            this.panelMenu1.Size = new System.Drawing.Size(240, 178);
-            this.panelMenu1.TabIndex = 4;
-            // 
-            // panelPicture
-            // 
-            this.panelPicture.Controls.Add(this.pictureBox1);
-            this.panelPicture.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPicture.Location = new System.Drawing.Point(0, 0);
-            this.panelPicture.Name = "panelPicture";
-            this.panelPicture.Size = new System.Drawing.Size(240, 145);
-            this.panelPicture.TabIndex = 0;
-            // 
-            // panelHome
-            // 
-            this.panelHome.BackgroundImage = global::Tp_WinForm_Grupo_19.Properties.Resources.degradadoAzulVioleta;
-            this.panelHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelHome.Controls.Add(this.pictureBox3);
-            this.panelHome.Controls.Add(this.lbltitulo);
-            this.panelHome.Controls.Add(this.pictureBox2);
-            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelHome.Location = new System.Drawing.Point(240, 50);
-            this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1024, 631);
-            this.panelHome.TabIndex = 2;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.bandera_argentina;
-            this.pictureBox3.Location = new System.Drawing.Point(818, 385);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // lbltitulo
-            // 
-            this.lbltitulo.BackColor = System.Drawing.Color.Transparent;
-            this.lbltitulo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(121, 383);
-            this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(712, 64);
-            this.lbltitulo.TabIndex = 3;
-            this.lbltitulo.Text = "Bienvenidos a la tienda de articulos numero 1 de Argentina";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.logotienda;
-            this.pictureBox2.Location = new System.Drawing.Point(367, 145);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(289, 214);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
             // 
             // ibSocialNetworks
             // 
@@ -230,6 +228,17 @@
             this.ibUs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibUs.UseVisualStyleBackColor = true;
             // 
+            // panelMenu1
+            // 
+            this.panelMenu1.Controls.Add(this.ibaAddArticles);
+            this.panelMenu1.Controls.Add(this.ibviewArticles);
+            this.panelMenu1.Controls.Add(this.ibArticles);
+            this.panelMenu1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMenu1.Location = new System.Drawing.Point(0, 145);
+            this.panelMenu1.Name = "panelMenu1";
+            this.panelMenu1.Size = new System.Drawing.Size(240, 178);
+            this.panelMenu1.TabIndex = 4;
+            // 
             // ibaAddArticles
             // 
             this.ibaAddArticles.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -297,6 +306,15 @@
             this.ibArticles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibArticles.UseVisualStyleBackColor = true;
             // 
+            // panelPicture
+            // 
+            this.panelPicture.Controls.Add(this.pictureBox1);
+            this.panelPicture.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPicture.Location = new System.Drawing.Point(0, 0);
+            this.panelPicture.Name = "panelPicture";
+            this.panelPicture.Size = new System.Drawing.Size(240, 145);
+            this.panelPicture.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.compras_movilesBlanco;
@@ -307,68 +325,51 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // ibHome
+            // panelHome
             // 
-            this.ibHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ibHome.FlatAppearance.BorderSize = 0;
-            this.ibHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibHome.IconChar = FontAwesome.Sharp.IconChar.House;
-            this.ibHome.IconColor = System.Drawing.Color.White;
-            this.ibHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibHome.IconSize = 40;
-            this.ibHome.Location = new System.Drawing.Point(12, 12);
-            this.ibHome.Name = "ibHome";
-            this.ibHome.Size = new System.Drawing.Size(34, 32);
-            this.ibHome.TabIndex = 4;
-            this.ibHome.UseVisualStyleBackColor = true;
+            this.panelHome.BackgroundImage = global::Tp_WinForm_Grupo_19.Properties.Resources.degradadoAzulVioleta;
+            this.panelHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelHome.Controls.Add(this.pictureBox3);
+            this.panelHome.Controls.Add(this.lbltitulo);
+            this.panelHome.Controls.Add(this.pictureBox2);
+            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelHome.Location = new System.Drawing.Point(240, 50);
+            this.panelHome.Name = "panelHome";
+            this.panelHome.Size = new System.Drawing.Size(1024, 631);
+            this.panelHome.TabIndex = 2;
             // 
-            // ibMinimize
+            // pictureBox3
             // 
-            this.ibMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ibMinimize.FlatAppearance.BorderSize = 0;
-            this.ibMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibMinimize.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize;
-            this.ibMinimize.IconColor = System.Drawing.Color.White;
-            this.ibMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibMinimize.IconSize = 34;
-            this.ibMinimize.Location = new System.Drawing.Point(1152, 9);
-            this.ibMinimize.Name = "ibMinimize";
-            this.ibMinimize.Size = new System.Drawing.Size(34, 32);
-            this.ibMinimize.TabIndex = 2;
-            this.ibMinimize.UseVisualStyleBackColor = true;
-            this.ibMinimize.Click += new System.EventHandler(this.ibMinimize_Click);
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.bandera_argentina;
+            this.pictureBox3.Location = new System.Drawing.Point(818, 385);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(60, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
             // 
-            // ibMaximize
+            // lbltitulo
             // 
-            this.ibMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ibMaximize.FlatAppearance.BorderSize = 0;
-            this.ibMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibMaximize.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
-            this.ibMaximize.IconColor = System.Drawing.Color.White;
-            this.ibMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibMaximize.IconSize = 34;
-            this.ibMaximize.Location = new System.Drawing.Point(1190, 9);
-            this.ibMaximize.Name = "ibMaximize";
-            this.ibMaximize.Size = new System.Drawing.Size(34, 32);
-            this.ibMaximize.TabIndex = 3;
-            this.ibMaximize.UseVisualStyleBackColor = true;
-            this.ibMaximize.Click += new System.EventHandler(this.ibMaximize_Click);
+            this.lbltitulo.BackColor = System.Drawing.Color.Transparent;
+            this.lbltitulo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltitulo.Location = new System.Drawing.Point(121, 383);
+            this.lbltitulo.Name = "lbltitulo";
+            this.lbltitulo.Size = new System.Drawing.Size(712, 64);
+            this.lbltitulo.TabIndex = 3;
+            this.lbltitulo.Text = "Bienvenidos a la tienda de articulos numero 1 de Argentina";
             // 
-            // ibExit
+            // pictureBox2
             // 
-            this.ibExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ibExit.FlatAppearance.BorderSize = 0;
-            this.ibExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ibExit.IconChar = FontAwesome.Sharp.IconChar.TimesRectangle;
-            this.ibExit.IconColor = System.Drawing.Color.White;
-            this.ibExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ibExit.IconSize = 34;
-            this.ibExit.Location = new System.Drawing.Point(1227, 9);
-            this.ibExit.Name = "ibExit";
-            this.ibExit.Size = new System.Drawing.Size(34, 32);
-            this.ibExit.TabIndex = 1;
-            this.ibExit.UseVisualStyleBackColor = true;
-            this.ibExit.Click += new System.EventHandler(this.ibExit_Click);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.logotienda;
+            this.pictureBox2.Location = new System.Drawing.Point(367, 145);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(289, 214);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // viewPrincipal
             // 
@@ -388,10 +389,10 @@
             this.panelMenu2.ResumeLayout(false);
             this.panelMenu1.ResumeLayout(false);
             this.panelPicture.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelHome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
