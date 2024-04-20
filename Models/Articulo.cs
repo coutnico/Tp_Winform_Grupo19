@@ -20,8 +20,8 @@ namespace Tp_WinForm_Grupo_19
         private string Nombre;
         private string Descripcion;
         private int Marca;
-        //private  Imagen; SE USA BYTE? VER
         private float Precio;
+        private string ImagenURl;
 
         //Sets
         public void setCodigo (int Cod) { ID = Cod ;}
@@ -29,6 +29,7 @@ namespace Tp_WinForm_Grupo_19
         public void setDescripcion(string Des) { Descripcion = Des;}
         public void setMarca(int Mar) { Marca = Mar; }
         public void setPrecio(float Pre) { Precio = Pre; }
+        public void SetImagenURl(string imagen) { ImagenURl = imagen;  }
 
 
         //Gets
@@ -38,6 +39,8 @@ namespace Tp_WinForm_Grupo_19
         public string getDescripcion () { return Descripcion; }
         public int getMarca () {  return Marca; }
         public float GetPrecio () {  return Precio; }
+
+        public string getImagenURl () {  return ImagenURl; }
 
         //FUNCIONES
 

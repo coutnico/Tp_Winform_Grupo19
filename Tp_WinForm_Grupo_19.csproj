@@ -63,6 +63,12 @@
       <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\Articulo.cs" />
+    <Compile Include="UserControls\CardArticulos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\CardArticulos.Designer.cs">
+      <DependentUpon>CardArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\CardArticulos.resx">
+      <DependentUpon>CardArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\viewPrincipal.resx">
       <DependentUpon>viewPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,8 +145,6 @@
   <ItemGroup>
     <None Include="Resources\bandera argentina.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UserControls\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
