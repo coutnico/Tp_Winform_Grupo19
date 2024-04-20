@@ -153,6 +153,7 @@
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.pbImagen);
+            this.Margin = new System.Windows.Forms.Padding(25, 10, 3, 3);
             this.Name = "CardArticulos";
             this.Size = new System.Drawing.Size(396, 186);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();

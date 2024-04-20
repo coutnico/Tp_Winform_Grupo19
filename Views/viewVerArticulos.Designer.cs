@@ -47,6 +47,7 @@
             this.flowpanelArticles.BackColor = System.Drawing.Color.Transparent;
             this.flowpanelArticles.Location = new System.Drawing.Point(12, 89);
             this.flowpanelArticles.Name = "flowpanelArticles";
+            this.flowpanelArticles.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.flowpanelArticles.Size = new System.Drawing.Size(984, 491);
             this.flowpanelArticles.TabIndex = 1;
             // 
