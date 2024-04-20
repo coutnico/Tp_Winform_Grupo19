@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tp_WinForm_Grupo_19
 {
-    internal class Articulo
+    public class Articulo
     {
         /* •	Código de artículo.
        •	Nombre.
@@ -16,31 +16,16 @@ namespace Tp_WinForm_Grupo_19
        •	Imagen.
        •	Precio.*/
 
-        private int ID;
-        private string Nombre;
-        private string Descripcion;
-        private int Marca;
-        private float Precio;
-        private string ImagenURl;
 
-        //Sets
-        public void setCodigo (int Cod) { ID = Cod ;}
-        public void setNombre(string Nom) { Nombre = Nom; }
-        public void setDescripcion(string Des) { Descripcion = Des;}
-        public void setMarca(int Mar) { Marca = Mar; }
-        public void setPrecio(float Pre) { Precio = Pre; }
-        public void SetImagenURl(string imagen) { ImagenURl = imagen;  }
+        public int ID { get; set; }
+        public string Codigo { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public int Marca { get; set; }
+        public float Precio { get; set; }
+        public string ImagenURl { get; set; }
 
 
-        //Gets
-
-        public int GetID() { return ID; }
-        public string getNombre () {  return Nombre; }
-        public string getDescripcion () { return Descripcion; }
-        public int getMarca () {  return Marca; }
-        public float GetPrecio () {  return Precio; }
-
-        public string getImagenURl () {  return ImagenURl; }
 
         //FUNCIONES
 
