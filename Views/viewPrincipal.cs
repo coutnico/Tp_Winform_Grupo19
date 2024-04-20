@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Media.Media3D;
+using Tp_WinForm_Grupo_19.Views;
 
 namespace Tp_WinForm_Grupo_19
 {
@@ -63,5 +65,40 @@ namespace Tp_WinForm_Grupo_19
         {
 
         }
+
+        private void ibviewArticles_Click(object sender, EventArgs e)
+        {
+            viewVerArticulos viewVerArticulos = new viewVerArticulos();
+            OpenChildForm(viewVerArticulos);
+        }
+
+
+        private void OpenChildForm(Form childForm)
+        {
+
+            // Si hay un formulario secundario abierto, ciérralo antes de abrir uno nuevo
+            if (ActiveMdiChild != null)
+            {
+                ActiveMdiChild.Close();
+            }
+
+            // Establece el formulario secundario pasado como argumento como formulario hijo del formulario principal
+            childForm.MdiParent = this;
+            childForm.TopLevel = false;
+            childForm.Dock = DockStyle.Fill;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            panelHome.Visible = false;
+            childForm.Show();
+
+            childForm.FormClosed += (sender, e) =>
+            {
+
+                panelHome.Visible = true;
+            };
+
+
+            childForm.Show();
+        }
+
     }
 }

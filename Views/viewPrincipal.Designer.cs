@@ -282,6 +282,7 @@
             this.ibviewArticles.Text = "Ver ";
             this.ibviewArticles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.ibviewArticles.UseVisualStyleBackColor = true;
+            this.ibviewArticles.Click += new System.EventHandler(this.ibviewArticles_Click);
             // 
             // ibArticles
             // 
@@ -380,6 +381,7 @@
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelBorderStyle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Name = "viewPrincipal";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
