@@ -146,6 +146,8 @@
   <ItemGroup>
     <None Include="Resources\bandera argentina.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ImagenNoCargada.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

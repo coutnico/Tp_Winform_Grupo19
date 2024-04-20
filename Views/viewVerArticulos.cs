@@ -32,6 +32,8 @@ namespace Tp_WinForm_Grupo_19.Views
 
             foreach (Articulo articulo in articulos)
             { 
+                CardArticulos cardArticulo = new CardArticulos(articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
+                flowpanelArticles.Controls.Add(cardArticulo);
 
             }
         }

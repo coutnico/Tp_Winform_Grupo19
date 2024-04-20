@@ -35,6 +35,8 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
             this.lblCategoria = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ibVistaDetallada = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +53,7 @@
             // 
             // pbImagen
             // 
+            this.pbImagen.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.ImagenNoCargada;
             this.pbImagen.Location = new System.Drawing.Point(16, 24);
             this.pbImagen.Name = "pbImagen";
             this.pbImagen.Size = new System.Drawing.Size(124, 137);
@@ -60,11 +63,11 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(157, 50);
+            this.txtDescripcion.Location = new System.Drawing.Point(157, 80);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(224, 64);
+            this.txtDescripcion.Size = new System.Drawing.Size(227, 34);
             this.txtDescripcion.TabIndex = 2;
             // 
             // lblMarca
@@ -72,7 +75,7 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.Color.White;
-            this.lblMarca.Location = new System.Drawing.Point(154, 127);
+            this.lblMarca.Location = new System.Drawing.Point(298, 117);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(45, 17);
             this.lblMarca.TabIndex = 3;
@@ -81,11 +84,11 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.White;
-            this.lblPrecio.Location = new System.Drawing.Point(277, 156);
+            this.lblPrecio.Location = new System.Drawing.Point(243, 160);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(45, 17);
+            this.lblPrecio.Size = new System.Drawing.Size(58, 21);
             this.lblPrecio.TabIndex = 4;
             this.lblPrecio.Text = "Precio";
             // 
@@ -105,17 +108,44 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(154, 156);
+            this.lblCategoria.Location = new System.Drawing.Point(154, 117);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(66, 17);
             this.lblCategoria.TabIndex = 6;
             this.lblCategoria.Text = "Categoria";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(154, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Descripcion:";
+            // 
+            // ibVistaDetallada
+            // 
+            this.ibVistaDetallada.FlatAppearance.BorderSize = 0;
+            this.ibVistaDetallada.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibVistaDetallada.IconChar = FontAwesome.Sharp.IconChar.CircleInfo;
+            this.ibVistaDetallada.IconColor = System.Drawing.Color.Black;
+            this.ibVistaDetallada.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibVistaDetallada.IconSize = 35;
+            this.ibVistaDetallada.Location = new System.Drawing.Point(349, 3);
+            this.ibVistaDetallada.Name = "ibVistaDetallada";
+            this.ibVistaDetallada.Size = new System.Drawing.Size(44, 38);
+            this.ibVistaDetallada.TabIndex = 8;
+            this.ibVistaDetallada.UseVisualStyleBackColor = true;
+            // 
             // CardArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.ibVistaDetallada);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblPrecio);
@@ -140,5 +170,7 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label label1;
+        private FontAwesome.Sharp.IconButton ibVistaDetallada;
     }
 }

@@ -44,32 +44,34 @@
             // flowpanelArticles
             // 
             this.flowpanelArticles.AutoScroll = true;
-            this.flowpanelArticles.Location = new System.Drawing.Point(44, 111);
+            this.flowpanelArticles.BackColor = System.Drawing.Color.Transparent;
+            this.flowpanelArticles.Location = new System.Drawing.Point(12, 89);
             this.flowpanelArticles.Name = "flowpanelArticles";
-            this.flowpanelArticles.Size = new System.Drawing.Size(914, 412);
+            this.flowpanelArticles.Size = new System.Drawing.Size(984, 491);
             this.flowpanelArticles.TabIndex = 1;
             // 
             // textBox1
             // 
             this.textBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.textBox1.Location = new System.Drawing.Point(44, 54);
+            this.textBox1.Location = new System.Drawing.Point(12, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 20);
+            this.textBox1.Size = new System.Drawing.Size(287, 20);
             this.textBox1.TabIndex = 2;
             // 
             // ibSearch
             // 
+            this.ibSearch.BackColor = System.Drawing.Color.Transparent;
             this.ibSearch.FlatAppearance.BorderSize = 0;
             this.ibSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibSearch.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.ibSearch.IconColor = System.Drawing.Color.Black;
             this.ibSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibSearch.IconSize = 30;
-            this.ibSearch.Location = new System.Drawing.Point(251, 47);
+            this.ibSearch.Location = new System.Drawing.Point(305, 38);
             this.ibSearch.Name = "ibSearch";
             this.ibSearch.Size = new System.Drawing.Size(38, 36);
             this.ibSearch.TabIndex = 3;
-            this.ibSearch.UseVisualStyleBackColor = true;
+            this.ibSearch.UseVisualStyleBackColor = false;
             // 
             // viewVerArticulos
             // 

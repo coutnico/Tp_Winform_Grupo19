@@ -23,7 +23,7 @@ namespace Tp_WinForm_Grupo_19
         public string Descripcion { get; set; }
         public int IDMarca { get; set; }
         public int IDCategoria { get; set; }
-        public float Precio { get; set; }
+        public decimal Precio { get; set; }
         public string ImagenURl { get; set; }
 
 

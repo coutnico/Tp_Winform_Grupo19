@@ -40,7 +40,7 @@ namespace Tp_WinForm_Grupo_19.Models
                     articulo.Descripcion = reader["Descripcion"].ToString();
                     articulo.IDMarca = Convert.ToInt32(reader["IdMarca"]);
                     articulo.IDCategoria = Convert.ToInt32(reader["IdCategoria"]);
-                    articulo.Precio = (float)reader["Precio"];
+                    articulo.Precio = Convert.ToDecimal(reader["Precio"]);
 
                     lista.Add(articulo);
 
