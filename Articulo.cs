@@ -16,7 +16,7 @@ namespace Tp_WinForm_Grupo_19
        •	Imagen.
        •	Precio.*/
 
-        private int Codigo;
+        private int ID;
         private string Nombre;
         private string Descripcion;
         private int Marca;
@@ -24,7 +24,7 @@ namespace Tp_WinForm_Grupo_19
         private float Precio;
 
         //Sets
-        public void setCodigo (int Cod) { Codigo = Cod ;}
+        public void setCodigo (int Cod) { ID = Cod ;}
         public void setNombre(string Nom) { Nombre = Nom; }
         public void setDescripcion(string Des) { Descripcion = Des;}
         public void setMarca(int Mar) { Marca = Mar; }
@@ -32,6 +32,12 @@ namespace Tp_WinForm_Grupo_19
 
 
         //Gets
+
+        public int GetID() { return ID; }
+        public string getNombre () {  return Nombre; }
+        public string getDescripcion () { return Descripcion; }
+        public int getMarca () {  return Marca; }
+        public float GetPrecio () {  return Precio; }
 
         //FUNCIONES
 
