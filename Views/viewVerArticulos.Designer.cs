@@ -82,6 +82,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "viewVerArticulos";
             this.Text = "viewVerArticulos";
+            this.Load += new System.EventHandler(this.viewVerArticulos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

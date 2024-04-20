@@ -63,6 +63,7 @@
       <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Models\Articulo.cs" />
+    <Compile Include="Models\ArticuloNegocio.cs" />
     <Compile Include="UserControls\CardArticulos.cs">
       <SubType>UserControl</SubType>
     </Compile>

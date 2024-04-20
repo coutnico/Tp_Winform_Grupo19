@@ -21,5 +21,9 @@ namespace Tp_WinForm_Grupo_19.Views
             this.BackgroundImageLayout = ImageLayout.Stretch;
         }
 
+        private void viewVerArticulos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
