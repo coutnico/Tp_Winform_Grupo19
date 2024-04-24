@@ -62,6 +62,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Models\MarcaNegocio.cs" />
+    <Compile Include="Models\Marca.cs" />
     <Compile Include="Models\Articulo.cs" />
     <Compile Include="Models\ArticuloNegocio.cs" />
     <Compile Include="UserControls\CardArticulos.cs">

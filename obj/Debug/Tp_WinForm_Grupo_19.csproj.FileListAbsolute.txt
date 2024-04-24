@@ -24,3 +24,17 @@ C:\Mariano\UTN\Programacion III. TP\TP2\Tp_Winform_Grupo19\bin\Debug\FontAwesome
 C:\Mariano\UTN\Programacion III. TP\TP2\Tp_Winform_Grupo19\obj\Debug\Tp_WinFo.B3B521E1.Up2Date
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVerArticulos.resources
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.UserControls.CardArticulos.resources
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.csproj.AssemblyReference.cache
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Properties.Resources.resources
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.UserControls.CardArticulos.resources
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.viewPrincipal.resources
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVerArticulos.resources
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.csproj.GenerateResource.cache
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.csproj.CoreCompileInputs.cache
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.exe
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\bin\Debug\Tp_WinForm_Grupo_19.exe.config
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\bin\Debug\Tp_WinForm_Grupo_19.exe
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\bin\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\bin\Debug\FontAwesome.Sharp.dll
+C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinFo.B3B521E1.Up2Date
