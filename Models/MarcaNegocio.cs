@@ -36,7 +36,8 @@ namespace Tp_WinForm_Grupo_19.Models
                 {
                     Marca marca = new Marca();
 
-                    //
+                    marca.Id = Convert.ToInt32(reader["Id"]);
+                    marca.Descripcion = reader["Descripcion"].ToString();
 
                     lista.Add(marca);
 
