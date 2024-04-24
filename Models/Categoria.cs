@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tp_WinForm_Grupo_19
 {
-    public class Marca
+    public class Categoria
     {
         public int Id { set; get; }
         public string Descripcion { set; get; }

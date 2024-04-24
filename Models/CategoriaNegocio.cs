@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace Tp_WinForm_Grupo_19.Models
 {
-    public class MarcaNegocio
+    public class CategoriaNegocio
     {
         static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
 
@@ -16,16 +16,16 @@ namespace Tp_WinForm_Grupo_19.Models
         SqlDataReader reader = null;
 
 
-        public List<Marca> ListarMarcas()
+        public List<Categoria> ListarCategorias()
 
 
         {
-            List<Marca> lista = new List<Marca>();
-
+            List<Categoria> lista = new List<Categoria>();
+            
             try
             {
                 conexion.Open();
-                string query = "Select Id, Descripcion from MARCAS"; 
+                string query = "Select Id, Descripcion from Categoria"; 
                 cmd = new SqlCommand(query, conexion);
 
 
@@ -34,11 +34,11 @@ namespace Tp_WinForm_Grupo_19.Models
 
                 while (reader.Read())
                 {
-                    Marca marca = new Marca();
+                    Categoria categoria = new Categoria();
 
                     //
 
-                    lista.Add(marca);
+                    lista.Add(categoria);
 
                 }
 
