@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 
 namespace Tp_WinForm_Grupo_19.Models
 {
-    public class CategoriaNegocio
+    public class ImagenNegocio
     {
         static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
 
@@ -15,15 +15,14 @@ namespace Tp_WinForm_Grupo_19.Models
         SqlCommand cmd;
         SqlDataReader reader = null;
 
-
-        public List<Categoria> ListarCategorias()
+        public List<Imagen> ListarImagen()
         {
-            List<Categoria> lista = new List<Categoria>();
-            
+            List<Imagen> lista = new List<Imagen>();
+
             try
             {
                 conexion.Open();
-                string query = "Select Id, Descripcion from CATEGORIAS"; 
+                string query = "select Id, IdArticulo, ImagenUrl from IMAGENES\r\n";
                 cmd = new SqlCommand(query, conexion);
 
 
@@ -32,12 +31,13 @@ namespace Tp_WinForm_Grupo_19.Models
 
                 while (reader.Read())
                 {
-                    Categoria categoria = new Categoria();
+                    Imagen imagen = new Imagen();
 
-                    categoria.Id = Convert.ToInt32(reader["Id"]);
-                    categoria.Descripcion = reader["Descripcion"].ToString();
+                    imagen.Id = Convert.ToInt32(reader["Id"]);
+                    imagen.IdArticulo = Convert.ToInt32(reader["IdArticulo"]);
+                    imagen.URL = reader["ImagenUrl"].ToString();
 
-                    lista.Add(categoria);
+                    lista.Add(imagen);
 
                 }
 
@@ -52,7 +52,6 @@ namespace Tp_WinForm_Grupo_19.Models
 
 
         }
+
     }
-
-
 }
