@@ -33,5 +33,16 @@ namespace Tp_WinForm_Grupo_19.Properties {
                 return ((string)(this["CATALOGO_P3_DBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=CATALOGO_P3_DB;Integrated Security=True;Trust" +
+            "ServerCertificate=True")]
+        public string CATALOGO_P3_DBConnectionString1 {
+            get {
+                return ((string)(this["CATALOGO_P3_DBConnectionString1"]));
+            }
+        }
     }
 }
