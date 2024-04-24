@@ -29,7 +29,7 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void viewVerArticulos_Load(object sender, EventArgs e)
         {
-          /*  List<Articulo> articulos = ArticuloNegocio.ListarArticulos();
+            List<Articulo> articulos = ArticuloNegocio.ListarArticulos();
 
             foreach (Articulo articulo in articulos)
             { 
@@ -38,16 +38,15 @@ namespace Tp_WinForm_Grupo_19.Views
 
                 flowpanelArticles.Controls.Add(cardArticulo);
                 
-            }*/
+            }
         }
-      //  private void textBox1_TextChanged(object sender, EventArgs e) { }
-       private void textBox1_TextChanged(object sender, EventArgs e)
+       private void txtBuscador_TextChanged(object sender, EventArgs e)
         {
             //Limpio screen antes de mostrar la busqueda
             flowpanelArticles.Controls.Clear();
             
 
-            Id_Marca_Buscado = int.Parse(textBox1.Text);
+            Id_Marca_Buscado = int.Parse(txtBuscador.Text);
 
             List<Articulo> articulos = ArticuloNegocio.ListarArticulos();
 

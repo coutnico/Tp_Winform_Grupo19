@@ -36,7 +36,8 @@ namespace Tp_WinForm_Grupo_19.Models
                 {
                     Categoria categoria = new Categoria();
 
-                    //
+                    categoria.Id = Convert.ToInt32(reader["Id"]);
+                    categoria.Descripcion = reader["Descripcion"].ToString();
 
                     lista.Add(categoria);
 

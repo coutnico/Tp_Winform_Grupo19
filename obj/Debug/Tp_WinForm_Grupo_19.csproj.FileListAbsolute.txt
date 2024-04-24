@@ -39,3 +39,4 @@ C:\Mariano\UTN\Programacion III. TP\TP2\TP\bin\Debug\Tp_WinForm_Grupo_19.pdb
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\bin\Debug\FontAwesome.Sharp.dll
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinFo.B3B521E1.Up2Date
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarArticulos.resources
