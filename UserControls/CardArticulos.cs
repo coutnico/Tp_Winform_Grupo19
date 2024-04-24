@@ -6,6 +6,8 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,15 +17,21 @@ namespace Tp_WinForm_Grupo_19.UserControls
 {
     public partial class CardArticulos : UserControl
     {
-        MarcaNegocio marcaNegocio = new MarcaNegocio();
-        CategoriaNegocio categoriNegocio = new CategoriaNegocio();
-        public CardArticulos(string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
+        private MarcaNegocio marcaNegocio = new MarcaNegocio();
+        private CategoriaNegocio categoriNegocio = new CategoriaNegocio();
+        private ImagenNegocio ImagenNegocio = new ImagenNegocio();
+
+
+
+        public CardArticulos(int idarticulo, string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
         {
             InitializeComponent();
 
 
             try
             {
+                List<Imagen> imagenes = new List<Imagen>();
+
                 lblCodigo.Text = codigo;
                 lblNombre.Text = nombre;
                 txtDescripcion.Text = descripcion;
@@ -41,6 +49,7 @@ namespace Tp_WinForm_Grupo_19.UserControls
 
                     }
                 }
+
                 foreach (Marca marca in marcaNegocio.ListarMarcas())
                 {
                     if (IdMarca == marca.Id)
@@ -55,24 +64,38 @@ namespace Tp_WinForm_Grupo_19.UserControls
                     }
 
                 }
-                lblPrecio.Text = precio.ToString();
+
+                foreach (Imagen imagen in ImagenNegocio.ListarImagen())
+                {
+                    if (imagen.IdArticulo == idarticulo)
+                    {
+                        imagenes.Add(imagen);
+                    }
+                }
 
 
-
-
-
-
-
-
-
-                //using (WebClient cliente = new WebClient())
+                //using (HttpClient httpClient = new HttpClient())
                 //{
-                //    byte[] imagenBytes = cliente.DownloadData(url);
-                //    using (MemoryStream stream = new MemoryStream(imagenBytes))
+                //    using (WebClient cliente = new WebClient())
                 //    {
-                //        pbImagen.Image = Image.FromStream(stream);
+                //        byte[] imagenBytes = cliente.DownloadData(imagenes[0].URL);
+
+                //        if (imagenBytes != null && imagenBytes.Length > 0)
+                //        {
+                //            using (MemoryStream stream = new MemoryStream(imagenBytes))
+                //            {
+                //                Image imagen = Image.FromStream(stream);
+
+                //                pbImagen.Image = imagen;
+                //            }
+                //        }
+                //        else
+                //        {
+                //            MessageBox.Show("Los datos de la imagen están vacíos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //        }
                 //    }
                 //}
+                lblPrecio.Text = precio.ToString();
             }
             catch (Exception)
             {

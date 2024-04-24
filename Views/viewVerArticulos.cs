@@ -34,7 +34,7 @@ namespace Tp_WinForm_Grupo_19.Views
             foreach (Articulo articulo in articulos)
             { 
                 
-                CardArticulos cardArticulo = new CardArticulos(articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
+                CardArticulos cardArticulo = new CardArticulos(articulo.ID, articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
 
                 flowpanelArticles.Controls.Add(cardArticulo);
                 
@@ -54,7 +54,7 @@ namespace Tp_WinForm_Grupo_19.Views
             {
                 if (Id_Marca_Buscado == articulo.IDMarca)
                 {  // busco por ID de marca
-                    CardArticulos cardArticulo = new CardArticulos(articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
+                    CardArticulos cardArticulo = new CardArticulos(articulo.ID, articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
 
                     flowpanelArticles.Controls.Add(cardArticulo);
                 }
