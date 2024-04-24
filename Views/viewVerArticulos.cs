@@ -16,6 +16,7 @@ namespace Tp_WinForm_Grupo_19.Views
     public partial class viewVerArticulos : Form
     {
 
+        int Id_Marca_Buscado;
         ArticuloNegocio ArticuloNegocio = new ArticuloNegocio();
 
         public viewVerArticulos()
@@ -28,14 +29,36 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void viewVerArticulos_Load(object sender, EventArgs e)
         {
-            List<Articulo> articulos = ArticuloNegocio.ListarArticulos();
+          /*  List<Articulo> articulos = ArticuloNegocio.ListarArticulos();
 
             foreach (Articulo articulo in articulos)
             { 
+                
                 CardArticulos cardArticulo = new CardArticulos(articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
 
                 flowpanelArticles.Controls.Add(cardArticulo);
+                
+            }*/
+        }
+      //  private void textBox1_TextChanged(object sender, EventArgs e) { }
+       private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //Limpio screen antes de mostrar la busqueda
+            flowpanelArticles.Controls.Clear();
+            
 
+            Id_Marca_Buscado = int.Parse(textBox1.Text);
+
+            List<Articulo> articulos = ArticuloNegocio.ListarArticulos();
+
+            foreach (Articulo articulo in articulos)
+            {
+                if (Id_Marca_Buscado == articulo.IDMarca)
+                {  // busco por ID de marca
+                    CardArticulos cardArticulo = new CardArticulos(articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
+
+                    flowpanelArticles.Controls.Add(cardArticulo);
+                }
             }
         }
     }

@@ -15,8 +15,9 @@ namespace Tp_WinForm_Grupo_19.Models
         SqlCommand cmd;
         SqlDataReader reader = null;
 
-
+        
         public List<Articulo> ListarArticulos()
+        
         {
             List<Articulo> lista = new List<Articulo>();
 
