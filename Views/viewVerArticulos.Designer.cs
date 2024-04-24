@@ -48,7 +48,7 @@
             this.flowpanelArticles.Location = new System.Drawing.Point(12, 89);
             this.flowpanelArticles.Name = "flowpanelArticles";
             this.flowpanelArticles.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.flowpanelArticles.Size = new System.Drawing.Size(984, 491);
+            this.flowpanelArticles.Size = new System.Drawing.Size(984, 564);
             this.flowpanelArticles.TabIndex = 1;
             // 
             // txtBuscador
@@ -78,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 575);
+            this.ClientSize = new System.Drawing.Size(1008, 665);
             this.Controls.Add(this.ibSearch);
             this.Controls.Add(this.txtBuscador);
             this.Controls.Add(this.flowpanelArticles);

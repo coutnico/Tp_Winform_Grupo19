@@ -147,7 +147,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 50);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(240, 627);
+            this.panelLeft.Size = new System.Drawing.Size(240, 704);
             this.panelLeft.TabIndex = 1;
             // 
             // panelMenu2
@@ -337,7 +337,7 @@
             this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(240, 50);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1024, 627);
+            this.panelHome.Size = new System.Drawing.Size(1024, 704);
             this.panelHome.TabIndex = 2;
             // 
             // pictureBox3
@@ -377,7 +377,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 677);
+            this.ClientSize = new System.Drawing.Size(1264, 754);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelBorderStyle);
