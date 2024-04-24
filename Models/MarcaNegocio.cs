@@ -25,7 +25,7 @@ namespace Tp_WinForm_Grupo_19.Models
             try
             {
                 conexion.Open();
-                string query = "Select Id, Descripcion from MARCAS"; 
+                string query = "Select Id, Descripcion from MARCAS";  
                 cmd = new SqlCommand(query, conexion);
 
 

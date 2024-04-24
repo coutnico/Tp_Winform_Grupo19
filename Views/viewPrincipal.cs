@@ -71,6 +71,11 @@ namespace Tp_WinForm_Grupo_19
             viewVerArticulos viewVerArticulos = new viewVerArticulos();
             OpenChildForm(viewVerArticulos);
         }
+        private void ibaAddArticles_Click(object sender, EventArgs e)
+        {
+           viewAgregarArticulos viewAgregarArticulos = new viewAgregarArticulos();
+            OpenChildForm(viewAgregarArticulos);
+        }
 
 
         private void OpenChildForm(Form childForm)
@@ -100,5 +105,6 @@ namespace Tp_WinForm_Grupo_19
             childForm.Show();
         }
 
+        
     }
 }

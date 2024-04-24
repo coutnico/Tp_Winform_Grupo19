@@ -3,47 +3,63 @@
   "WorkspaceRootPath": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewverarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\models\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewverarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewverarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewverarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewverarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewagregararticulos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewverarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewverarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\usercontrols\\cardarticulos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\usercontrols\\cardarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\models\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\usercontrols\\cardarticulos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\usercontrols\\cardarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,100 +70,134 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "viewVerArticulos.Designer.cs",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\viewVerArticulos.Designer.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.Designer.cs",
-              "RelativeToolTip": "Views\\viewVerArticulos.Designer.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAADwvz8AAABGAAAA",
+              "DocumentIndex": 5,
+              "Title": "viewAgregarArticulos.resx",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.resx",
+              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.resx",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.resx",
+              "RelativeToolTip": "Views\\viewAgregarArticulos.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-04-24T03:08:57.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MarcaNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\MarcaNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\MarcaNegocio.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\MarcaNegocio.cs",
+              "RelativeToolTip": "Models\\MarcaNegocio.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAIwBIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:38:36.353Z",
+              "WhenOpened": "2024-04-24T03:02:34.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\CategoriaNegocio.cs",
+              "RelativeToolTip": "Models\\CategoriaNegocio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T03:03:12.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "viewAgregarArticulos.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
+              "RelativeToolTip": "Views\\viewAgregarArticulos.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T02:47:19.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "viewAgregarArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\viewAgregarArticulos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T02:46:16.347Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "viewVerArticulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.cs",
               "RelativeDocumentMoniker": "Views\\viewVerArticulos.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Views\\viewVerArticulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:22:19.594Z",
+              "WhenOpened": "2024-04-24T02:45:32.159Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ArticuloNegocio.cs",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\ArticuloNegocio.cs",
-              "RelativeDocumentMoniker": "Models\\ArticuloNegocio.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\ArticuloNegocio.cs",
-              "RelativeToolTip": "Models\\ArticuloNegocio.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAIwBIAAAAvAAAA",
+              "DocumentIndex": 11,
+              "Title": "CardArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs",
+              "RelativeDocumentMoniker": "UserControls\\CardArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "UserControls\\CardArticulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:14:35.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T01:09:48.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "viewVerArticulos.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.cs",
               "RelativeDocumentMoniker": "Views\\viewVerArticulos.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.cs",
               "RelativeToolTip": "Views\\viewVerArticulos.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAqwC8AAAAMAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwDMAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T01:13:04.27Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CardArticulos.cs",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs",
-              "RelativeDocumentMoniker": "UserControls\\CardArticulos.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs",
-              "RelativeToolTip": "UserControls\\CardArticulos.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:12:04.157Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswA4AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:10:03.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "CardArticulos.resx",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.resx",
               "RelativeDocumentMoniker": "UserControls\\CardArticulos.resx",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.resx",
               "RelativeToolTip": "UserControls\\CardArticulos.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-04-24T01:09:52.709Z",
+              "WhenOpened": "2024-04-24T01:09:52.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\ArticuloNegocio.cs",
+              "RelativeToolTip": "Models\\ArticuloNegocio.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T01:14:35.201Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "CardArticulos.Designer.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.Designer.cs",
               "RelativeDocumentMoniker": "UserControls\\CardArticulos.Designer.cs",
@@ -155,37 +205,36 @@
               "RelativeToolTip": "UserControls\\CardArticulos.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:09:49.452Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-24T01:09:49.452Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CardArticulos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs",
-              "RelativeDocumentMoniker": "UserControls\\CardArticulos.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "UserControls\\CardArticulos.cs [Dise\u00F1o]",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswA4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T01:09:48.035Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-24T01:10:03.363Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "viewPrincipal.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewPrincipal.cs",
               "RelativeDocumentMoniker": "Views\\viewPrincipal.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewPrincipal.cs",
               "RelativeToolTip": "Views\\viewPrincipal.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFQAAABvAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAYwEMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T01:08:27.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "viewPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewPrincipal.cs",
               "RelativeDocumentMoniker": "Views\\viewPrincipal.cs",
@@ -194,6 +243,18 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-24T01:07:57.75Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CardArticulos.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs",
+              "RelativeDocumentMoniker": "UserControls\\CardArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\UserControls\\CardArticulos.cs",
+              "RelativeToolTip": "UserControls\\CardArticulos.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T01:12:04.157Z"
             }
           ]
         }
