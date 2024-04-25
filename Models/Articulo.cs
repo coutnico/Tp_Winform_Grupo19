@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,7 @@ namespace Tp_WinForm_Grupo_19
         public decimal Precio { get; set; }
         public string ImagenURl { get; set; }
 
-
+        public Image ImagenCargada { get; set; }
 
         //FUNCIONES
 

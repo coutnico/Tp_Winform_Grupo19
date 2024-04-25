@@ -94,6 +94,12 @@
     <Compile Include="Views\viewVerArticulos.Designer.cs">
       <DependentUpon>viewVerArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewVistaDetallada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewVistaDetallada.Designer.cs">
+      <DependentUpon>viewVistaDetallada.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewVerArticulos.resx">
       <DependentUpon>viewVerArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewVistaDetallada.resx">
+      <DependentUpon>viewVistaDetallada.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="CATALOGO_P3_DBDataSet.xsc">
       <DependentUpon>CATALOGO_P3_DBDataSet.xsd</DependentUpon>

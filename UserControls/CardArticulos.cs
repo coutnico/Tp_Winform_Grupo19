@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -11,6 +12,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Serialization;
 using Tp_WinForm_Grupo_19.Models;
 
 namespace Tp_WinForm_Grupo_19.UserControls
@@ -21,7 +23,15 @@ namespace Tp_WinForm_Grupo_19.UserControls
         private CategoriaNegocio categoriNegocio = new CategoriaNegocio();
         private ImagenNegocio ImagenNegocio = new ImagenNegocio();
 
+        public delegate void TransferirDatos(Articulo articulo);
 
+        public event TransferirDatos Eventotransferir;
+
+
+        private void OnEventotransferir(Articulo articulo)
+        {
+            Eventotransferir?.Invoke(articulo);
+        }
 
         public CardArticulos(int idarticulo, string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
         {
@@ -73,35 +83,40 @@ namespace Tp_WinForm_Grupo_19.UserControls
                     }
                 }
 
-
-                //using (HttpClient httpClient = new HttpClient())
-                //{
-                //    using (WebClient cliente = new WebClient())
-                //    {
-                //        byte[] imagenBytes = cliente.DownloadData(imagenes[0].URL);
-
-                //        if (imagenBytes != null && imagenBytes.Length > 0)
-                //        {
-                //            using (MemoryStream stream = new MemoryStream(imagenBytes))
-                //            {
-                //                Image imagen = Image.FromStream(stream);
-
-                //                pbImagen.Image = imagen;
-                //            }
-                //        }
-                //        else
-                //        {
-                //            MessageBox.Show("Los datos de la imagen están vacíos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //        }
-                //    }
-                //}
                 lblPrecio.Text = precio.ToString();
+
+
+                using (HttpClient httpClient = new HttpClient())
+                {
+                    using (WebClient cliente = new WebClient())
+                    {
+                        byte[] imagenBytes = cliente.DownloadData(imagenes[0].URL);
+
+                        if (imagenBytes != null && imagenBytes.Length > 0)
+                        {
+                            using (MemoryStream stream = new MemoryStream(imagenBytes))
+                            {
+                                Image imagen = Image.FromStream(stream);
+
+                                pbImagen.Image = imagen;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Los datos de la imagen están vacíos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
             }
             catch (Exception)
             {
-
-                throw;
+                //En caso de que no cargue la imagen 
             }
+        }
+
+        private void ibVistaDetallada_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

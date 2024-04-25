@@ -138,6 +138,7 @@
             this.ibVistaDetallada.Size = new System.Drawing.Size(44, 38);
             this.ibVistaDetallada.TabIndex = 8;
             this.ibVistaDetallada.UseVisualStyleBackColor = true;
+            this.ibVistaDetallada.Click += new System.EventHandler(this.ibVistaDetallada_Click);
             // 
             // CardArticulos
             // 
