@@ -49,7 +49,7 @@ namespace Tp_WinForm_Grupo_19.Views
 
             using (Pen borderPen = new Pen(borderColor, borderWidth))
             {
-                g.DrawRectangle(borderPen, 0, 0, pbImageArticle.Width - 1, pbImageArticle.Height - 1);
+                g.DrawRectangle(borderPen, 0, 0, pbImageArticle.Width - 1, pbImageArticle.Height - 1);            
             }
         }
     }

@@ -37,6 +37,8 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ibVistaDetallada = new FontAwesome.Sharp.IconButton();
+            this.ibUpdate = new FontAwesome.Sharp.IconButton();
+            this.ibTrash = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +47,7 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(154, 24);
+            this.lblNombre.Location = new System.Drawing.Point(127, 26);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(58, 17);
             this.lblNombre.TabIndex = 1;
@@ -54,7 +56,7 @@
             // pbImagen
             // 
             this.pbImagen.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.ImagenNoCargada;
-            this.pbImagen.Location = new System.Drawing.Point(16, 24);
+            this.pbImagen.Location = new System.Drawing.Point(0, 24);
             this.pbImagen.Name = "pbImagen";
             this.pbImagen.Size = new System.Drawing.Size(124, 137);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -63,7 +65,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(157, 80);
+            this.txtDescripcion.Location = new System.Drawing.Point(130, 82);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.ReadOnly = true;
@@ -75,7 +77,7 @@
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.Color.White;
-            this.lblMarca.Location = new System.Drawing.Point(154, 137);
+            this.lblMarca.Location = new System.Drawing.Point(127, 139);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(45, 17);
             this.lblMarca.TabIndex = 3;
@@ -86,7 +88,7 @@
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.ForeColor = System.Drawing.Color.White;
-            this.lblPrecio.Location = new System.Drawing.Point(290, 161);
+            this.lblPrecio.Location = new System.Drawing.Point(285, 161);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(58, 21);
             this.lblPrecio.TabIndex = 4;
@@ -97,7 +99,7 @@
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.ForeColor = System.Drawing.Color.White;
-            this.lblCodigo.Location = new System.Drawing.Point(54, 164);
+            this.lblCodigo.Location = new System.Drawing.Point(3, 165);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(51, 17);
             this.lblCodigo.TabIndex = 5;
@@ -108,7 +110,7 @@
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(154, 117);
+            this.lblCategoria.Location = new System.Drawing.Point(127, 119);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(66, 17);
             this.lblCategoria.TabIndex = 6;
@@ -119,7 +121,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(154, 60);
+            this.label1.Location = new System.Drawing.Point(127, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 7;
@@ -133,18 +135,49 @@
             this.ibVistaDetallada.IconColor = System.Drawing.Color.Black;
             this.ibVistaDetallada.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibVistaDetallada.IconSize = 35;
-            this.ibVistaDetallada.Location = new System.Drawing.Point(349, 3);
+            this.ibVistaDetallada.Location = new System.Drawing.Point(364, 0);
             this.ibVistaDetallada.Name = "ibVistaDetallada";
-            this.ibVistaDetallada.Size = new System.Drawing.Size(44, 38);
+            this.ibVistaDetallada.Size = new System.Drawing.Size(32, 35);
             this.ibVistaDetallada.TabIndex = 8;
             this.ibVistaDetallada.UseVisualStyleBackColor = true;
             this.ibVistaDetallada.Click += new System.EventHandler(this.ibVistaDetallada_Click);
+            // 
+            // ibUpdate
+            // 
+            this.ibUpdate.FlatAppearance.BorderSize = 0;
+            this.ibUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibUpdate.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
+            this.ibUpdate.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ibUpdate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibUpdate.IconSize = 35;
+            this.ibUpdate.Location = new System.Drawing.Point(330, 0);
+            this.ibUpdate.Name = "ibUpdate";
+            this.ibUpdate.Size = new System.Drawing.Size(32, 35);
+            this.ibUpdate.TabIndex = 9;
+            this.ibUpdate.UseVisualStyleBackColor = true;
+            this.ibUpdate.Click += new System.EventHandler(this.ibUpdate_Click);
+            // 
+            // ibTrash
+            // 
+            this.ibTrash.FlatAppearance.BorderSize = 0;
+            this.ibTrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibTrash.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.ibTrash.IconColor = System.Drawing.Color.Brown;
+            this.ibTrash.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibTrash.IconSize = 32;
+            this.ibTrash.Location = new System.Drawing.Point(291, 0);
+            this.ibTrash.Name = "ibTrash";
+            this.ibTrash.Size = new System.Drawing.Size(32, 35);
+            this.ibTrash.TabIndex = 10;
+            this.ibTrash.UseVisualStyleBackColor = true;
             // 
             // CardArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.ibTrash);
+            this.Controls.Add(this.ibUpdate);
             this.Controls.Add(this.ibVistaDetallada);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCategoria);
@@ -174,5 +207,7 @@
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label label1;
         private FontAwesome.Sharp.IconButton ibVistaDetallada;
+        private FontAwesome.Sharp.IconButton ibUpdate;
+        private FontAwesome.Sharp.IconButton ibTrash;
     }
 }

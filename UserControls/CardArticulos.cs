@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
@@ -22,11 +23,12 @@ namespace Tp_WinForm_Grupo_19.UserControls
         private MarcaNegocio marcaNegocio = new MarcaNegocio();
         private CategoriaNegocio categoriNegocio = new CategoriaNegocio();
         private ImagenNegocio ImagenNegocio = new ImagenNegocio();
-
+        private decimal precio;
 
         public event EventHandler<EventoTransferir> Eventotransferir;
 
 
+  
         private void OnEventotransferir(Articulo articulo)
         {
             Eventotransferir?.Invoke(this, new EventoTransferir(articulo));
@@ -36,15 +38,15 @@ namespace Tp_WinForm_Grupo_19.UserControls
             InitializeComponent();
         }
 
-            public CardArticulos(int idarticulo, string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
+        public CardArticulos(int idarticulo, string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
         {
             InitializeComponent();
-
 
             try
             {
                 List<Imagen> imagenes = new List<Imagen>();
 
+                this.precio = precio;
                 lblCodigo.Text = codigo;
                 lblNombre.Text = nombre;
                 txtDescripcion.Text = descripcion;
@@ -86,7 +88,7 @@ namespace Tp_WinForm_Grupo_19.UserControls
                     }
                 }
 
-                lblPrecio.Text = precio.ToString();
+                lblPrecio.Text = "$" + precio.ToString();
 
 
                 using (HttpClient httpClient = new HttpClient())
@@ -125,10 +127,15 @@ namespace Tp_WinForm_Grupo_19.UserControls
             CardArticulo.Categoria = lblCategoria.Text;
             CardArticulo.Marca = lblMarca.Text;
             CardArticulo.Descripcion = txtDescripcion.Text;
-            CardArticulo.Precio = Convert.ToDecimal(lblPrecio.Text);
+            CardArticulo.Precio = precio;
             CardArticulo.ImagenCargada = pbImagen.Image;
 
             OnEventotransferir(CardArticulo);
+        }
+
+        private void ibUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
