@@ -26,11 +26,28 @@ namespace Tp_WinForm_Grupo_19.Views
 
             for (int i = 0; i < marcas.Count; i++) {
                 Marca marca_obj = marcas[i];
-                lista_Marca.Items.Add(marca_obj.Id);
+                lista_Marca.Items.Add(marca_obj.Id);// lista_marca es el nombre del combobox
             }
+
+            // Agrego en el listbox todos los ID de categoria que existen para poder crear un nuevo articulo
+
+            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+
+            List<Categoria> categorias = categoriaNegocio.ListarCategorias();
+
+
+            for (int i = 0; i < categorias.Count; i++)
+            {
+                Categoria categoria_obj = categorias[i];
+               lista_Categoria.Items.Add(categoria_obj.Id); // lista_categoria es el nombre del combobox
+            }
+
         }
 
-        private void viewAgregarArticulos_Load(object sender, EventArgs e)
+        
+
+
+private void viewAgregarArticulos_Load(object sender, EventArgs e)
         {
 
         }
@@ -38,12 +55,56 @@ namespace Tp_WinForm_Grupo_19.Views
         private void label1_Click(object sender, EventArgs e)
         {
 
-        }
+       }
 
         private void lista_Marca_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // lista_Marca.Items.Add("id 1");
-            //lista_Marca.Items.Add("id 2");
+           
+
         }
+    private void lista_Categoria_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        
+    }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void crear_Articulo_Click(object sender, EventArgs e)
+        {
+            string codigo_art_sel, nombre_art_sel, descripcion_art_sel, imagen_art_sel;
+            int id_marca_sel, id_categoria_sel;
+            decimal precio_art_sel;
+
+            id_marca_sel = int.Parse(lista_Marca.Text);
+            id_categoria_sel = int.Parse(lista_Categoria.Text);
+
+            codigo_art_sel = codigo_Articulo.Text;
+            nombre_art_sel = nombre_Articulo.Text;
+            descripcion_art_sel = descripcion_Articulo.Text;
+           // imagen_art_sel = imagen_Articulo.Text;
+
+            precio_art_sel = decimal.Parse(precio_Articulo.Text);
+
+            //Cargar en  base de datos.
+            //Limpio carga y copio en ultimo reg.
+            codigo_Articulo.Clear();
+            nombre_Articulo.Clear();
+            descripcion_Articulo.Clear();
+            precio_Articulo.Clear();
+
+            lista_Marca.Items.Clear();
+            lista_Categoria.Items.Clear();
+
+
+            codigo_Ultimo_Art.Text = codigo_art_sel;
+            nombre_Ultimo_Art.Text = nombre_art_sel;
+
+
+        }
+
+        
     }
 }
