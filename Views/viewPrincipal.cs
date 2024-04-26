@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Media3D;
+using Tp_WinForm_Grupo_19.UserControls;
 using Tp_WinForm_Grupo_19.Views;
 
 namespace Tp_WinForm_Grupo_19
@@ -69,8 +70,17 @@ namespace Tp_WinForm_Grupo_19
         private void ibviewArticles_Click(object sender, EventArgs e)
         {
             viewVerArticulos viewVerArticulos = new viewVerArticulos();
+            viewVerArticulos.Transferencia += ViewVerArticulos_Transferencia;
             OpenChildForm(viewVerArticulos);
         }
+
+        private void ViewVerArticulos_Transferencia(object sender, Models.EventoTransferir e)
+        {
+            Articulo articulo = e.ArticuloSeleccionado;
+            viewVistaDetallada vistaDetallada = new viewVistaDetallada(articulo);
+            OpenChildForm(vistaDetallada);
+        }
+
         private void ibaAddArticles_Click(object sender, EventArgs e)
         {
            viewAgregarArticulos viewAgregarArticulos = new viewAgregarArticulos();
@@ -105,6 +115,10 @@ namespace Tp_WinForm_Grupo_19
             childForm.Show();
         }
 
-        
+        private void viewPrincipal_Load(object sender, EventArgs e)
+        {
+           this.DoubleBuffered = true;
+        }
+
     }
 }

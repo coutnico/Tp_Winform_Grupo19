@@ -12,20 +12,32 @@ namespace Tp_WinForm_Grupo_19.Views
 {
     public partial class viewVistaDetallada : Form
     {
-        public viewVistaDetallada(Image imagen, string nombre, string marca, string categoria, string descripcion, string precio)
+        public viewVistaDetallada(Articulo articulo)
         {
             InitializeComponent();
             this.DoubleBuffered = true;
 
-            pbImageArticle.Image = imagen;
+            pbImageArticle.Image = articulo.ImagenCargada;
 
-            lblName.Text = nombre;
-            lblMar.Text = marca;
-            lblCat.Text = categoria;
-            lblDesc.Text = descripcion;
-            lblPrice.Text = precio;
+            lblName.Text = articulo.Nombre;
+            lblMar.Text = articulo.Marca;
+            lblCat.Text = articulo.Categoria;
+            lblDesc.Text = articulo.Descripcion;
+            lblPrice.Text = "$" + articulo.Precio.ToString();
+
         }
 
+        private void panelPrincipal_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
 
+            Color borderColor = Color.Black; 
+            int borderWidth = 8;
+
+            using (Pen borderPen = new Pen(borderColor, borderWidth))
+            {
+                g.DrawRectangle(borderPen, 0, 0, panelPrincipal.Width - 1, panelPrincipal.Height - 1);
+            }
+        }
     }
 }

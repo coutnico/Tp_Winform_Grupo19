@@ -92,6 +92,7 @@
             // 
             // ibMinimize
             // 
+            this.ibMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ibMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ibMinimize.FlatAppearance.BorderSize = 0;
             this.ibMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -108,6 +109,7 @@
             // 
             // ibMaximize
             // 
+            this.ibMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ibMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ibMaximize.FlatAppearance.BorderSize = 0;
             this.ibMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -124,6 +126,7 @@
             // 
             // ibExit
             // 
+            this.ibExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ibExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ibExit.FlatAppearance.BorderSize = 0;
             this.ibExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -329,12 +332,12 @@
             // 
             // panelHome
             // 
+            this.panelHome.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panelHome.BackgroundImage = global::Tp_WinForm_Grupo_19.Properties.Resources.degradadoAzulVioleta;
             this.panelHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelHome.Controls.Add(this.pictureBox3);
             this.panelHome.Controls.Add(this.lbltitulo);
             this.panelHome.Controls.Add(this.pictureBox2);
-            this.panelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHome.Location = new System.Drawing.Point(240, 50);
             this.panelHome.Name = "panelHome";
             this.panelHome.Size = new System.Drawing.Size(1024, 704);
@@ -387,6 +390,7 @@
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "viewPrincipal";
+            this.Load += new System.EventHandler(this.viewPrincipal_Load);
             this.panelBorderStyle.ResumeLayout(false);
             this.panelLeft.ResumeLayout(false);
             this.panelMenu2.ResumeLayout(false);

@@ -19,12 +19,19 @@ namespace Tp_WinForm_Grupo_19.Views
         int Id_Marca_Buscado;
         ArticuloNegocio ArticuloNegocio = new ArticuloNegocio();
 
+
+        public event EventHandler<EventoTransferir> Transferencia;
         public viewVerArticulos()
         {
             InitializeComponent();
 
             this.BackgroundImage = Properties.Resources.degradadoAzulVioleta;
             this.BackgroundImageLayout = ImageLayout.Stretch;
+        }
+
+        private void OnTransferencia(Articulo articulo)
+        {
+            Transferencia?.Invoke(this, new EventoTransferir(articulo));
         }
 
         private void viewVerArticulos_Load(object sender, EventArgs e)
@@ -35,12 +42,19 @@ namespace Tp_WinForm_Grupo_19.Views
             { 
                 
                 CardArticulos cardArticulo = new CardArticulos(articulo.ID, articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
-
+                cardArticulo.Eventotransferir += CardArticulo_Eventotransferir1;
                 flowpanelArticles.Controls.Add(cardArticulo);
                 
             }
         }
-       private void txtBuscador_TextChanged(object sender, EventArgs e)
+
+        private void CardArticulo_Eventotransferir1(object sender, EventoTransferir e)
+        {
+            OnTransferencia(e.ArticuloSeleccionado);
+        }
+
+
+        private void txtBuscador_TextChanged(object sender, EventArgs e)
         {
             //Limpio screen antes de mostrar la busqueda
             flowpanelArticles.Controls.Clear();

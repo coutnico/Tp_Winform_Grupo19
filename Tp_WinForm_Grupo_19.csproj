@@ -62,6 +62,7 @@
     </Compile>
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\CategoriaNegocio.cs" />
+    <Compile Include="Models\EventoTransferir.cs" />
     <Compile Include="Models\Imagen.cs" />
     <Compile Include="Models\ImagenNegocio.cs" />
     <Compile Include="Models\MarcaNegocio.cs" />

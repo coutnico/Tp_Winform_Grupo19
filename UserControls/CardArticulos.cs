@@ -23,17 +23,20 @@ namespace Tp_WinForm_Grupo_19.UserControls
         private CategoriaNegocio categoriNegocio = new CategoriaNegocio();
         private ImagenNegocio ImagenNegocio = new ImagenNegocio();
 
-        public delegate void TransferirDatos(Articulo articulo);
 
-        public event TransferirDatos Eventotransferir;
+        public event EventHandler<EventoTransferir> Eventotransferir;
 
 
         private void OnEventotransferir(Articulo articulo)
         {
-            Eventotransferir?.Invoke(articulo);
+            Eventotransferir?.Invoke(this, new EventoTransferir(articulo));
+        }
+        public CardArticulos()
+        {
+            InitializeComponent();
         }
 
-        public CardArticulos(int idarticulo, string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
+            public CardArticulos(int idarticulo, string codigo, string nombre, string descripcion, int IdMarca, int IdCategoria, decimal precio)
         {
             InitializeComponent();
 
@@ -116,7 +119,16 @@ namespace Tp_WinForm_Grupo_19.UserControls
 
         private void ibVistaDetallada_Click(object sender, EventArgs e)
         {
-            
+            Articulo CardArticulo = new Articulo();
+
+            CardArticulo.Nombre = lblNombre.Text;
+            CardArticulo.Categoria = lblCategoria.Text;
+            CardArticulo.Marca = lblMarca.Text;
+            CardArticulo.Descripcion = txtDescripcion.Text;
+            CardArticulo.Precio = Convert.ToDecimal(lblPrecio.Text);
+            CardArticulo.ImagenCargada = pbImagen.Image;
+
+            OnEventotransferir(CardArticulo);
         }
     }
 }

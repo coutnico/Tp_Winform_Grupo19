@@ -27,7 +27,13 @@ namespace Tp_WinForm_Grupo_19
         public decimal Precio { get; set; }
         public string ImagenURl { get; set; }
 
+
+
+
+        //DatosCargados
         public Image ImagenCargada { get; set; }
+        public string Marca { get; set; }
+        public string Categoria { get; set; }
 
         //FUNCIONES
 

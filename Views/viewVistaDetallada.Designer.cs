@@ -36,6 +36,7 @@
             this.lblDesc = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panelPrincipal = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageArticle)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,6 +47,7 @@
             this.pbImageArticle.Location = new System.Drawing.Point(40, 47);
             this.pbImageArticle.Name = "pbImageArticle";
             this.pbImageArticle.Size = new System.Drawing.Size(456, 589);
+            this.pbImageArticle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImageArticle.TabIndex = 0;
             this.pbImageArticle.TabStop = false;
             // 
@@ -130,6 +132,16 @@
             this.panel1.Size = new System.Drawing.Size(324, 143);
             this.panel1.TabIndex = 7;
             // 
+            // panelPrincipal
+            // 
+            this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
+            this.panelPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPrincipal.Location = new System.Drawing.Point(31, 35);
+            this.panelPrincipal.Name = "panelPrincipal";
+            this.panelPrincipal.Size = new System.Drawing.Size(965, 618);
+            this.panelPrincipal.TabIndex = 8;
+            this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
+            // 
             // viewVistaDetallada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +156,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.pbImageArticle);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelPrincipal);
             this.Name = "viewVistaDetallada";
             this.Text = "viewVistaDetallada";
             ((System.ComponentModel.ISupportInitialize)(this.pbImageArticle)).EndInit();
@@ -164,5 +177,6 @@
         private System.Windows.Forms.Label lblDesc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelPrincipal;
     }
 }
