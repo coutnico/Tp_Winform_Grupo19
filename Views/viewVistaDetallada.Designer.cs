@@ -39,17 +39,19 @@
             this.panelPrincipal = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageArticle)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbImageArticle
             // 
             this.pbImageArticle.BackColor = System.Drawing.Color.Transparent;
-            this.pbImageArticle.Location = new System.Drawing.Point(40, 47);
+            this.pbImageArticle.Location = new System.Drawing.Point(38, 20);
             this.pbImageArticle.Name = "pbImageArticle";
-            this.pbImageArticle.Size = new System.Drawing.Size(456, 589);
+            this.pbImageArticle.Size = new System.Drawing.Size(414, 558);
             this.pbImageArticle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImageArticle.TabIndex = 0;
             this.pbImageArticle.TabStop = false;
+            this.pbImageArticle.Paint += new System.Windows.Forms.PaintEventHandler(this.pbImageArticle_Paint);
             // 
             // lblName
             // 
@@ -136,6 +138,7 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.panelPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPrincipal.Controls.Add(this.pbImageArticle);
             this.panelPrincipal.Location = new System.Drawing.Point(31, 35);
             this.panelPrincipal.Name = "panelPrincipal";
             this.panelPrincipal.Size = new System.Drawing.Size(965, 618);
@@ -154,7 +157,6 @@
             this.Controls.Add(this.lblMar);
             this.Controls.Add(this.lblCat);
             this.Controls.Add(this.lblName);
-            this.Controls.Add(this.pbImageArticle);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelPrincipal);
             this.Name = "viewVistaDetallada";
@@ -162,6 +164,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbImageArticle)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelPrincipal.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

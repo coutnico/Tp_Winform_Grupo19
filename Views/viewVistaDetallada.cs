@@ -39,5 +39,18 @@ namespace Tp_WinForm_Grupo_19.Views
                 g.DrawRectangle(borderPen, 0, 0, panelPrincipal.Width - 1, panelPrincipal.Height - 1);
             }
         }
+
+        private void pbImageArticle_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+
+            Color borderColor = Color.WhiteSmoke;
+            int borderWidth = 4;
+
+            using (Pen borderPen = new Pen(borderColor, borderWidth))
+            {
+                g.DrawRectangle(borderPen, 0, 0, pbImageArticle.Width - 1, pbImageArticle.Height - 1);
+            }
+        }
     }
 }
