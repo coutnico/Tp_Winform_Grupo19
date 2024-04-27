@@ -112,16 +112,19 @@ private void viewAgregarArticulos_Load(object sender, EventArgs e)
             lista_Marca.Items.Clear();
             lista_Categoria.Items.Clear();
 
-
-            codigo_Ultimo_Art.Text = articulo_obj.Codigo;
-            nombre_Ultimo_Art.Text = articulo_obj.Nombre;
-
-
             Close();
 
 
         }
 
-        
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

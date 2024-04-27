@@ -76,6 +76,12 @@
     <Compile Include="UserControls\CardArticulos.Designer.cs">
       <DependentUpon>CardArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewEliminarArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewEliminarArticulos.Designer.cs">
+      <DependentUpon>viewEliminarArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewAgregarArticulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\CardArticulos.resx">
       <DependentUpon>CardArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewEliminarArticulos.resx">
+      <DependentUpon>viewEliminarArticulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewAgregarArticulos.resx">
       <DependentUpon>viewAgregarArticulos.cs</DependentUpon>

@@ -120,5 +120,10 @@ namespace Tp_WinForm_Grupo_19
            this.DoubleBuffered = true;
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {   
+            viewEliminarArticulos viewEliminarArticulos = new viewEliminarArticulos();
+            OpenChildForm(viewEliminarArticulos);
+        }
     }
 }

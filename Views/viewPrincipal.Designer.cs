@@ -48,6 +48,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lbltitulo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ibaDeleteArticles = new FontAwesome.Sharp.IconButton();
             this.panelBorderStyle.SuspendLayout();
             this.panelLeft.SuspendLayout();
             this.panelMenu2.SuspendLayout();
@@ -68,8 +69,9 @@
             this.panelBorderStyle.Controls.Add(this.ibExit);
             this.panelBorderStyle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBorderStyle.Location = new System.Drawing.Point(0, 0);
+            this.panelBorderStyle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelBorderStyle.Name = "panelBorderStyle";
-            this.panelBorderStyle.Size = new System.Drawing.Size(1264, 50);
+            this.panelBorderStyle.Size = new System.Drawing.Size(1942, 92);
             this.panelBorderStyle.TabIndex = 0;
             this.panelBorderStyle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBorderStyle_MouseDown);
             this.panelBorderStyle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBorderStyle_MouseMove);
@@ -84,9 +86,10 @@
             this.ibHome.IconColor = System.Drawing.Color.White;
             this.ibHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibHome.IconSize = 40;
-            this.ibHome.Location = new System.Drawing.Point(12, 12);
+            this.ibHome.Location = new System.Drawing.Point(22, 22);
+            this.ibHome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibHome.Name = "ibHome";
-            this.ibHome.Size = new System.Drawing.Size(34, 32);
+            this.ibHome.Size = new System.Drawing.Size(62, 59);
             this.ibHome.TabIndex = 4;
             this.ibHome.UseVisualStyleBackColor = true;
             // 
@@ -100,9 +103,10 @@
             this.ibMinimize.IconColor = System.Drawing.Color.White;
             this.ibMinimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibMinimize.IconSize = 34;
-            this.ibMinimize.Location = new System.Drawing.Point(1152, 9);
+            this.ibMinimize.Location = new System.Drawing.Point(1737, 17);
+            this.ibMinimize.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibMinimize.Name = "ibMinimize";
-            this.ibMinimize.Size = new System.Drawing.Size(34, 32);
+            this.ibMinimize.Size = new System.Drawing.Size(62, 59);
             this.ibMinimize.TabIndex = 2;
             this.ibMinimize.UseVisualStyleBackColor = true;
             this.ibMinimize.Click += new System.EventHandler(this.ibMinimize_Click);
@@ -117,9 +121,10 @@
             this.ibMaximize.IconColor = System.Drawing.Color.White;
             this.ibMaximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibMaximize.IconSize = 34;
-            this.ibMaximize.Location = new System.Drawing.Point(1190, 9);
+            this.ibMaximize.Location = new System.Drawing.Point(1807, 17);
+            this.ibMaximize.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibMaximize.Name = "ibMaximize";
-            this.ibMaximize.Size = new System.Drawing.Size(34, 32);
+            this.ibMaximize.Size = new System.Drawing.Size(62, 59);
             this.ibMaximize.TabIndex = 3;
             this.ibMaximize.UseVisualStyleBackColor = true;
             this.ibMaximize.Click += new System.EventHandler(this.ibMaximize_Click);
@@ -134,9 +139,10 @@
             this.ibExit.IconColor = System.Drawing.Color.White;
             this.ibExit.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibExit.IconSize = 34;
-            this.ibExit.Location = new System.Drawing.Point(1227, 9);
+            this.ibExit.Location = new System.Drawing.Point(1875, 17);
+            this.ibExit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibExit.Name = "ibExit";
-            this.ibExit.Size = new System.Drawing.Size(34, 32);
+            this.ibExit.Size = new System.Drawing.Size(62, 59);
             this.ibExit.TabIndex = 1;
             this.ibExit.UseVisualStyleBackColor = true;
             this.ibExit.Click += new System.EventHandler(this.ibExit_Click);
@@ -148,9 +154,10 @@
             this.panelLeft.Controls.Add(this.panelMenu1);
             this.panelLeft.Controls.Add(this.panelPicture);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.Location = new System.Drawing.Point(0, 50);
+            this.panelLeft.Location = new System.Drawing.Point(0, 92);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(240, 704);
+            this.panelLeft.Size = new System.Drawing.Size(440, 1010);
             this.panelLeft.TabIndex = 1;
             // 
             // panelMenu2
@@ -159,9 +166,10 @@
             this.panelMenu2.Controls.Add(this.ibMoreInformation);
             this.panelMenu2.Controls.Add(this.ibUs);
             this.panelMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu2.Location = new System.Drawing.Point(0, 323);
+            this.panelMenu2.Location = new System.Drawing.Point(0, 597);
+            this.panelMenu2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelMenu2.Name = "panelMenu2";
-            this.panelMenu2.Size = new System.Drawing.Size(240, 178);
+            this.panelMenu2.Size = new System.Drawing.Size(440, 329);
             this.panelMenu2.TabIndex = 5;
             // 
             // ibSocialNetworks
@@ -176,11 +184,12 @@
             this.ibSocialNetworks.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibSocialNetworks.IconSize = 38;
             this.ibSocialNetworks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibSocialNetworks.Location = new System.Drawing.Point(48, 120);
+            this.ibSocialNetworks.Location = new System.Drawing.Point(88, 242);
+            this.ibSocialNetworks.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibSocialNetworks.Name = "ibSocialNetworks";
-            this.ibSocialNetworks.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibSocialNetworks.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.ibSocialNetworks.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibSocialNetworks.Size = new System.Drawing.Size(192, 54);
+            this.ibSocialNetworks.Size = new System.Drawing.Size(352, 100);
             this.ibSocialNetworks.TabIndex = 2;
             this.ibSocialNetworks.Text = "Redes sociales";
             this.ibSocialNetworks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -198,11 +207,12 @@
             this.ibMoreInformation.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibMoreInformation.IconSize = 38;
             this.ibMoreInformation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibMoreInformation.Location = new System.Drawing.Point(48, 60);
+            this.ibMoreInformation.Location = new System.Drawing.Point(88, 131);
+            this.ibMoreInformation.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibMoreInformation.Name = "ibMoreInformation";
-            this.ibMoreInformation.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibMoreInformation.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.ibMoreInformation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibMoreInformation.Size = new System.Drawing.Size(192, 54);
+            this.ibMoreInformation.Size = new System.Drawing.Size(352, 100);
             this.ibMoreInformation.TabIndex = 1;
             this.ibMoreInformation.Text = "Mas Informacion";
             this.ibMoreInformation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -222,10 +232,11 @@
             this.ibUs.IconSize = 40;
             this.ibUs.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ibUs.Location = new System.Drawing.Point(0, 0);
+            this.ibUs.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibUs.Name = "ibUs";
-            this.ibUs.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibUs.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.ibUs.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibUs.Size = new System.Drawing.Size(240, 54);
+            this.ibUs.Size = new System.Drawing.Size(440, 100);
             this.ibUs.TabIndex = 0;
             this.ibUs.Text = "Nosotros";
             this.ibUs.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -233,13 +244,15 @@
             // 
             // panelMenu1
             // 
+            this.panelMenu1.Controls.Add(this.ibaDeleteArticles);
             this.panelMenu1.Controls.Add(this.ibaAddArticles);
             this.panelMenu1.Controls.Add(this.ibviewArticles);
             this.panelMenu1.Controls.Add(this.ibArticles);
             this.panelMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu1.Location = new System.Drawing.Point(0, 145);
+            this.panelMenu1.Location = new System.Drawing.Point(0, 268);
+            this.panelMenu1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelMenu1.Name = "panelMenu1";
-            this.panelMenu1.Size = new System.Drawing.Size(240, 178);
+            this.panelMenu1.Size = new System.Drawing.Size(440, 329);
             this.panelMenu1.TabIndex = 4;
             // 
             // ibaAddArticles
@@ -254,11 +267,12 @@
             this.ibaAddArticles.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibaAddArticles.IconSize = 38;
             this.ibaAddArticles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibaAddArticles.Location = new System.Drawing.Point(45, 120);
+            this.ibaAddArticles.Location = new System.Drawing.Point(82, 181);
+            this.ibaAddArticles.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibaAddArticles.Name = "ibaAddArticles";
-            this.ibaAddArticles.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibaAddArticles.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.ibaAddArticles.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibaAddArticles.Size = new System.Drawing.Size(195, 54);
+            this.ibaAddArticles.Size = new System.Drawing.Size(358, 100);
             this.ibaAddArticles.TabIndex = 2;
             this.ibaAddArticles.Text = "Agregar ";
             this.ibaAddArticles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -277,11 +291,12 @@
             this.ibviewArticles.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibviewArticles.IconSize = 38;
             this.ibviewArticles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibviewArticles.Location = new System.Drawing.Point(48, 60);
+            this.ibviewArticles.Location = new System.Drawing.Point(88, 70);
+            this.ibviewArticles.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibviewArticles.Name = "ibviewArticles";
-            this.ibviewArticles.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibviewArticles.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.ibviewArticles.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibviewArticles.Size = new System.Drawing.Size(195, 54);
+            this.ibviewArticles.Size = new System.Drawing.Size(358, 100);
             this.ibviewArticles.TabIndex = 1;
             this.ibviewArticles.Text = "Ver ";
             this.ibviewArticles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -302,10 +317,11 @@
             this.ibArticles.IconSize = 40;
             this.ibArticles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ibArticles.Location = new System.Drawing.Point(0, 0);
+            this.ibArticles.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ibArticles.Name = "ibArticles";
-            this.ibArticles.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibArticles.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.ibArticles.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibArticles.Size = new System.Drawing.Size(240, 54);
+            this.ibArticles.Size = new System.Drawing.Size(440, 100);
             this.ibArticles.TabIndex = 0;
             this.ibArticles.Text = "Articulos disponibles";
             this.ibArticles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -316,16 +332,18 @@
             this.panelPicture.Controls.Add(this.pictureBox1);
             this.panelPicture.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPicture.Location = new System.Drawing.Point(0, 0);
+            this.panelPicture.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelPicture.Name = "panelPicture";
-            this.panelPicture.Size = new System.Drawing.Size(240, 145);
+            this.panelPicture.Size = new System.Drawing.Size(440, 268);
             this.panelPicture.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.compras_movilesBlanco;
-            this.pictureBox1.Location = new System.Drawing.Point(60, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(110, 31);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(131, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(240, 198);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -338,18 +356,20 @@
             this.panelHome.Controls.Add(this.pictureBox3);
             this.panelHome.Controls.Add(this.lbltitulo);
             this.panelHome.Controls.Add(this.pictureBox2);
-            this.panelHome.Location = new System.Drawing.Point(240, 50);
+            this.panelHome.Location = new System.Drawing.Point(440, 92);
+            this.panelHome.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panelHome.Name = "panelHome";
-            this.panelHome.Size = new System.Drawing.Size(1024, 704);
+            this.panelHome.Size = new System.Drawing.Size(1877, 1300);
             this.panelHome.TabIndex = 2;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.bandera_argentina;
-            this.pictureBox3.Location = new System.Drawing.Point(818, 385);
+            this.pictureBox3.Location = new System.Drawing.Point(1500, 711);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(60, 37);
+            this.pictureBox3.Size = new System.Drawing.Size(110, 68);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -358,9 +378,10 @@
             // 
             this.lbltitulo.BackColor = System.Drawing.Color.Transparent;
             this.lbltitulo.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitulo.Location = new System.Drawing.Point(121, 383);
+            this.lbltitulo.Location = new System.Drawing.Point(222, 707);
+            this.lbltitulo.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lbltitulo.Name = "lbltitulo";
-            this.lbltitulo.Size = new System.Drawing.Size(712, 64);
+            this.lbltitulo.Size = new System.Drawing.Size(1305, 118);
             this.lbltitulo.TabIndex = 3;
             this.lbltitulo.Text = "Bienvenidos a la tienda de articulos numero 1 de Argentina";
             // 
@@ -368,24 +389,50 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.logotienda;
-            this.pictureBox2.Location = new System.Drawing.Point(367, 145);
+            this.pictureBox2.Location = new System.Drawing.Point(673, 268);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(289, 214);
+            this.pictureBox2.Size = new System.Drawing.Size(530, 395);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // ibaDeleteArticles
+            // 
+            this.ibaDeleteArticles.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ibaDeleteArticles.FlatAppearance.BorderSize = 0;
+            this.ibaDeleteArticles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibaDeleteArticles.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibaDeleteArticles.ForeColor = System.Drawing.Color.White;
+            this.ibaDeleteArticles.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.ibaDeleteArticles.IconColor = System.Drawing.Color.White;
+            this.ibaDeleteArticles.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibaDeleteArticles.IconSize = 38;
+            this.ibaDeleteArticles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibaDeleteArticles.Location = new System.Drawing.Point(76, 267);
+            this.ibaDeleteArticles.Margin = new System.Windows.Forms.Padding(6);
+            this.ibaDeleteArticles.Name = "ibaDeleteArticles";
+            this.ibaDeleteArticles.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.ibaDeleteArticles.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ibaDeleteArticles.Size = new System.Drawing.Size(358, 100);
+            this.ibaDeleteArticles.TabIndex = 3;
+            this.ibaDeleteArticles.Text = "Eliminar";
+            this.ibaDeleteArticles.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibaDeleteArticles.UseVisualStyleBackColor = true;
+            this.ibaDeleteArticles.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // viewPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 754);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.panelHome);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelBorderStyle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "viewPrincipal";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -426,6 +473,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbltitulo;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private FontAwesome.Sharp.IconButton ibaDeleteArticles;
     }
 }
 

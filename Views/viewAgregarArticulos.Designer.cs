@@ -31,7 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lista_Marca = new System.Windows.Forms.ListBox();
             this.lista_Categoria = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
             this.codigo_Articulo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,9 +43,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.precio_Articulo = new System.Windows.Forms.TextBox();
             this.crear_Articulo = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.codigo_Ultimo_Art = new System.Windows.Forms.Label();
-            this.nombre_Ultimo_Art = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -54,9 +50,10 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(52, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 25);
+            this.label1.Size = new System.Drawing.Size(240, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Agrega un nuevo articulo";
+            this.label1.Text = "Agregue un nuevo articulo";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // lista_Marca
             // 
@@ -78,15 +75,6 @@
             this.lista_Categoria.TabIndex = 2;
             this.lista_Categoria.SelectedIndexChanged += new System.EventHandler(this.lista_Categoria_SelectedIndexChanged);
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(906, 371);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(8, 4);
-            this.listBox1.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -95,6 +83,7 @@
             this.label2.Size = new System.Drawing.Size(75, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Codigo";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // codigo_Articulo
             // 
@@ -157,7 +146,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 551);
+            this.label7.Location = new System.Drawing.Point(41, 539);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(77, 25);
             this.label7.TabIndex = 12;
@@ -166,7 +155,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(35, 621);
+            this.label8.Location = new System.Drawing.Point(41, 592);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 25);
             this.label8.TabIndex = 13;
@@ -174,58 +163,26 @@
             // 
             // precio_Articulo
             // 
-            this.precio_Articulo.Location = new System.Drawing.Point(243, 621);
+            this.precio_Articulo.Location = new System.Drawing.Point(243, 588);
             this.precio_Articulo.Name = "precio_Articulo";
             this.precio_Articulo.Size = new System.Drawing.Size(100, 29);
             this.precio_Articulo.TabIndex = 15;
             // 
             // crear_Articulo
             // 
-            this.crear_Articulo.Location = new System.Drawing.Point(205, 736);
+            this.crear_Articulo.Location = new System.Drawing.Point(408, 654);
             this.crear_Articulo.Name = "crear_Articulo";
-            this.crear_Articulo.Size = new System.Drawing.Size(166, 52);
+            this.crear_Articulo.Size = new System.Drawing.Size(166, 59);
             this.crear_Articulo.TabIndex = 16;
             this.crear_Articulo.Text = "Crear";
             this.crear_Articulo.UseVisualStyleBackColor = true;
             this.crear_Articulo.Click += new System.EventHandler(this.crear_Articulo_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1253, 49);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(201, 25);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Ultimo Articulo creado";
-            
-            // 
-            // codigo_Ultimo_Art
-            // 
-            this.codigo_Ultimo_Art.AutoSize = true;
-            this.codigo_Ultimo_Art.Location = new System.Drawing.Point(1322, 119);
-            this.codigo_Ultimo_Art.Name = "codigo_Ultimo_Art";
-            this.codigo_Ultimo_Art.Size = new System.Drawing.Size(75, 25);
-            this.codigo_Ultimo_Art.TabIndex = 18;
-            this.codigo_Ultimo_Art.Text = "Codigo";
-            // 
-            // nombre_Ultimo_Art
-            // 
-            this.nombre_Ultimo_Art.AutoSize = true;
-            this.nombre_Ultimo_Art.Location = new System.Drawing.Point(1322, 183);
-            this.nombre_Ultimo_Art.Name = "nombre_Ultimo_Art";
-            this.nombre_Ultimo_Art.Size = new System.Drawing.Size(81, 25);
-            this.nombre_Ultimo_Art.TabIndex = 19;
-            this.nombre_Ultimo_Art.Text = "Nombre";
-            this.nombre_Ultimo_Art.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // viewAgregarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1639, 936);
-            this.Controls.Add(this.nombre_Ultimo_Art);
-            this.Controls.Add(this.codigo_Ultimo_Art);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.crear_Articulo);
             this.Controls.Add(this.precio_Articulo);
             this.Controls.Add(this.label8);
@@ -238,7 +195,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.codigo_Articulo);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lista_Categoria);
             this.Controls.Add(this.lista_Marca);
             this.Controls.Add(this.label1);
@@ -255,7 +211,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lista_Marca;
         private System.Windows.Forms.ListBox lista_Categoria;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox codigo_Articulo;
         private System.Windows.Forms.Label label3;
@@ -268,8 +223,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox precio_Articulo;
         private System.Windows.Forms.Button crear_Articulo;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label codigo_Ultimo_Art;
-        private System.Windows.Forms.Label nombre_Ultimo_Art;
     }
 }
