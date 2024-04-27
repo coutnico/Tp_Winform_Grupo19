@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace Tp_WinForm_Grupo_19.Models
 {
-    public static class ConexionDB
+    public class ConexionDB
     {
         public static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
 
@@ -39,10 +39,11 @@ namespace Tp_WinForm_Grupo_19.Models
             return null;
         }
 
-        public static void EjecutarComando(string query)
+        public void EjecutarComando(string query)
         {
             try
             {
+                AbrirConexion();
                 cmd = new SqlCommand(query, conexion);
                 cmd.ExecuteNonQuery();
             }
@@ -50,7 +51,11 @@ namespace Tp_WinForm_Grupo_19.Models
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
-        }
+            finally
+            {
+                CerrarConexion();
+            }
+        }      
     }
 
 }

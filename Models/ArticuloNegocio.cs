@@ -58,6 +58,23 @@ namespace Tp_WinForm_Grupo_19.Models
 
 
         }
+
+        public void agregarArticulo (Articulo articuloo_nuevo)
+        {
+            // para conectarme base de datos.
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
+
+
+        }
     }
 
 

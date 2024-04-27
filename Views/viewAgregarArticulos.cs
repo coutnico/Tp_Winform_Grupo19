@@ -74,21 +74,39 @@ private void viewAgregarArticulos_Load(object sender, EventArgs e)
 
         private void crear_Articulo_Click(object sender, EventArgs e)
         {
-            string codigo_art_sel, nombre_art_sel, descripcion_art_sel, imagen_art_sel;
-            int id_marca_sel, id_categoria_sel;
-            decimal precio_art_sel;
+            Articulo articulo_obj = new Articulo();
+            //string codigo_art_sel, nombre_art_sel, descripcion_art_sel, imagen_art_sel;
+            //int id_marca_sel, id_categoria_sel;
+            //decimal precio_art_sel;
 
-            id_marca_sel = int.Parse(lista_Marca.Text);
+            /*id_marca_sel = int.Parse(lista_Marca.Text);
             id_categoria_sel = int.Parse(lista_Categoria.Text);
 
             codigo_art_sel = codigo_Articulo.Text;
             nombre_art_sel = nombre_Articulo.Text;
             descripcion_art_sel = descripcion_Articulo.Text;
-           // imagen_art_sel = imagen_Articulo.Text;
+            imagen_art_sel = imagen_Articulo.Text;
 
-            precio_art_sel = decimal.Parse(precio_Articulo.Text);
+
+            // precio_art_sel = decimal.Parse(precio_Articulo.Text);*/
+
+            articulo_obj.IDMarca = int.Parse(lista_Marca.Text);
+            articulo_obj.IDCategoria = int.Parse(lista_Categoria.Text);
+
+            articulo_obj.Codigo = codigo_Articulo.Text;
+            articulo_obj.Nombre = nombre_Articulo.Text;
+            articulo_obj.Descripcion = descripcion_Articulo.Text;
 
             //Cargar en  base de datos.
+            ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
+
+            articuloNegocio_obj.agregarArticulo(articulo_obj);
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+          
+            // SQL usa ' para el query. y c# com dobles para separar cadenas
+            conexionDB_Obj.EjecutarComando("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) Values (" + articulo_obj.Codigo + " , '" + articulo_obj.Nombre + "' , ' " + articulo_obj.Descripcion + " ' , " + articulo_obj.IDMarca + " , " + articulo_obj.IDCategoria + " , " + articulo_obj.Precio + " ) ");
+
             //Limpio carga y copio en ultimo reg.
             codigo_Articulo.Clear();
             nombre_Articulo.Clear();
@@ -99,8 +117,11 @@ private void viewAgregarArticulos_Load(object sender, EventArgs e)
             lista_Categoria.Items.Clear();
 
 
-            codigo_Ultimo_Art.Text = codigo_art_sel;
-            nombre_Ultimo_Art.Text = nombre_art_sel;
+            codigo_Ultimo_Art.Text = articulo_obj.Codigo;
+            nombre_Ultimo_Art.Text = articulo_obj.Nombre;
+
+           
+
 
 
         }
