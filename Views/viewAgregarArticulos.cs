@@ -96,17 +96,13 @@ private void viewAgregarArticulos_Load(object sender, EventArgs e)
             articulo_obj.Codigo = codigo_Articulo.Text;
             articulo_obj.Nombre = nombre_Articulo.Text;
             articulo_obj.Descripcion = descripcion_Articulo.Text;
+            articulo_obj.Precio = decimal.Parse(precio_Articulo.Text);
 
             //Cargar en  base de datos.
             ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
 
             articuloNegocio_obj.agregarArticulo(articulo_obj);
-            ConexionDB conexionDB_Obj = new ConexionDB();
-
-          
-            // SQL usa ' para el query. y c# com dobles para separar cadenas
-            conexionDB_Obj.EjecutarComando("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) Values (" + articulo_obj.Codigo + " , '" + articulo_obj.Nombre + "' , ' " + articulo_obj.Descripcion + " ' , " + articulo_obj.IDMarca + " , " + articulo_obj.IDCategoria + " , " + articulo_obj.Precio + " ) ");
-
+            
             //Limpio carga y copio en ultimo reg.
             codigo_Articulo.Clear();
             nombre_Articulo.Clear();
@@ -120,8 +116,8 @@ private void viewAgregarArticulos_Load(object sender, EventArgs e)
             codigo_Ultimo_Art.Text = articulo_obj.Codigo;
             nombre_Ultimo_Art.Text = articulo_obj.Nombre;
 
-           
 
+            Close();
 
 
         }
