@@ -64,8 +64,19 @@ namespace Tp_WinForm_Grupo_19.Models
             ConexionDB conexionDB_Obj = new ConexionDB();
 
 
-            // SQL usa ' para el query. y c# com dobles para separar cadenas
-            conexionDB_Obj.EjecutarComando("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) Values (" + " ' " + articulo_obj.Codigo + "' , '" + articulo_obj.Nombre + "' , ' " + articulo_obj.Descripcion + " ' , " + articulo_obj.IDMarca + " , " + articulo_obj.IDCategoria + " , " + articulo_obj.Precio + " ) ");
+            try
+            {
+
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) Values (" + " ' " + articulo_obj.Codigo + "' , '" + articulo_obj.Nombre + "' , ' " + articulo_obj.Descripcion + " ' , " + articulo_obj.IDMarca + " , " + articulo_obj.IDCategoria + " , " + articulo_obj.Precio + " ) ");
+                System.Windows.Forms.MessageBox.Show("Articulo agregado exitosamente");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
         }
 
         public void eliminarArticulo(int id_delete)
