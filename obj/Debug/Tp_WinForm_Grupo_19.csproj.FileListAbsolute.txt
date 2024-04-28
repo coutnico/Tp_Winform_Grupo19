@@ -44,3 +44,5 @@ C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winf
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVistaDetallada.resources
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarArticulos.resources
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources

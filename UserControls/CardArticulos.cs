@@ -26,12 +26,18 @@ namespace Tp_WinForm_Grupo_19.UserControls
         private decimal precio;
 
         public event EventHandler<EventoTransferir> Eventotransferir;
+        public event EventHandler<EventoTransferir> EvenetoModificar;
 
+        private Articulo articulo =  new Articulo();
 
   
         private void OnEventotransferir(Articulo articulo)
         {
             Eventotransferir?.Invoke(this, new EventoTransferir(articulo));
+        }
+        private void OnEventoModificar(Articulo articulo)
+        {
+            EvenetoModificar?.Invoke(this, new EventoTransferir(articulo));
         }
         public CardArticulos()
         {
@@ -43,7 +49,15 @@ namespace Tp_WinForm_Grupo_19.UserControls
             InitializeComponent();
 
             try
-            {
+            { 
+                articulo.ID = idarticulo;
+                articulo.Codigo = codigo;
+                articulo.Nombre = nombre;
+                articulo.Descripcion = descripcion;
+                articulo.IDMarca = IdMarca;
+                articulo.IDCategoria = IdCategoria;
+                articulo.Precio = precio;
+
                 List<Imagen> imagenes = new List<Imagen>();
 
                 this.precio = precio;
@@ -134,6 +148,12 @@ namespace Tp_WinForm_Grupo_19.UserControls
         }
 
         private void ibUpdate_Click(object sender, EventArgs e)
+        {
+            articulo.ImagenCargada = pbImagen.Image;
+            OnEventoModificar(articulo);
+        }
+
+        private void ibTrash_Click(object sender, EventArgs e)
         {
 
         }

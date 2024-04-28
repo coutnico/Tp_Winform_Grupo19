@@ -36,6 +36,10 @@ namespace Tp_WinForm_Grupo_19.Models
             {
                 System.Windows.Forms.MessageBox.Show(ex.Message);        
             }
+            finally
+            {
+                CerrarConexion();
+            }
             return null;
         }
 

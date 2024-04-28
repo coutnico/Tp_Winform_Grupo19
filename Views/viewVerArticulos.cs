@@ -21,6 +21,8 @@ namespace Tp_WinForm_Grupo_19.Views
 
 
         public event EventHandler<EventoTransferir> Transferencia;
+        public event EventHandler<EventoTransferir> TransferenciaModificar;
+
         public viewVerArticulos()
         {
             InitializeComponent();
@@ -33,6 +35,10 @@ namespace Tp_WinForm_Grupo_19.Views
         {
             Transferencia?.Invoke(this, new EventoTransferir(articulo));
         }
+        private void OnTransferenciaModificar(Articulo articulo)
+        {
+            TransferenciaModificar?.Invoke(this, new EventoTransferir(articulo));
+        }
 
         private void viewVerArticulos_Load(object sender, EventArgs e)
         {
@@ -43,9 +49,15 @@ namespace Tp_WinForm_Grupo_19.Views
                 
                 CardArticulos cardArticulo = new CardArticulos(articulo.ID, articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
                 cardArticulo.Eventotransferir += CardArticulo_Eventotransferir1;
+                cardArticulo.EvenetoModificar += CardArticulo_EvenetoModificar;
                 flowpanelArticles.Controls.Add(cardArticulo);
                 
             }
+        }
+
+        private void CardArticulo_EvenetoModificar(object sender, EventoTransferir e)
+        {
+            OnTransferenciaModificar(e.ArticuloSeleccionado);
         }
 
         private void CardArticulo_Eventotransferir1(object sender, EventoTransferir e)

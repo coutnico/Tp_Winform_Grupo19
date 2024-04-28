@@ -13,42 +13,60 @@ namespace Tp_WinForm_Grupo_19.Views
 {
     public partial class viewModificarArticulos : Form
     {
-        public viewModificarArticulos()
+        private CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
+        private MarcaNegocio marcaNegocio = new MarcaNegocio();
+        private Articulo articulo;
+        List<Marca> listademarcas;
+        List<Categoria> listadecategorias;
+        public viewModificarArticulos(Articulo articulo)
         {
             InitializeComponent();
-            // Agrego en el listbox todos los ID de marcas que existen para poder crear un nuevo articulo
 
-            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            this.articulo = articulo;
 
-            List<Marca> marcas = marcaNegocio.ListarMarcas();
+            ID_Articulo_a_modificar.Text = articulo.ID.ToString();
+            codigo_Articulo_a_modificar.Text = articulo.Codigo;
+            nombre_Articulo_a_modificar.Text = articulo.Nombre;
+            descripcion_Articulo_a_modificar.Text = articulo.Descripcion;
+            pbImagen.Image = articulo.ImagenCargada;
 
-            for (int i = 0; i < marcas.Count; i++)
+            listadecategorias = categoriaNegocio.ListarCategorias();
+
+            foreach (Categoria categoria in listadecategorias)
             {
-                Marca marca_obj = marcas[i];
-                lista_Marca.Items.Add(marca_obj.Id);// lista_marca es el nombre del combobox
+                cbCategorias.Items.Add(categoria.Descripcion);
+
             }
 
-            // Agrego en el listbox todos los ID de categoria que existen para poder crear un nuevo articulo
-
-            CategoriaNegocio categoriaNegocio = new CategoriaNegocio();
-
-            List<Categoria> categorias = categoriaNegocio.ListarCategorias();
-
-
-            for (int i = 0; i < categorias.Count; i++)
+            foreach (Categoria categoria in listadecategorias)
             {
-                Categoria categoria_obj = categorias[i];
-                lista_Categoria.Items.Add(categoria_obj.Id); // lista_categoria es el nombre del combobox
+                if (articulo.IDCategoria == categoria.Id)
+                {
+                    cbCategorias.SelectedItem = categoria.Descripcion;
+                }
             }
+
+            listademarcas = marcaNegocio.ListarMarcas();
+
+            foreach (Marca marca in listademarcas)
+            {
+                cbMarcas.Items.Add(marca.Descripcion);
+            }
+
+            foreach (Marca marca in listademarcas)
+            {
+                if (articulo.IDMarca == marca.Id)
+                {
+                    cbMarcas.SelectedItem = marca.Descripcion;
+                }
+            }
+
+            precio_Articulo_a_modificar.Text = articulo.Precio.ToString();
 
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-            
 
-        }
-
+        /*
         private void ID_Articulo_a_modificar_TextChanged(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
@@ -74,14 +92,14 @@ namespace Tp_WinForm_Grupo_19.Views
                 Precio_Actual.Text = Convert.ToString(-1);
             }
         }
-
+        */
         private void modificar_Articulo_Click(object sender, EventArgs e)
         {
             Articulo articulo_obj = new Articulo();
 
 
-            articulo_obj.IDMarca = int.Parse(lista_Marca.Text);
-            articulo_obj.IDCategoria = int.Parse(lista_Categoria.Text);
+            //articulo_obj.IDMarca = int.Parse(lista_Marca.Text);
+            //articulo_obj.IDCategoria = int.Parse(lista_Categoria.Text);
 
             articulo_obj.Codigo = codigo_Articulo_a_modificar.Text;
             articulo_obj.Nombre = nombre_Articulo_a_modificar.Text;
@@ -99,10 +117,20 @@ namespace Tp_WinForm_Grupo_19.Views
             descripcion_Articulo_a_modificar.Clear();
             precio_Articulo_a_modificar.Clear();
 
-            lista_Marca.Items.Clear();
-            lista_Categoria.Items.Clear();
+            //lista_Marca.Items.Clear();
+            //lista_Categoria.Items.Clear();
 
             Close();
+
+        }
+
+        private void viewModificarArticulos_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Properties.Resources.degradadoAzulVioleta;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+
+
+             
 
         }
     }

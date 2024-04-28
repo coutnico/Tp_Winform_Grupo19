@@ -170,6 +170,7 @@
             this.ibTrash.Size = new System.Drawing.Size(32, 35);
             this.ibTrash.TabIndex = 10;
             this.ibTrash.UseVisualStyleBackColor = true;
+            this.ibTrash.Click += new System.EventHandler(this.ibTrash_Click);
             // 
             // CardArticulos
             // 
