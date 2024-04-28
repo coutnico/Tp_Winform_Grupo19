@@ -71,8 +71,19 @@ namespace Tp_WinForm_Grupo_19.Models
         public void eliminarArticulo(int id_delete)
         {
             ConexionDB conexionDB_Obj = new ConexionDB();
-            // SQL usa ' para el query. y c# com dobles para separar cadenas
-            conexionDB_Obj.EjecutarComando("Delete from ARTICULOS where ID = " + id_delete);
+
+            try
+            {
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("Delete from ARTICULOS where ID = " + id_delete);
+
+                System.Windows.Forms.MessageBox.Show("Articulo eliminado");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void modificarArticulo(Articulo articulo_obj, int ID_a_modificar)

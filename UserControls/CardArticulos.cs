@@ -27,10 +27,11 @@ namespace Tp_WinForm_Grupo_19.UserControls
 
         public event EventHandler<EventoTransferir> Eventotransferir;
         public event EventHandler<EventoTransferir> EvenetoModificar;
+        public event EventHandler EventoEliminar;
 
-        private Articulo articulo =  new Articulo();
+        private Articulo articulo = new Articulo();
 
-  
+
         private void OnEventotransferir(Articulo articulo)
         {
             Eventotransferir?.Invoke(this, new EventoTransferir(articulo));
@@ -39,6 +40,11 @@ namespace Tp_WinForm_Grupo_19.UserControls
         {
             EvenetoModificar?.Invoke(this, new EventoTransferir(articulo));
         }
+        private void OnEventoEliminar()
+        {
+            EventoEliminar?.Invoke(this, EventArgs.Empty);
+        }
+
         public CardArticulos()
         {
             InitializeComponent();
@@ -49,7 +55,7 @@ namespace Tp_WinForm_Grupo_19.UserControls
             InitializeComponent();
 
             try
-            { 
+            {
                 articulo.ID = idarticulo;
                 articulo.Codigo = codigo;
                 articulo.Nombre = nombre;
@@ -155,7 +161,12 @@ namespace Tp_WinForm_Grupo_19.UserControls
 
         private void ibTrash_Click(object sender, EventArgs e)
         {
+            ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
+            articuloNegocio_obj.eliminarArticulo(articulo.ID);
 
+
+
+            OnEventoEliminar();
         }
     }
 }
