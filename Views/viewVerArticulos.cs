@@ -59,7 +59,7 @@ namespace Tp_WinForm_Grupo_19.Views
         private void CardArticulo_EventoEliminar(object sender, EventArgs e)
         {
             flowpanelArticles.Controls.Clear();
-
+            txtBuscador.Text = "";
             viewVerArticulos_Load(null, EventArgs.Empty);
         }
 
@@ -89,7 +89,9 @@ namespace Tp_WinForm_Grupo_19.Views
                     if (articulo.Nombre.ToUpper().Contains(txtBuscador.Text))
                     {  // busco por ID de marca
                         CardArticulos cardArticulo = new CardArticulos(articulo.ID, articulo.Codigo, articulo.Nombre, articulo.Descripcion, articulo.IDMarca, articulo.IDCategoria, articulo.Precio);
-
+                        cardArticulo.Eventotransferir += CardArticulo_Eventotransferir1;
+                        cardArticulo.EvenetoModificar += CardArticulo_EvenetoModificar;
+                        cardArticulo.EventoEliminar += CardArticulo_EventoEliminar;
                         flowpanelArticles.Controls.Add(cardArticulo);
                     }
                 }

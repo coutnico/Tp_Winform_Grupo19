@@ -45,7 +45,7 @@
             // pbImageArticle
             // 
             this.pbImageArticle.BackColor = System.Drawing.Color.Transparent;
-            this.pbImageArticle.Location = new System.Drawing.Point(38, 20);
+            this.pbImageArticle.Location = new System.Drawing.Point(9, 20);
             this.pbImageArticle.Name = "pbImageArticle";
             this.pbImageArticle.Size = new System.Drawing.Size(414, 558);
             this.pbImageArticle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,7 +59,7 @@
             this.lblName.BackColor = System.Drawing.Color.Transparent;
             this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(502, 68);
+            this.lblName.Location = new System.Drawing.Point(429, 29);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(238, 40);
             this.lblName.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.lblCat.BackColor = System.Drawing.Color.Transparent;
             this.lblCat.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCat.ForeColor = System.Drawing.Color.White;
-            this.lblCat.Location = new System.Drawing.Point(504, 169);
+            this.lblCat.Location = new System.Drawing.Point(431, 130);
             this.lblCat.Name = "lblCat";
             this.lblCat.Size = new System.Drawing.Size(105, 25);
             this.lblCat.TabIndex = 2;
@@ -83,7 +83,7 @@
             this.lblMar.BackColor = System.Drawing.Color.Transparent;
             this.lblMar.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMar.ForeColor = System.Drawing.Color.White;
-            this.lblMar.Location = new System.Drawing.Point(502, 241);
+            this.lblMar.Location = new System.Drawing.Point(429, 202);
             this.lblMar.Name = "lblMar";
             this.lblMar.Size = new System.Drawing.Size(71, 25);
             this.lblMar.TabIndex = 3;
@@ -95,7 +95,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(769, 596);
+            this.lblPrice.Location = new System.Drawing.Point(718, 565);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(212, 40);
             this.lblPrice.TabIndex = 4;
@@ -119,7 +119,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(502, 372);
+            this.label6.Location = new System.Drawing.Point(429, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 25);
             this.label6.TabIndex = 6;
@@ -129,7 +129,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(99)))), ((int)(((byte)(224)))));
             this.panel1.Controls.Add(this.lblDesc);
-            this.panel1.Location = new System.Drawing.Point(502, 400);
+            this.panel1.Location = new System.Drawing.Point(429, 361);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(324, 143);
             this.panel1.TabIndex = 7;
@@ -138,10 +138,16 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.panelPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPrincipal.Controls.Add(this.label6);
             this.panelPrincipal.Controls.Add(this.pbImageArticle);
+            this.panelPrincipal.Controls.Add(this.lblPrice);
+            this.panelPrincipal.Controls.Add(this.lblName);
+            this.panelPrincipal.Controls.Add(this.lblMar);
+            this.panelPrincipal.Controls.Add(this.panel1);
+            this.panelPrincipal.Controls.Add(this.lblCat);
             this.panelPrincipal.Location = new System.Drawing.Point(31, 35);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(965, 618);
+            this.panelPrincipal.Size = new System.Drawing.Size(931, 607);
             this.panelPrincipal.TabIndex = 8;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
@@ -151,13 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Tp_WinForm_Grupo_19.Properties.Resources.degradadoAzulVioleta;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 665);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.lblPrice);
-            this.Controls.Add(this.lblMar);
-            this.Controls.Add(this.lblCat);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(974, 654);
             this.Controls.Add(this.panelPrincipal);
             this.Name = "viewVistaDetallada";
             this.Text = "viewVistaDetallada";
@@ -165,8 +165,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelPrincipal.ResumeLayout(false);
+            this.panelPrincipal.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -51,13 +51,13 @@
             this.flowpanelArticles.Location = new System.Drawing.Point(12, 89);
             this.flowpanelArticles.Name = "flowpanelArticles";
             this.flowpanelArticles.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.flowpanelArticles.Size = new System.Drawing.Size(984, 564);
+            this.flowpanelArticles.Size = new System.Drawing.Size(950, 563);
             this.flowpanelArticles.TabIndex = 1;
             // 
             // txtBuscador
             // 
             this.txtBuscador.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtBuscador.Location = new System.Drawing.Point(3, 32);
+            this.txtBuscador.Location = new System.Drawing.Point(17, 31);
             this.txtBuscador.Name = "txtBuscador";
             this.txtBuscador.Size = new System.Drawing.Size(287, 20);
             this.txtBuscador.TabIndex = 2;
@@ -72,7 +72,7 @@
             this.ibSearch.IconColor = System.Drawing.Color.Black;
             this.ibSearch.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibSearch.IconSize = 30;
-            this.ibSearch.Location = new System.Drawing.Point(296, 23);
+            this.ibSearch.Location = new System.Drawing.Point(310, 22);
             this.ibSearch.Name = "ibSearch";
             this.ibSearch.Size = new System.Drawing.Size(38, 36);
             this.ibSearch.TabIndex = 3;
@@ -84,7 +84,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(2, 8);
+            this.label2.Location = new System.Drawing.Point(16, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(232, 21);
@@ -106,7 +106,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 665);
+            this.ClientSize = new System.Drawing.Size(974, 654);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flowpanelArticles);
             this.Controls.Add(this.flowLayoutPanel1);
