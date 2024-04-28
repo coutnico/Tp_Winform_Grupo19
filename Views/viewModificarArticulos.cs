@@ -61,7 +61,7 @@ namespace Tp_WinForm_Grupo_19.Views
                 }
             }
 
-            precio_Articulo_a_modificar.Text = articulo.Precio.ToString();
+            precio_Articulo_a_modificar.Value = articulo.Precio;
 
         }
 
@@ -97,30 +97,34 @@ namespace Tp_WinForm_Grupo_19.Views
         {
             Articulo articulo_obj = new Articulo();
 
-
-            //articulo_obj.IDMarca = int.Parse(lista_Marca.Text);
-            //articulo_obj.IDCategoria = int.Parse(lista_Categoria.Text);
-
             articulo_obj.Codigo = codigo_Articulo_a_modificar.Text;
             articulo_obj.Nombre = nombre_Articulo_a_modificar.Text;
             articulo_obj.Descripcion = descripcion_Articulo_a_modificar.Text;
-            articulo_obj.Precio = decimal.Parse(precio_Articulo_a_modificar.Text);
+
+            precio_Articulo_a_modificar.Text.Replace(',', ' ');
+
+            decimal preciomodificado = Convert.ToDecimal(precio_Articulo_a_modificar.Text.Trim());
+
+            articulo_obj.Precio = preciomodificado;
+
+
+            foreach (Categoria categoria in listadecategorias)
+            {
+                if (cbCategorias.SelectedItem == categoria.Descripcion)               
+                    articulo_obj.IDCategoria = categoria.Id;
+            }
+            foreach (Marca marca in listademarcas)
+            {
+                if (cbMarcas.SelectedItem == marca.Descripcion)
+                    articulo_obj.IDMarca = marca.Id;
+            }
 
             //Cargar en  base de datos.
             ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
 
             articuloNegocio_obj.modificarArticulo(articulo_obj, int.Parse(ID_Articulo_a_modificar.Text));
 
-            //Limpio carga y copio en ultimo reg.
-            codigo_Articulo_a_modificar.Clear();
-            nombre_Articulo_a_modificar.Clear();
-            descripcion_Articulo_a_modificar.Clear();
-            precio_Articulo_a_modificar.Clear();
-
-            //lista_Marca.Items.Clear();
-            //lista_Categoria.Items.Clear();
-
-            Close();
+            this.Close();
 
         }
 

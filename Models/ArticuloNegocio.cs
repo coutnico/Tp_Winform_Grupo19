@@ -15,9 +15,9 @@ namespace Tp_WinForm_Grupo_19.Models
         SqlCommand cmd;
         SqlDataReader reader = null;
 
-        
+
         public List<Articulo> ListarArticulos()
-        
+
         {
             List<Articulo> lista = new List<Articulo>();
 
@@ -36,7 +36,7 @@ namespace Tp_WinForm_Grupo_19.Models
                     Articulo articulo = new Articulo();
 
                     articulo.ID = Convert.ToInt32(reader["id"]);
-                    articulo.Codigo = reader["Codigo"].ToString();  
+                    articulo.Codigo = reader["Codigo"].ToString();
                     articulo.Nombre = reader["Nombre"].ToString();
                     articulo.Descripcion = reader["Descripcion"].ToString();
                     articulo.IDMarca = Convert.ToInt32(reader["IdMarca"]);
@@ -59,14 +59,14 @@ namespace Tp_WinForm_Grupo_19.Models
 
         }
 
-        public void agregarArticulo (Articulo articulo_obj)
+        public void agregarArticulo(Articulo articulo_obj)
         {
             ConexionDB conexionDB_Obj = new ConexionDB();
 
 
             // SQL usa ' para el query. y c# com dobles para separar cadenas
             conexionDB_Obj.EjecutarComando("Insert into ARTICULOS (Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) Values (" + " ' " + articulo_obj.Codigo + "' , '" + articulo_obj.Nombre + "' , ' " + articulo_obj.Descripcion + " ' , " + articulo_obj.IDMarca + " , " + articulo_obj.IDCategoria + " , " + articulo_obj.Precio + " ) ");
-            }
+        }
 
         public void eliminarArticulo(int id_delete)
         {
@@ -79,10 +79,18 @@ namespace Tp_WinForm_Grupo_19.Models
         {
             ConexionDB conexionDB_Obj = new ConexionDB();
 
+            try
+            {
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                //  conexionDB_Obj.EjecutarComando("update ARTICULOS set Codigo = ' " + articulo_obj.Codigo + "' , Nombre = '" + articulo_obj.Nombre + " ' , Descripcion = ' " + articulo_obj.Descripcion + " , Idmarca = " + articulo_obj.IDMarca + " , Idcategoria = " + articulo_obj.IDCategoria + ", Precio = " + articulo_obj.Precio + " where ID = " + ID_a_modificar );
+                conexionDB_Obj.EjecutarComando("UPDATE ARTICULOS SET Codigo = '" + articulo_obj.Codigo + "', Nombre = '" + articulo_obj.Nombre + "', Descripcion = '" + articulo_obj.Descripcion + "', Idmarca = " + articulo_obj.IDMarca + ", Idcategoria = " + articulo_obj.IDCategoria + ", Precio = " + articulo_obj.Precio + " WHERE ID = " + ID_a_modificar);
+                System.Windows.Forms.MessageBox.Show("Acticulo Actualizado");
+            }
+            catch (Exception)
+            {
 
-            // SQL usa ' para el query. y c# com dobles para separar cadenas
-            //  conexionDB_Obj.EjecutarComando("update ARTICULOS set Codigo = ' " + articulo_obj.Codigo + "' , Nombre = '" + articulo_obj.Nombre + " ' , Descripcion = ' " + articulo_obj.Descripcion + " , Idmarca = " + articulo_obj.IDMarca + " , Idcategoria = " + articulo_obj.IDCategoria + ", Precio = " + articulo_obj.Precio + " where ID = " + ID_a_modificar );
-            conexionDB_Obj.EjecutarComando("UPDATE ARTICULOS SET Codigo = '" + articulo_obj.Codigo + "', Nombre = '" + articulo_obj.Nombre + "', Descripcion = '" + articulo_obj.Descripcion + "', Idmarca = " + articulo_obj.IDMarca + ", Idcategoria = " + articulo_obj.IDCategoria + ", Precio = " + articulo_obj.Precio + " WHERE ID = " + ID_a_modificar);
+                throw;
+            }
 
 
         }
@@ -90,7 +98,7 @@ namespace Tp_WinForm_Grupo_19.Models
         public Articulo Buscar_Articulo_por_ID(int id_buscado)
 
         {
-                try
+            try
             {
                 conexion.Open();
                 string query = "Select id, Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio from ARTICULOS";
@@ -104,12 +112,12 @@ namespace Tp_WinForm_Grupo_19.Models
                 {
 
 
-                   
+
                     articulo.ID = Convert.ToInt32(reader["id"]);
 
                     if (articulo.ID == id_buscado)
                     {
-                        
+
                         articulo.ID = Convert.ToInt32(reader["id"]);
                         articulo.Codigo = reader["Codigo"].ToString();
                         articulo.Nombre = reader["Nombre"].ToString();
@@ -117,7 +125,7 @@ namespace Tp_WinForm_Grupo_19.Models
                         articulo.IDMarca = Convert.ToInt32(reader["IdMarca"]);
                         articulo.IDCategoria = Convert.ToInt32(reader["IdCategoria"]);
                         articulo.Precio = Convert.ToDecimal(reader["Precio"]);
-                        
+
                     }
                 }
                 return articulo;

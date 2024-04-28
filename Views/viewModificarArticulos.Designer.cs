@@ -37,14 +37,15 @@
             this.descripcion_Articulo_a_modificar = new System.Windows.Forms.TextBox();
             this.nombre_Articulo_a_modificar = new System.Windows.Forms.TextBox();
             this.codigo_Articulo_a_modificar = new System.Windows.Forms.TextBox();
-            this.precio_Articulo_a_modificar = new System.Windows.Forms.TextBox();
             this.ID_Articulo_a_modificar = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.modificar_Articulo = new FontAwesome.Sharp.IconButton();
             this.cbMarcas = new System.Windows.Forms.ComboBox();
             this.cbCategorias = new System.Windows.Forms.ComboBox();
             this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.precio_Articulo_a_modificar = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.precio_Articulo_a_modificar)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -162,18 +163,6 @@
             this.codigo_Articulo_a_modificar.Size = new System.Drawing.Size(62, 25);
             this.codigo_Articulo_a_modificar.TabIndex = 25;
             // 
-            // precio_Articulo_a_modificar
-            // 
-            this.precio_Articulo_a_modificar.BackColor = System.Drawing.Color.BlueViolet;
-            this.precio_Articulo_a_modificar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.precio_Articulo_a_modificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.precio_Articulo_a_modificar.ForeColor = System.Drawing.Color.White;
-            this.precio_Articulo_a_modificar.Location = new System.Drawing.Point(814, 507);
-            this.precio_Articulo_a_modificar.Margin = new System.Windows.Forms.Padding(2);
-            this.precio_Articulo_a_modificar.Name = "precio_Articulo_a_modificar";
-            this.precio_Articulo_a_modificar.Size = new System.Drawing.Size(116, 25);
-            this.precio_Articulo_a_modificar.TabIndex = 28;
-            // 
             // ID_Articulo_a_modificar
             // 
             this.ID_Articulo_a_modificar.AutoSize = true;
@@ -217,6 +206,7 @@
             this.modificar_Articulo.Text = "Modificar";
             this.modificar_Articulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.modificar_Articulo.UseVisualStyleBackColor = false;
+            this.modificar_Articulo.Click += new System.EventHandler(this.modificar_Articulo_Click);
             // 
             // cbMarcas
             // 
@@ -250,18 +240,33 @@
             this.pbImagen.TabIndex = 47;
             this.pbImagen.TabStop = false;
             // 
+            // precio_Articulo_a_modificar
+            // 
+            this.precio_Articulo_a_modificar.BackColor = System.Drawing.Color.BlueViolet;
+            this.precio_Articulo_a_modificar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.precio_Articulo_a_modificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.precio_Articulo_a_modificar.Location = new System.Drawing.Point(795, 504);
+            this.precio_Articulo_a_modificar.Maximum = new decimal(new int[] {
+            -559939584,
+            902409669,
+            54,
+            0});
+            this.precio_Articulo_a_modificar.Name = "precio_Articulo_a_modificar";
+            this.precio_Articulo_a_modificar.Size = new System.Drawing.Size(120, 25);
+            this.precio_Articulo_a_modificar.TabIndex = 48;
+            // 
             // viewModificarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 654);
+            this.Controls.Add(this.precio_Articulo_a_modificar);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.cbCategorias);
             this.Controls.Add(this.cbMarcas);
             this.Controls.Add(this.modificar_Articulo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ID_Articulo_a_modificar);
-            this.Controls.Add(this.precio_Articulo_a_modificar);
             this.Controls.Add(this.descripcion_Articulo_a_modificar);
             this.Controls.Add(this.nombre_Articulo_a_modificar);
             this.Controls.Add(this.codigo_Articulo_a_modificar);
@@ -276,6 +281,7 @@
             this.Text = "viewModificarArticulo";
             this.Load += new System.EventHandler(this.viewModificarArticulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.precio_Articulo_a_modificar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,12 +297,12 @@
         private System.Windows.Forms.TextBox descripcion_Articulo_a_modificar;
         private System.Windows.Forms.TextBox nombre_Articulo_a_modificar;
         private System.Windows.Forms.TextBox codigo_Articulo_a_modificar;
-        private System.Windows.Forms.TextBox precio_Articulo_a_modificar;
         private System.Windows.Forms.Label ID_Articulo_a_modificar;
         private System.Windows.Forms.Label label8;
         private FontAwesome.Sharp.IconButton modificar_Articulo;
         private System.Windows.Forms.ComboBox cbMarcas;
         private System.Windows.Forms.ComboBox cbCategorias;
         private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.NumericUpDown precio_Articulo_a_modificar;
     }
 }
