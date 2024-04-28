@@ -125,5 +125,17 @@ namespace Tp_WinForm_Grupo_19
             viewEliminarArticulos viewEliminarArticulos = new viewEliminarArticulos();
             OpenChildForm(viewEliminarArticulos);
         }
+
+        private void ibUs_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void ibaModifyArticles_Click(object sender, EventArgs e)
+        {
+            viewModificarArticulos viewModificarArticulos = new viewModificarArticulos();
+            OpenChildForm(viewModificarArticulos);
+        }
     }
 }

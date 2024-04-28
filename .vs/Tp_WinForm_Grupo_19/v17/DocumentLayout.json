@@ -3,36 +3,44 @@
   "WorkspaceRootPath": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewmodificararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewmodificararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewmodificararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewmodificararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\vieweliminararticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\vieweliminararticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\utn\\programacion iii. tp\\tp2\\tp\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\vieweliminararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\vieweliminararticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\vieweliminararticulos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\views\\viewverarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,42 +70,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "viewEliminarArticulos.cs",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs",
-              "RelativeDocumentMoniker": "Views\\viewEliminarArticulos.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs",
-              "RelativeToolTip": "Views\\viewEliminarArticulos.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAwwCcAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T22:41:28.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "viewAgregarArticulos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
-              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Views\\viewAgregarArticulos.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T22:49:14.453Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "viewAgregarArticulos.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
               "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
               "RelativeToolTip": "Views\\viewAgregarArticulos.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAAwGcAAAAvAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAHIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-26T19:06:30.068Z",
               "EditorCaption": ""
@@ -110,52 +93,52 @@
               "RelativeDocumentMoniker": "Models\\ArticuloNegocio.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\ArticuloNegocio.cs",
               "RelativeToolTip": "Models\\ArticuloNegocio.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAtwEIAAABGAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAApwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-26T19:14:06.192Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "viewEliminarArticulos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs",
-              "RelativeDocumentMoniker": "Views\\viewEliminarArticulos.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Views\\viewEliminarArticulos.cs [Dise\u00F1o]",
+              "DocumentIndex": 1,
+              "Title": "viewModificarArticulos.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewModificarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewModificarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewModificarArticulos.cs",
+              "RelativeToolTip": "Views\\viewModificarArticulos.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAswF0AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T22:40:16.177Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "viewEliminarArticulos.Designer.cs",
-              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\viewEliminarArticulos.Designer.cs",
-              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.Designer.cs",
-              "RelativeToolTip": "Views\\viewEliminarArticulos.Designer.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T22:56:26.917Z",
+              "WhenOpened": "2024-04-27T23:15:18.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "viewModificarArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewModificarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewModificarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewModificarArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\viewModificarArticulos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T23:09:05.32Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "viewPrincipal.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewPrincipal.cs",
               "RelativeDocumentMoniker": "Views\\viewPrincipal.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewPrincipal.cs",
               "RelativeToolTip": "Views\\viewPrincipal.cs",
-              "ViewState": "AQIAAGkAAAAAAAAAAAAiwH4AAAAJAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAwwIkAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T22:51:42.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "viewPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewPrincipal.cs",
               "RelativeDocumentMoniker": "Views\\viewPrincipal.cs",
@@ -167,19 +150,65 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "viewAgregarArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\viewAgregarArticulos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T22:49:14.453Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "viewEliminarArticulos.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewEliminarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs",
+              "RelativeToolTip": "Views\\viewEliminarArticulos.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAwwCcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T22:41:28.932Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "viewEliminarArticulos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs",
+              "RelativeDocumentMoniker": "Views\\viewEliminarArticulos.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Views\\viewEliminarArticulos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T22:40:16.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "viewEliminarArticulos.Designer.cs",
+              "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\viewEliminarArticulos.Designer.cs",
+              "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewEliminarArticulos.Designer.cs",
+              "RelativeToolTip": "Views\\viewEliminarArticulos.Designer.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T22:56:26.917Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "viewVerArticulos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.cs",
               "RelativeDocumentMoniker": "Views\\viewVerArticulos.cs",
               "ToolTip": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewVerArticulos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Views\\viewVerArticulos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T22:20:04.449Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-04-27T22:20:04.449Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "ConexionDB.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\ConexionDB.cs",
               "RelativeDocumentMoniker": "Models\\ConexionDB.cs",
@@ -187,12 +216,11 @@
               "RelativeToolTip": "Models\\ConexionDB.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAIwCkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-27T20:18:06.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-27T20:18:06.016Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "CategoriaNegocio.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\CategoriaNegocio.cs",
               "RelativeDocumentMoniker": "Models\\CategoriaNegocio.cs",
@@ -204,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "viewAgregarArticulos.Designer.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Views\\viewAgregarArticulos.Designer.cs",
               "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.Designer.cs",
@@ -217,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "MarcaNegocio.cs",
               "DocumentMoniker": "C:\\Mariano\\UTN\\Programacion III. TP\\TP2\\TP\\Models\\MarcaNegocio.cs",
               "RelativeDocumentMoniker": "Models\\MarcaNegocio.cs",
