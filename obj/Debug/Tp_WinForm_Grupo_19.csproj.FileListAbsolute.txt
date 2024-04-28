@@ -46,3 +46,21 @@ C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.v
 C:\Mariano\UTN\Programacion III. TP\TP2\TP\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarArticulos.resources
 C:\Users\nicoo\OneDrive\Desktop\Facultad 3er Cuatrimestre\Programacion 3\Tp_Winform_Grupo19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.exe.config
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.exe
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.AssemblyReference.cache
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Properties.Resources.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.UserControls.CardArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.viewPrincipal.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVerArticulos.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVistaDetallada.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.GenerateResource.cache
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CoreCompileInputs.cache
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CopyComplete
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.exe
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.pdb
