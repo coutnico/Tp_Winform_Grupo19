@@ -43,6 +43,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.ibAddMarca = new FontAwesome.Sharp.IconButton();
+            this.ibAgregarCategoria = new FontAwesome.Sharp.IconButton();
+            this.ibTrashMarca = new FontAwesome.Sharp.IconButton();
+            this.ibUpdateMarca = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
@@ -242,11 +246,88 @@
             this.label2.TabIndex = 49;
             this.label2.Text = "Codigo";
             // 
+            // ibAddMarca
+            // 
+            this.ibAddMarca.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ibAddMarca.FlatAppearance.BorderSize = 0;
+            this.ibAddMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibAddMarca.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibAddMarca.ForeColor = System.Drawing.Color.White;
+            this.ibAddMarca.IconChar = FontAwesome.Sharp.IconChar.Add;
+            this.ibAddMarca.IconColor = System.Drawing.Color.White;
+            this.ibAddMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibAddMarca.IconSize = 38;
+            this.ibAddMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibAddMarca.Location = new System.Drawing.Point(658, 423);
+            this.ibAddMarca.Name = "ibAddMarca";
+            this.ibAddMarca.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibAddMarca.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ibAddMarca.Size = new System.Drawing.Size(55, 33);
+            this.ibAddMarca.TabIndex = 65;
+            this.ibAddMarca.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibAddMarca.UseVisualStyleBackColor = true;
+            this.ibAddMarca.Click += new System.EventHandler(this.ibAgregarMarca_Click);
+            // 
+            // ibAgregarCategoria
+            // 
+            this.ibAgregarCategoria.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ibAgregarCategoria.FlatAppearance.BorderSize = 0;
+            this.ibAgregarCategoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibAgregarCategoria.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ibAgregarCategoria.ForeColor = System.Drawing.Color.White;
+            this.ibAgregarCategoria.IconChar = FontAwesome.Sharp.IconChar.Add;
+            this.ibAgregarCategoria.IconColor = System.Drawing.Color.White;
+            this.ibAgregarCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibAgregarCategoria.IconSize = 38;
+            this.ibAgregarCategoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ibAgregarCategoria.Location = new System.Drawing.Point(648, 467);
+            this.ibAgregarCategoria.Name = "ibAgregarCategoria";
+            this.ibAgregarCategoria.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.ibAgregarCategoria.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ibAgregarCategoria.Size = new System.Drawing.Size(193, 33);
+            this.ibAgregarCategoria.TabIndex = 66;
+            this.ibAgregarCategoria.Text = "Agregar ";
+            this.ibAgregarCategoria.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibAgregarCategoria.UseVisualStyleBackColor = true;
+            // 
+            // ibTrashMarca
+            // 
+            this.ibTrashMarca.FlatAppearance.BorderSize = 0;
+            this.ibTrashMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibTrashMarca.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.ibTrashMarca.IconColor = System.Drawing.Color.Brown;
+            this.ibTrashMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibTrashMarca.IconSize = 32;
+            this.ibTrashMarca.Location = new System.Drawing.Point(719, 421);
+            this.ibTrashMarca.Name = "ibTrashMarca";
+            this.ibTrashMarca.Size = new System.Drawing.Size(32, 35);
+            this.ibTrashMarca.TabIndex = 68;
+            this.ibTrashMarca.UseVisualStyleBackColor = true;
+            this.ibTrashMarca.Click += new System.EventHandler(this.ibTrashMarca_Click);
+            // 
+            // ibUpdateMarca
+            // 
+            this.ibUpdateMarca.FlatAppearance.BorderSize = 0;
+            this.ibUpdateMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibUpdateMarca.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
+            this.ibUpdateMarca.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ibUpdateMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibUpdateMarca.IconSize = 35;
+            this.ibUpdateMarca.Location = new System.Drawing.Point(768, 419);
+            this.ibUpdateMarca.Name = "ibUpdateMarca";
+            this.ibUpdateMarca.Size = new System.Drawing.Size(32, 35);
+            this.ibUpdateMarca.TabIndex = 67;
+            this.ibUpdateMarca.UseVisualStyleBackColor = true;
+            // 
             // viewAgregarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 654);
+            this.Controls.Add(this.ibTrashMarca);
+            this.Controls.Add(this.ibUpdateMarca);
+            this.Controls.Add(this.ibAgregarCategoria);
+            this.Controls.Add(this.ibAddMarca);
             this.Controls.Add(this.nudPrecio);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.cbCategorias);
@@ -290,5 +371,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private FontAwesome.Sharp.IconButton ibAddMarca;
+        private FontAwesome.Sharp.IconButton ibAgregarCategoria;
+        private FontAwesome.Sharp.IconButton ibTrashMarca;
+        private FontAwesome.Sharp.IconButton ibUpdateMarca;
     }
 }

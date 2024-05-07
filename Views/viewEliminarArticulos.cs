@@ -33,7 +33,7 @@ namespace Tp_WinForm_Grupo_19.Views
 
         }
 
-        private void crear_Articulo_Click(object sender, EventArgs e)
+        private void eliminar_Articulo_Click(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
             articuloNegocio_obj.eliminarArticulo(int.Parse(Id_Articulo_Eliminar.Text));

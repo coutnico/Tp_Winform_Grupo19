@@ -64,3 +64,24 @@ C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_
 C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CopyComplete
 C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.exe
 C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.exe.config
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\bin\Debug\FontAwesome.Sharp.dll
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.AssemblyReference.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Properties.Resources.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.UserControls.CardArticulos.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarArticulos.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarArticulos.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.viewPrincipal.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVerArticulos.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVistaDetallada.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.GenerateResource.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CoreCompileInputs.cache
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinFo.B3B521E1.Up2Date
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.exe
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarMarcas.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarMarcas.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarMarcas.resources

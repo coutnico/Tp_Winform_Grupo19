@@ -54,6 +54,60 @@ namespace Tp_WinForm_Grupo_19.Models
 
 
         }
+
+        public void agregarMarca(Marca marca_obj)
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+            try
+            {
+
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("Insert into MARCAS (Descripcion) Values (" + " ' " + marca_obj.Descripcion + " ') ");
+                System.Windows.Forms.MessageBox.Show("Marca agregada exitosamente");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        public void eliminarMarca(int id_delete)
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+            try
+            {
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("Delete from MARCAS where ID = " + id_delete);
+
+                System.Windows.Forms.MessageBox.Show("Marca eliminada");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void modificarMarca(Marca marca_obj, int ID_a_modificar)
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+            try
+            {
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("UPDATE MARCAS SET Descripcion = '" + marca_obj.Descripcion + " WHERE ID = " + ID_a_modificar);
+                System.Windows.Forms.MessageBox.Show("Marca Actualizada");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
     }
 
 

@@ -120,5 +120,20 @@ namespace Tp_WinForm_Grupo_19.Views
 
             Close();
         }
+
+
+        private void ibAgregarMarca_Click(object sender, EventArgs e)
+        {
+            viewAgregarMarcas viewAgregarMarcas = new viewAgregarMarcas();
+            viewAgregarMarcas.ShowDialog();
+        }
+
+        private void ibTrashMarca_Click(object sender, EventArgs e)
+        {
+            viewEliminarMarcas viewEliminarMarcas = new viewEliminarMarcas();
+            viewEliminarMarcas.ShowDialog();
+        }
+
+        
     }
 }
