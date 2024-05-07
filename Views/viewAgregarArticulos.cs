@@ -139,5 +139,23 @@ namespace Tp_WinForm_Grupo_19.Views
             viewModificarMarcas viewModificarMarcas = new viewModificarMarcas();
             viewModificarMarcas.ShowDialog();
         }
+
+        private void ibAddCategoria_Click(object sender, EventArgs e)
+        {
+            viewAgregarCategorias viewAgregarCategorias = new viewAgregarCategorias();
+            viewAgregarCategorias.ShowDialog();
+        }
+
+        private void ibTrashCategoria_Click(object sender, EventArgs e)
+        {
+            viewEliminarCategorias viewEliminarCategorias = new viewEliminarCategorias();
+            viewEliminarCategorias.ShowDialog();
+        }
+
+        private void ibUpdateCategoria_Click(object sender, EventArgs e)
+        {
+            viewModificarCategorias viewModificarCategorias = new viewModificarCategorias();
+            viewModificarCategorias.ShowDialog();
+        }
     }
 }

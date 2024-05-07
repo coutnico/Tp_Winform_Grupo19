@@ -52,6 +52,98 @@ namespace Tp_WinForm_Grupo_19.Models
 
 
         }
+        public void agregarCategoria(Categoria Categoria_obj)
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+            try
+            {
+
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("Insert into CATEGORIAS (Descripcion) Values (" + " ' " + Categoria_obj.Descripcion + " ') ");
+                System.Windows.Forms.MessageBox.Show("Categoria agregada exitosamente");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+
+        public void eliminarCategoria(int id_delete)
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+            try
+            {
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("Delete from CATEGORIAS where ID = " + id_delete);
+
+                System.Windows.Forms.MessageBox.Show("Categoria eliminada");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public void modificarCategoria(Categoria Categoria_obj, int ID_a_modificar)
+        {
+            ConexionDB conexionDB_Obj = new ConexionDB();
+
+            try
+            {
+                // SQL usa ' para el query. y c# com dobles para separar cadenas
+                conexionDB_Obj.EjecutarComando("UPDATE CATEGORIAS SET Descripcion = '" + Categoria_obj.Descripcion + " ' WHERE ID = " + ID_a_modificar);
+                System.Windows.Forms.MessageBox.Show("Categoria Actualizada");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        public Categoria Buscar_Categoria_por_ID(int id_buscado)
+
+        {
+            try
+            {
+                conexion.Open();
+                string query = "Select id, Descripcion from CATEGORIAS";
+                cmd = new SqlCommand(query, conexion);
+
+
+                reader = cmd.ExecuteReader();
+
+                Categoria Categoria = new Categoria();
+                while (reader.Read())
+                {
+
+
+
+                    Categoria.Id = Convert.ToInt32(reader["Id"]);
+
+                    if (Categoria.Id == id_buscado)
+                    {
+                        Categoria.Id = Convert.ToInt32(reader["Id"]);
+                        Categoria.Descripcion = reader["Descripcion"].ToString();
+                    }
+                }
+                return Categoria;
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally { conexion.Close(); }
+
+
+        }
+
+
     }
 
 

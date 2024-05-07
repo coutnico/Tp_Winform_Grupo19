@@ -30,7 +30,7 @@ namespace Tp_WinForm_Grupo_19.Views
 
         }
 
-        private void ibAgregarArticulo_Click(object sender, EventArgs e)
+        private void ibAgregarMarca_Click(object sender, EventArgs e)
         {
             Marca marca_obj = new Marca();
 

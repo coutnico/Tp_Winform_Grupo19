@@ -85,3 +85,6 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarMarcas.resources
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarMarcas.resources
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarMarcas.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarCategorias.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarCategorias.resources
+C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarCategorias.resources

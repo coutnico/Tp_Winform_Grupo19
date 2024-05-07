@@ -45,9 +45,9 @@
             this.label1.Location = new System.Drawing.Point(145, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(256, 37);
+            this.label1.Size = new System.Drawing.Size(228, 37);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Modificar articulo ";
+            this.label1.Text = "Modificar marca";
             // 
             // label4
             // 

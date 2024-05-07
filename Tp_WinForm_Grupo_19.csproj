@@ -76,6 +76,24 @@
     <Compile Include="UserControls\CardArticulos.Designer.cs">
       <DependentUpon>CardArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewModificarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewModificarCategorias.Designer.cs">
+      <DependentUpon>viewModificarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewEliminarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewEliminarCategorias.Designer.cs">
+      <DependentUpon>viewEliminarCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewAgregarCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewAgregarCategorias.Designer.cs">
+      <DependentUpon>viewAgregarCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewModificarMarcas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +163,12 @@
     <EmbeddedResource Include="UserControls\CardArticulos.resx">
       <DependentUpon>CardArticulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewAgregarCategorias.resx">
+      <DependentUpon>viewAgregarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewEliminarCategorias.resx">
+      <DependentUpon>viewEliminarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\viewEliminarMarcas.resx">
       <DependentUpon>viewEliminarMarcas.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewModificarArticulos.resx">
       <DependentUpon>viewModificarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewModificarCategorias.resx">
+      <DependentUpon>viewModificarCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewModificarMarcas.resx">
       <DependentUpon>viewModificarMarcas.cs</DependentUpon>
