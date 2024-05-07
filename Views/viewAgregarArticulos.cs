@@ -134,6 +134,10 @@ namespace Tp_WinForm_Grupo_19.Views
             viewEliminarMarcas.ShowDialog();
         }
 
-        
+        private void ibUpdateMarca_Click(object sender, EventArgs e)
+        {
+            viewModificarMarcas viewModificarMarcas = new viewModificarMarcas();
+            viewModificarMarcas.ShowDialog();
+        }
     }
 }

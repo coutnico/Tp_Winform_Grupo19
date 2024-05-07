@@ -249,23 +249,25 @@
             // ibAddMarca
             // 
             this.ibAddMarca.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ibAddMarca.BackColor = System.Drawing.Color.Transparent;
+            this.ibAddMarca.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ibAddMarca.FlatAppearance.BorderSize = 0;
             this.ibAddMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibAddMarca.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ibAddMarca.ForeColor = System.Drawing.Color.White;
+            this.ibAddMarca.ForeColor = System.Drawing.Color.Transparent;
             this.ibAddMarca.IconChar = FontAwesome.Sharp.IconChar.Add;
             this.ibAddMarca.IconColor = System.Drawing.Color.White;
             this.ibAddMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibAddMarca.IconSize = 38;
             this.ibAddMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibAddMarca.Location = new System.Drawing.Point(658, 423);
+            this.ibAddMarca.Location = new System.Drawing.Point(671, 423);
             this.ibAddMarca.Name = "ibAddMarca";
             this.ibAddMarca.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.ibAddMarca.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ibAddMarca.Size = new System.Drawing.Size(55, 33);
+            this.ibAddMarca.Size = new System.Drawing.Size(51, 33);
             this.ibAddMarca.TabIndex = 65;
             this.ibAddMarca.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ibAddMarca.UseVisualStyleBackColor = true;
+            this.ibAddMarca.UseVisualStyleBackColor = false;
             this.ibAddMarca.Click += new System.EventHandler(this.ibAgregarMarca_Click);
             // 
             // ibAgregarCategoria
@@ -292,32 +294,35 @@
             // 
             // ibTrashMarca
             // 
+            this.ibTrashMarca.BackColor = System.Drawing.Color.Transparent;
             this.ibTrashMarca.FlatAppearance.BorderSize = 0;
             this.ibTrashMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibTrashMarca.IconChar = FontAwesome.Sharp.IconChar.Trash;
             this.ibTrashMarca.IconColor = System.Drawing.Color.Brown;
             this.ibTrashMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibTrashMarca.IconSize = 32;
-            this.ibTrashMarca.Location = new System.Drawing.Point(719, 421);
+            this.ibTrashMarca.Location = new System.Drawing.Point(748, 422);
             this.ibTrashMarca.Name = "ibTrashMarca";
             this.ibTrashMarca.Size = new System.Drawing.Size(32, 35);
             this.ibTrashMarca.TabIndex = 68;
-            this.ibTrashMarca.UseVisualStyleBackColor = true;
+            this.ibTrashMarca.UseVisualStyleBackColor = false;
             this.ibTrashMarca.Click += new System.EventHandler(this.ibTrashMarca_Click);
             // 
             // ibUpdateMarca
             // 
+            this.ibUpdateMarca.BackColor = System.Drawing.Color.Transparent;
             this.ibUpdateMarca.FlatAppearance.BorderSize = 0;
             this.ibUpdateMarca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ibUpdateMarca.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
             this.ibUpdateMarca.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ibUpdateMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibUpdateMarca.IconSize = 35;
-            this.ibUpdateMarca.Location = new System.Drawing.Point(768, 419);
+            this.ibUpdateMarca.Location = new System.Drawing.Point(805, 419);
             this.ibUpdateMarca.Name = "ibUpdateMarca";
             this.ibUpdateMarca.Size = new System.Drawing.Size(32, 35);
             this.ibUpdateMarca.TabIndex = 67;
-            this.ibUpdateMarca.UseVisualStyleBackColor = true;
+            this.ibUpdateMarca.UseVisualStyleBackColor = false;
+            this.ibUpdateMarca.Click += new System.EventHandler(this.ibUpdateMarca_Click);
             // 
             // viewAgregarArticulos
             // 

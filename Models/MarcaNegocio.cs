@@ -98,7 +98,7 @@ namespace Tp_WinForm_Grupo_19.Models
             try
             {
                 // SQL usa ' para el query. y c# com dobles para separar cadenas
-                conexionDB_Obj.EjecutarComando("UPDATE MARCAS SET Descripcion = '" + marca_obj.Descripcion + " WHERE ID = " + ID_a_modificar);
+                conexionDB_Obj.EjecutarComando("UPDATE MARCAS SET Descripcion = '" + marca_obj.Descripcion + " ' WHERE ID = " + ID_a_modificar);
                 System.Windows.Forms.MessageBox.Show("Marca Actualizada");
             }
             catch (Exception)
@@ -107,6 +107,45 @@ namespace Tp_WinForm_Grupo_19.Models
                 throw;
             }
         }
+
+        public Marca Buscar_Marca_por_ID(int id_buscado)
+
+        {
+            try
+            {
+                conexion.Open();
+                string query = "Select id, Descripcion from MARCAS";
+                cmd = new SqlCommand(query, conexion);
+
+
+                reader = cmd.ExecuteReader();
+
+                Marca marca = new Marca();
+                while (reader.Read())
+                {
+
+
+
+                    marca.Id = Convert.ToInt32(reader["Id"]);
+
+                    if (marca.Id == id_buscado)
+                    {
+                        marca.Id = Convert.ToInt32(reader["Id"]);
+                        marca.Descripcion = reader["Descripcion"].ToString();
+                    }
+                }
+                return marca;
+
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            finally { conexion.Close(); }
+
+
+        }
+
 
     }
 

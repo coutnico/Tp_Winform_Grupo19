@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.codigo_Marca_a_modificar = new System.Windows.Forms.TextBox();
             this.descripcion_Marca_a_modificar = new System.Windows.Forms.TextBox();
+            this.modificar_Marcas = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
             // 
             // label1
@@ -100,11 +101,31 @@
             this.descripcion_Marca_a_modificar.Size = new System.Drawing.Size(203, 25);
             this.descripcion_Marca_a_modificar.TabIndex = 33;
             // 
+            // modificar_Marcas
+            // 
+            this.modificar_Marcas.BackColor = System.Drawing.Color.Transparent;
+            this.modificar_Marcas.FlatAppearance.BorderSize = 0;
+            this.modificar_Marcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificar_Marcas.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.modificar_Marcas.ForeColor = System.Drawing.Color.White;
+            this.modificar_Marcas.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            this.modificar_Marcas.IconColor = System.Drawing.Color.Gold;
+            this.modificar_Marcas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.modificar_Marcas.Location = new System.Drawing.Point(183, 168);
+            this.modificar_Marcas.Name = "modificar_Marcas";
+            this.modificar_Marcas.Size = new System.Drawing.Size(145, 48);
+            this.modificar_Marcas.TabIndex = 45;
+            this.modificar_Marcas.Text = "Modificar";
+            this.modificar_Marcas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.modificar_Marcas.UseVisualStyleBackColor = false;
+            this.modificar_Marcas.Click += new System.EventHandler(this.modificar_Marcas_Click);
+            // 
             // viewModificarMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(513, 238);
+            this.Controls.Add(this.modificar_Marcas);
             this.Controls.Add(this.descripcion_Marca_a_modificar);
             this.Controls.Add(this.codigo_Marca_a_modificar);
             this.Controls.Add(this.label2);
@@ -123,5 +144,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox codigo_Marca_a_modificar;
         private System.Windows.Forms.TextBox descripcion_Marca_a_modificar;
+        private FontAwesome.Sharp.IconButton modificar_Marcas;
     }
 }

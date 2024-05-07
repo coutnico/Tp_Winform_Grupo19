@@ -27,8 +27,28 @@ namespace Tp_WinForm_Grupo_19.Views
         {
             MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
             Marca marca_obj;
-            
 
+            if (!string.IsNullOrEmpty(codigo_Marca_a_modificar.Text)) {
+                marca_obj = marcaNegocio_obj.Buscar_Marca_por_ID(int.Parse(codigo_Marca_a_modificar.Text));
+                descripcion_Marca_a_modificar.Text = marca_obj.Descripcion; ;
+            } else { descripcion_Marca_a_modificar.Text = ""; }
+                
+        }
+
+        private void modificar_Marcas_Click(object sender, EventArgs e)
+        {
+            Marca marca_obj = new Marca();
+
+            marca_obj.Id = int.Parse(codigo_Marca_a_modificar.Text);
+            marca_obj.Descripcion = descripcion_Marca_a_modificar.Text;
+
+           
+            //Cargar en  base de datos.
+            MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+
+            marcaNegocio_obj.modificarMarca(marca_obj, int.Parse(codigo_Marca_a_modificar.Text));
+
+            this.Close();
         }
     }
 }
