@@ -50,5 +50,10 @@ namespace Tp_WinForm_Grupo_19.Views
 
             this.Close();
         }
+
+        private void ibClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

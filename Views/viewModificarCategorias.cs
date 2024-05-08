@@ -48,5 +48,10 @@ namespace Tp_WinForm_Grupo_19.Views
             else { descripcion_Categoria_a_modificar.Text = ""; }
 
         }
+
+        private void ibClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

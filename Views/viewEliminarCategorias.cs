@@ -24,5 +24,10 @@ namespace Tp_WinForm_Grupo_19.Views
             CategoriaNegocio_obj.eliminarCategoria(int.Parse(Id_Categoria_Eliminar.Text));
             Close();
         }
+
+        private void ibClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

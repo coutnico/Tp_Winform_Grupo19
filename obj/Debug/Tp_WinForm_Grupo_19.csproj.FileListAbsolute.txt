@@ -88,3 +88,27 @@ C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarCategorias.resources
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarCategorias.resources
 C:\Mariano\Otros\UTN\Tecnicatura programacion\Año 3\Viernes - Programacion III\TP\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarCategorias.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.exe.config
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.exe
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\bin\Debug\Tp_WinForm_Grupo_19.pdb
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.AssemblyReference.cache
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Properties.Resources.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.UserControls.CardArticulos.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarCategorias.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarCategorias.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarMarcas.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarMarcas.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewEliminarArticulos.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarArticulos.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarArticulos.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarCategorias.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarMarcas.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.viewPrincipal.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVerArticulos.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewVistaDetallada.resources
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.GenerateResource.cache
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.csproj.CoreCompileInputs.cache
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinFo.B3B521E1.Up2Date
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.exe
+C:\Users\Programador2\Desktop\Proyectos Nico\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.pdb

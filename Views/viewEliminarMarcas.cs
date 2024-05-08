@@ -29,5 +29,10 @@ namespace Tp_WinForm_Grupo_19.Views
             marcaNegocio_obj.eliminarMarca(int.Parse(Id_Marca_Eliminar.Text));
             Close();
         }
+
+        private void ibClose_Click(object sender, EventArgs e)
+        {
+            this.Close();   
+        }
     }
 }
