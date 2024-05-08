@@ -23,8 +23,17 @@ namespace Tp_WinForm_Grupo_19.Views
         {
             InitializeComponent();
 
-            // Agrego en el listbox todos los ID de marcas que existen para poder crear un nuevo articulo
+            ActualizarComboBoxs();
 
+            this.BackgroundImage = Properties.Resources.degradadoAzulVioleta;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+
+        }
+
+        private void ActualizarComboBoxs()
+        {
+            cbCategorias.Items.Clear();
+            cbMarcas.Items.Clear();
 
             listadecategorias = categoriaNegocio.ListarCategorias();
             listademarcas = marcaNegocio.ListarMarcas();
@@ -39,13 +48,7 @@ namespace Tp_WinForm_Grupo_19.Views
             {
                 cbMarcas.Items.Add(marca.Descripcion);
             }
-
-            this.BackgroundImage = Properties.Resources.degradadoAzulVioleta;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
-
         }
-
-
 
 
         private void viewAgregarArticulos_Load(object sender, EventArgs e)
@@ -125,37 +128,66 @@ namespace Tp_WinForm_Grupo_19.Views
         private void ibAgregarMarca_Click(object sender, EventArgs e)
         {
             viewAgregarMarcas viewAgregarMarcas = new viewAgregarMarcas();
-            viewAgregarMarcas.ShowDialog();
+            DialogResult resultado = viewAgregarMarcas.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                ActualizarComboBoxs();
+            }
         }
 
         private void ibTrashMarca_Click(object sender, EventArgs e)
         {
             viewEliminarMarcas viewEliminarMarcas = new viewEliminarMarcas();
-            viewEliminarMarcas.ShowDialog();
+            DialogResult resultado = viewEliminarMarcas.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                ActualizarComboBoxs();
+            }
         }
 
         private void ibUpdateMarca_Click(object sender, EventArgs e)
         {
             viewModificarMarcas viewModificarMarcas = new viewModificarMarcas();
-            viewModificarMarcas.ShowDialog();
+            DialogResult resultado = viewModificarMarcas.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                ActualizarComboBoxs();
+            }
         }
 
         private void ibAddCategoria_Click(object sender, EventArgs e)
         {
             viewAgregarCategorias viewAgregarCategorias = new viewAgregarCategorias();
-            viewAgregarCategorias.ShowDialog();
+            DialogResult resultado = viewAgregarCategorias.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                ActualizarComboBoxs();
+            }
         }
 
         private void ibTrashCategoria_Click(object sender, EventArgs e)
         {
             viewEliminarCategorias viewEliminarCategorias = new viewEliminarCategorias();
-            viewEliminarCategorias.ShowDialog();
+            DialogResult resultado = viewEliminarCategorias.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                ActualizarComboBoxs();
+            }
         }
 
         private void ibUpdateCategoria_Click(object sender, EventArgs e)
         {
             viewModificarCategorias viewModificarCategorias = new viewModificarCategorias();
-            viewModificarCategorias.ShowDialog();
+            DialogResult resultado = viewModificarCategorias.ShowDialog();
+            if (resultado == DialogResult.OK)
+            {
+                ActualizarComboBoxs();
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

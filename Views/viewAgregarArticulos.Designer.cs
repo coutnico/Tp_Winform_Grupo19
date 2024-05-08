@@ -49,23 +49,28 @@
             this.ibTrashCategoria = new FontAwesome.Sharp.IconButton();
             this.ibUpdateCategoria = new FontAwesome.Sharp.IconButton();
             this.ibAddCategoria = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // nudPrecio
             // 
             this.nudPrecio.BackColor = System.Drawing.Color.BlueViolet;
             this.nudPrecio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nudPrecio.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.nudPrecio.Location = new System.Drawing.Point(805, 535);
+            this.nudPrecio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.nudPrecio.ForeColor = System.Drawing.Color.White;
+            this.nudPrecio.Location = new System.Drawing.Point(802, 520);
             this.nudPrecio.Maximum = new decimal(new int[] {
             -559939584,
             902409669,
             54,
             0});
             this.nudPrecio.Name = "nudPrecio";
-            this.nudPrecio.Size = new System.Drawing.Size(120, 25);
+            this.nudPrecio.Size = new System.Drawing.Size(120, 29);
             this.nudPrecio.TabIndex = 64;
             // 
             // pbImagen
@@ -85,7 +90,7 @@
             this.cbCategorias.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategorias.ForeColor = System.Drawing.Color.White;
             this.cbCategorias.FormattingEnabled = true;
-            this.cbCategorias.Location = new System.Drawing.Point(496, 475);
+            this.cbCategorias.Location = new System.Drawing.Point(507, 446);
             this.cbCategorias.Name = "cbCategorias";
             this.cbCategorias.Size = new System.Drawing.Size(156, 25);
             this.cbCategorias.TabIndex = 62;
@@ -96,7 +101,7 @@
             this.cbMarcas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMarcas.ForeColor = System.Drawing.Color.White;
             this.cbMarcas.FormattingEnabled = true;
-            this.cbMarcas.Location = new System.Drawing.Point(496, 427);
+            this.cbMarcas.Location = new System.Drawing.Point(507, 396);
             this.cbMarcas.Name = "cbMarcas";
             this.cbMarcas.Size = new System.Drawing.Size(156, 25);
             this.cbMarcas.TabIndex = 61;
@@ -124,12 +129,12 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(744, 534);
+            this.label8.Location = new System.Drawing.Point(734, 522);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 21);
+            this.label8.Size = new System.Drawing.Size(65, 25);
             this.label8.TabIndex = 59;
             this.label8.Text = "Precio";
             // 
@@ -189,7 +194,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(396, 475);
+            this.label6.Location = new System.Drawing.Point(7, 8);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 21);
@@ -202,12 +207,13 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(396, 424);
+            this.label5.Location = new System.Drawing.Point(7, 8);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 21);
             this.label5.TabIndex = 52;
             this.label5.Text = "Marca";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -258,11 +264,11 @@
             this.ibAddMarca.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibAddMarca.ForeColor = System.Drawing.Color.Transparent;
             this.ibAddMarca.IconChar = FontAwesome.Sharp.IconChar.Add;
-            this.ibAddMarca.IconColor = System.Drawing.Color.White;
+            this.ibAddMarca.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ibAddMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibAddMarca.IconSize = 38;
             this.ibAddMarca.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibAddMarca.Location = new System.Drawing.Point(671, 423);
+            this.ibAddMarca.Location = new System.Drawing.Point(282, 6);
             this.ibAddMarca.Name = "ibAddMarca";
             this.ibAddMarca.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.ibAddMarca.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -281,7 +287,7 @@
             this.ibTrashMarca.IconColor = System.Drawing.Color.Brown;
             this.ibTrashMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibTrashMarca.IconSize = 32;
-            this.ibTrashMarca.Location = new System.Drawing.Point(743, 422);
+            this.ibTrashMarca.Location = new System.Drawing.Point(354, 3);
             this.ibTrashMarca.Name = "ibTrashMarca";
             this.ibTrashMarca.Size = new System.Drawing.Size(32, 35);
             this.ibTrashMarca.TabIndex = 68;
@@ -297,7 +303,7 @@
             this.ibUpdateMarca.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ibUpdateMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibUpdateMarca.IconSize = 35;
-            this.ibUpdateMarca.Location = new System.Drawing.Point(805, 419);
+            this.ibUpdateMarca.Location = new System.Drawing.Point(416, 3);
             this.ibUpdateMarca.Name = "ibUpdateMarca";
             this.ibUpdateMarca.Size = new System.Drawing.Size(32, 35);
             this.ibUpdateMarca.TabIndex = 67;
@@ -313,7 +319,7 @@
             this.ibTrashCategoria.IconColor = System.Drawing.Color.Brown;
             this.ibTrashCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibTrashCategoria.IconSize = 32;
-            this.ibTrashCategoria.Location = new System.Drawing.Point(743, 470);
+            this.ibTrashCategoria.Location = new System.Drawing.Point(354, 4);
             this.ibTrashCategoria.Name = "ibTrashCategoria";
             this.ibTrashCategoria.Size = new System.Drawing.Size(32, 35);
             this.ibTrashCategoria.TabIndex = 71;
@@ -329,7 +335,7 @@
             this.ibUpdateCategoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ibUpdateCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibUpdateCategoria.IconSize = 35;
-            this.ibUpdateCategoria.Location = new System.Drawing.Point(805, 467);
+            this.ibUpdateCategoria.Location = new System.Drawing.Point(416, 2);
             this.ibUpdateCategoria.Name = "ibUpdateCategoria";
             this.ibUpdateCategoria.Size = new System.Drawing.Size(32, 35);
             this.ibUpdateCategoria.TabIndex = 70;
@@ -346,11 +352,11 @@
             this.ibAddCategoria.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ibAddCategoria.ForeColor = System.Drawing.Color.Transparent;
             this.ibAddCategoria.IconChar = FontAwesome.Sharp.IconChar.Add;
-            this.ibAddCategoria.IconColor = System.Drawing.Color.White;
+            this.ibAddCategoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ibAddCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibAddCategoria.IconSize = 38;
             this.ibAddCategoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibAddCategoria.Location = new System.Drawing.Point(671, 471);
+            this.ibAddCategoria.Location = new System.Drawing.Point(282, 4);
             this.ibAddCategoria.Name = "ibAddCategoria";
             this.ibAddCategoria.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.ibAddCategoria.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -360,17 +366,35 @@
             this.ibAddCategoria.UseVisualStyleBackColor = false;
             this.ibAddCategoria.Click += new System.EventHandler(this.ibAddCategoria_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel1.Controls.Add(this.ibUpdateMarca);
+            this.panel1.Controls.Add(this.ibTrashMarca);
+            this.panel1.Controls.Add(this.ibAddMarca);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(400, 387);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(456, 41);
+            this.panel1.TabIndex = 72;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.MediumPurple;
+            this.panel2.Controls.Add(this.ibAddCategoria);
+            this.panel2.Controls.Add(this.ibTrashCategoria);
+            this.panel2.Controls.Add(this.ibUpdateCategoria);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Location = new System.Drawing.Point(400, 438);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(456, 41);
+            this.panel2.TabIndex = 73;
+            // 
             // viewAgregarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 654);
-            this.Controls.Add(this.ibTrashCategoria);
-            this.Controls.Add(this.ibUpdateCategoria);
-            this.Controls.Add(this.ibAddCategoria);
-            this.Controls.Add(this.ibTrashMarca);
-            this.Controls.Add(this.ibUpdateMarca);
-            this.Controls.Add(this.ibAddMarca);
             this.Controls.Add(this.nudPrecio);
             this.Controls.Add(this.pbImagen);
             this.Controls.Add(this.cbCategorias);
@@ -381,17 +405,21 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "viewAgregarArticulos";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.viewAgregarArticulos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,5 +448,7 @@
         private FontAwesome.Sharp.IconButton ibTrashCategoria;
         private FontAwesome.Sharp.IconButton ibUpdateCategoria;
         private FontAwesome.Sharp.IconButton ibAddCategoria;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

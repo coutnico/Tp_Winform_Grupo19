@@ -25,14 +25,24 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void eliminar_Marca_Click(object sender, EventArgs e)
         {
-            MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
-            marcaNegocio_obj.eliminarMarca(int.Parse(Id_Marca_Eliminar.Text));
-            Close();
+            try
+            {
+
+                MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+                marcaNegocio_obj.eliminarMarca(int.Parse(Id_Marca_Eliminar.Text));
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void ibClose_Click(object sender, EventArgs e)
         {
-            this.Close();   
+            this.Close();
         }
     }
 }

@@ -20,9 +20,19 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void eliminar_Categoria_Click(object sender, EventArgs e)
         {
-            CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
-            CategoriaNegocio_obj.eliminarCategoria(int.Parse(Id_Categoria_Eliminar.Text));
-            Close();
+            try
+            {
+
+                CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
+                CategoriaNegocio_obj.eliminarCategoria(int.Parse(Id_Categoria_Eliminar.Text));
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void ibClose_Click(object sender, EventArgs e)

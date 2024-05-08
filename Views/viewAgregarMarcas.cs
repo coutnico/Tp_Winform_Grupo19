@@ -18,7 +18,7 @@ namespace Tp_WinForm_Grupo_19.Views
             InitializeComponent();
         }
 
-   
+
 
         private void cbCategorias_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -32,16 +32,25 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void ibAgregarMarca_Click(object sender, EventArgs e)
         {
-            Marca marca_obj = new Marca();
+            try
+            {
 
-            marca_obj.Descripcion = txtDescripcion.Text;
-            
-            //Cargar en  base de datos.
-            MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+                Marca marca_obj = new Marca();
 
-            marcaNegocio_obj.agregarMarca(marca_obj);
+                marca_obj.Descripcion = txtDescripcion.Text;
 
-            Close();
+                //Cargar en  base de datos.
+                MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+
+                marcaNegocio_obj.agregarMarca(marca_obj);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -54,7 +63,7 @@ namespace Tp_WinForm_Grupo_19.Views
 
         }
 
-   
+
 
         private void txtCodigo_TextChanged(object sender, EventArgs e)
         {

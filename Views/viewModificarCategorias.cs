@@ -20,18 +20,27 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void modificar_Categorias_Click(object sender, EventArgs e)
         {
-            Categoria Categoria_obj = new Categoria();
+            try
+            {
 
-            Categoria_obj.Id = int.Parse(codigo_Categoria_a_modificar.Text);
-            Categoria_obj.Descripcion = descripcion_Categoria_a_modificar.Text;
+                Categoria Categoria_obj = new Categoria();
+
+                Categoria_obj.Id = int.Parse(codigo_Categoria_a_modificar.Text);
+                Categoria_obj.Descripcion = descripcion_Categoria_a_modificar.Text;
 
 
-            //Cargar en  base de datos.
-            CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
+                //Cargar en  base de datos.
+                CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
 
-            CategoriaNegocio_obj.modificarCategoria(Categoria_obj, int.Parse(codigo_Categoria_a_modificar.Text));
+                CategoriaNegocio_obj.modificarCategoria(Categoria_obj, int.Parse(codigo_Categoria_a_modificar.Text));
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception)
+            {
 
-            this.Close();
+                throw;
+            }
 
         }
 

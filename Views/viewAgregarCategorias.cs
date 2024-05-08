@@ -20,16 +20,25 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void ibAgregarCategoria_Click(object sender, EventArgs e)
         {
-            Categoria Categoria_obj = new Categoria();
+            try
+            {
 
-            Categoria_obj.Descripcion = txtDescripcion.Text;
+                Categoria Categoria_obj = new Categoria();
 
-            //Cargar en  base de datos.
-            CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
+                Categoria_obj.Descripcion = txtDescripcion.Text;
 
-            CategoriaNegocio_obj.agregarCategoria(Categoria_obj);
+                //Cargar en  base de datos.
+                CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
 
-            Close();
+                CategoriaNegocio_obj.agregarCategoria(Categoria_obj);
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void ibClose_Click(object sender, EventArgs e)
