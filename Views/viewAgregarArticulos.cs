@@ -96,45 +96,53 @@ namespace Tp_WinForm_Grupo_19.Views
 
             try
             {
-
-                Articulo articulo_obj = new Articulo();
-
-
-                foreach (Categoria categoria in listadecategorias)
+                if (!string.IsNullOrEmpty(txtCodigo.Text) && !string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtDescripcion.Text) 
+                    && cbMarcas.SelectedItem != null && cbCategorias.SelectedItem != null && nudPrecio.Value != 0 && !string.IsNullOrEmpty(txtUrlImagen.Text))
                 {
-                    if (cbCategorias.SelectedItem == categoria.Descripcion)
+
+                    Articulo articulo_obj = new Articulo();
+
+
+                    foreach (Categoria categoria in listadecategorias)
                     {
-                        articulo_obj.IDCategoria = categoria.Id;
+                        if (cbCategorias.SelectedItem == categoria.Descripcion)
+                        {
+                            articulo_obj.IDCategoria = categoria.Id;
 
 
 
+                        }
                     }
+                    foreach (Marca marca in listademarcas)
+                    {
+                        if (cbMarcas.SelectedItem == marca.Descripcion)
+                            articulo_obj.IDMarca = marca.Id;
+                    }
+
+                    ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
+                    ImagenNegocio imagenNegocio = new ImagenNegocio();
+
+
+                    articulo_obj.Codigo = txtCodigo.Text;
+                    articulo_obj.Nombre = txtNombre.Text;
+                    articulo_obj.Descripcion = txtDescripcion.Text;
+                    articulo_obj.Precio = Convert.ToDecimal(nudPrecio.Value);
+
+                    //Cargar en  base de datos.
+                    articuloNegocio_obj.agregarArticulo(articulo_obj);
+
+                    List<Articulo> articulos = articuloNegocio_obj.ListarArticulos();
+                    int contadorArticulos = articulos.Count;
+                    contadorArticulos = articulos[contadorArticulos - 1].ID;
+
+                    imagenNegocio.InsertarImagen(contadorArticulos, txtUrlImagen.Text);
+
+                    this.Close();
                 }
-                foreach (Marca marca in listademarcas)
+                else
                 {
-                    if (cbMarcas.SelectedItem == marca.Descripcion)
-                        articulo_obj.IDMarca = marca.Id;
+                    MessageBox.Show("Falta completar campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
-                ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
-                ImagenNegocio imagenNegocio = new ImagenNegocio();
-
-
-                articulo_obj.Codigo = txtCodigo.Text;
-                articulo_obj.Nombre = txtNombre.Text;
-                articulo_obj.Descripcion = txtDescripcion.Text;
-                articulo_obj.Precio = Convert.ToDecimal(nudPrecio.Value);
-
-                //Cargar en  base de datos.
-                articuloNegocio_obj.agregarArticulo(articulo_obj);
-
-                List<Articulo> articulos = articuloNegocio_obj.ListarArticulos();
-                int contadorArticulos = articulos.Count;
-                contadorArticulos = articulos[contadorArticulos - 1].ID;
-
-                imagenNegocio.InsertarImagen(contadorArticulos, txtUrlImagen.Text);
-
-                this.Close();
             }
             catch (Exception)
             {

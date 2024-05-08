@@ -1,119 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp-winform-equipo-19\\usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp-winform-equipo-19\\models\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp-winform-equipo-19\\usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:usercontrols\\cardarticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp-winform-equipo-19\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp-winform-equipo-19\\views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewagregararticulos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\users\\programador2\\desktop\\proyectos nico\\tp-winform-equipo-19\\views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:views\\viewprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ImagenNegocio.cs",
-              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Models\\ImagenNegocio.cs",
-              "RelativeDocumentMoniker": "Models\\ImagenNegocio.cs",
-              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Models\\ImagenNegocio.cs",
-              "RelativeToolTip": "Models\\ImagenNegocio.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAowGIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:34:20.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CardArticulos.cs",
-              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\UserControls\\CardArticulos.cs",
-              "RelativeDocumentMoniker": "UserControls\\CardArticulos.cs",
-              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\UserControls\\CardArticulos.cs",
-              "RelativeToolTip": "UserControls\\CardArticulos.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAADwv6cAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:33:08.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CardArticulos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\UserControls\\CardArticulos.cs",
-              "RelativeDocumentMoniker": "UserControls\\CardArticulos.cs",
-              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\UserControls\\CardArticulos.cs [Design]",
-              "RelativeToolTip": "UserControls\\CardArticulos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:33:06.358Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "viewAgregarArticulos.cs",
-              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Views\\viewAgregarArticulos.cs",
-              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
-              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Views\\viewAgregarArticulos.cs",
-              "RelativeToolTip": "Views\\viewAgregarArticulos.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAqwI0AAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:29:39.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "viewAgregarArticulos.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Views\\viewAgregarArticulos.cs",
-              "RelativeDocumentMoniker": "Views\\viewAgregarArticulos.cs",
-              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Views\\viewAgregarArticulos.cs [Design]",
-              "RelativeToolTip": "Views\\viewAgregarArticulos.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:29:38.017Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "viewPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Views\\viewPrincipal.cs",
-              "RelativeDocumentMoniker": "Views\\viewPrincipal.cs",
-              "ToolTip": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\Views\\viewPrincipal.cs [Design]",
-              "RelativeToolTip": "Views\\viewPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:27:19.63Z",
-              "EditorCaption": " [Design]"
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
