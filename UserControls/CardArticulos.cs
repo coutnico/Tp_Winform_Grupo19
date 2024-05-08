@@ -162,9 +162,9 @@ namespace Tp_WinForm_Grupo_19.UserControls
         private void ibTrash_Click(object sender, EventArgs e)
         {
             ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
             articuloNegocio_obj.eliminarArticulo(articulo.ID);
-
-
+            imagenNegocio.EliminarImagen(articulo.ID);
 
             OnEventoEliminar();
         }

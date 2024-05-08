@@ -159,9 +159,9 @@
             this.panelMenu2.Controls.Add(this.ibMoreInformation);
             this.panelMenu2.Controls.Add(this.ibUs);
             this.panelMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMenu2.Location = new System.Drawing.Point(0, 282);
+            this.panelMenu2.Location = new System.Drawing.Point(0, 317);
             this.panelMenu2.Name = "panelMenu2";
-            this.panelMenu2.Size = new System.Drawing.Size(240, 178);
+            this.panelMenu2.Size = new System.Drawing.Size(240, 220);
             this.panelMenu2.TabIndex = 5;
             // 
             // ibSocialNetworks
@@ -241,7 +241,7 @@
             this.panelMenu1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenu1.Location = new System.Drawing.Point(0, 145);
             this.panelMenu1.Name = "panelMenu1";
-            this.panelMenu1.Size = new System.Drawing.Size(240, 137);
+            this.panelMenu1.Size = new System.Drawing.Size(240, 172);
             this.panelMenu1.TabIndex = 4;
             // 
             // ibaAddArticles
@@ -256,7 +256,7 @@
             this.ibaAddArticles.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibaAddArticles.IconSize = 38;
             this.ibaAddArticles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibaAddArticles.Location = new System.Drawing.Point(45, 84);
+            this.ibaAddArticles.Location = new System.Drawing.Point(45, 118);
             this.ibaAddArticles.Name = "ibaAddArticles";
             this.ibaAddArticles.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.ibaAddArticles.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -279,7 +279,7 @@
             this.ibviewArticles.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibviewArticles.IconSize = 38;
             this.ibviewArticles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ibviewArticles.Location = new System.Drawing.Point(48, 38);
+            this.ibviewArticles.Location = new System.Drawing.Point(45, 60);
             this.ibviewArticles.Name = "ibviewArticles";
             this.ibviewArticles.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.ibviewArticles.RightToLeft = System.Windows.Forms.RightToLeft.No;

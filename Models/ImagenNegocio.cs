@@ -49,8 +49,55 @@ namespace Tp_WinForm_Grupo_19.Models
                 throw ex;
             }
             finally { conexion.Close(); }
+        }
+
+        public void InsertarImagen (int idArticulo, string url)
+        {
+            try
+            {
+                conexion.Open();
+                string query = "INSERT INTO IMAGENES(IdArticulo, ImagenUrl) VALUES (@valor1, @valor2)";
+                cmd = new SqlCommand (query, conexion);
+                cmd.Parameters.AddWithValue("@valor1", idArticulo);
+                cmd.Parameters.AddWithValue("@valor2", url);
+
+                cmd.ExecuteNonQuery();
+
+                
+
+            }
+            catch (SqlException ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+        }
+
+        public void EliminarImagen(int idArticulo)
+        {
+            try
+            {
+                conexion.Open();
+                string query = "DELETE FROM iMAGENES WHERE IdArticulo = @valor1";
+                cmd = new SqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@valor1", idArticulo);
+                cmd.ExecuteNonQuery();
 
 
+            }
+            catch (SqlException ex  )
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                conexion.Close();
+            }
         }
 
     }

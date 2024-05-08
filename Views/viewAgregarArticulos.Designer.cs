@@ -51,6 +51,8 @@
             this.ibAddCategoria = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtUrlImagen = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudPrecio)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.panel1.SuspendLayout();
@@ -77,9 +79,10 @@
             // 
             this.pbImagen.BackColor = System.Drawing.Color.Transparent;
             this.pbImagen.Image = global::Tp_WinForm_Grupo_19.Properties.Resources.ImagenNoCargada;
+            this.pbImagen.InitialImage = global::Tp_WinForm_Grupo_19.Properties.Resources.ImagenNoCargada;
             this.pbImagen.Location = new System.Drawing.Point(54, 93);
             this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(323, 525);
+            this.pbImagen.Size = new System.Drawing.Size(323, 468);
             this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImagen.TabIndex = 63;
             this.pbImagen.TabStop = false;
@@ -390,6 +393,32 @@
             this.panel2.Size = new System.Drawing.Size(456, 41);
             this.panel2.TabIndex = 73;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(50, 591);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(102, 21);
+            this.label7.TabIndex = 50;
+            this.label7.Text = "Imagen URL:";
+            // 
+            // txtUrlImagen
+            // 
+            this.txtUrlImagen.BackColor = System.Drawing.Color.BlueViolet;
+            this.txtUrlImagen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUrlImagen.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUrlImagen.ForeColor = System.Drawing.Color.White;
+            this.txtUrlImagen.Location = new System.Drawing.Point(156, 592);
+            this.txtUrlImagen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtUrlImagen.Name = "txtUrlImagen";
+            this.txtUrlImagen.Size = new System.Drawing.Size(221, 25);
+            this.txtUrlImagen.TabIndex = 56;
+            this.txtUrlImagen.TextChanged += new System.EventHandler(this.txtUrlImagen_TextChanged);
+            // 
             // viewAgregarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -402,9 +431,11 @@
             this.Controls.Add(this.ibAgregarArticulo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtUrlImagen);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -450,5 +481,7 @@
         private FontAwesome.Sharp.IconButton ibAddCategoria;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtUrlImagen;
     }
 }

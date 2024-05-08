@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -89,39 +93,54 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void ibAgregarArticulo_Click(object sender, EventArgs e)
         {
-            Articulo articulo_obj = new Articulo();
 
-
-            foreach (Categoria categoria in listadecategorias)
+            try
             {
-                if (cbCategorias.SelectedItem == categoria.Descripcion)
+
+                Articulo articulo_obj = new Articulo();
+
+
+                foreach (Categoria categoria in listadecategorias)
                 {
-                    articulo_obj.IDCategoria = categoria.Id;
+                    if (cbCategorias.SelectedItem == categoria.Descripcion)
+                    {
+                        articulo_obj.IDCategoria = categoria.Id;
 
 
 
+                    }
                 }
+                foreach (Marca marca in listademarcas)
+                {
+                    if (cbMarcas.SelectedItem == marca.Descripcion)
+                        articulo_obj.IDMarca = marca.Id;
+                }
+
+                ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
+                ImagenNegocio imagenNegocio = new ImagenNegocio();
+
+
+                articulo_obj.Codigo = txtCodigo.Text;
+                articulo_obj.Nombre = txtNombre.Text;
+                articulo_obj.Descripcion = txtDescripcion.Text;
+                articulo_obj.Precio = Convert.ToDecimal(nudPrecio.Value);
+
+                //Cargar en  base de datos.
+                articuloNegocio_obj.agregarArticulo(articulo_obj);
+
+                List<Articulo> articulos = articuloNegocio_obj.ListarArticulos();
+                int contadorArticulos = articulos.Count;
+                contadorArticulos = articulos[contadorArticulos - 1].ID;
+
+                imagenNegocio.InsertarImagen(contadorArticulos, txtUrlImagen.Text);
+
+                this.Close();
             }
-            foreach (Marca marca in listademarcas)
+            catch (Exception)
             {
-                if (cbMarcas.SelectedItem == marca.Descripcion)
-                    articulo_obj.IDMarca = marca.Id;
+
+                throw;
             }
-
-
-            articulo_obj.Codigo = txtCodigo.Text;
-            articulo_obj.Nombre = txtNombre.Text;
-            articulo_obj.Descripcion = txtDescripcion.Text;
-            articulo_obj.Precio = Convert.ToDecimal(nudPrecio.Value);
-
-            //Cargar en  base de datos.
-            ArticuloNegocio articuloNegocio_obj = new ArticuloNegocio();
-
-            articuloNegocio_obj.agregarArticulo(articulo_obj);
-
-
-
-            Close();
         }
 
 
@@ -188,6 +207,44 @@ namespace Tp_WinForm_Grupo_19.Views
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtUrlImagen_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (!string.IsNullOrEmpty(txtUrlImagen.Text))
+                {
+                    using (HttpClient httpClient = new HttpClient())
+                    {
+                        using (WebClient cliente = new WebClient())
+                        {
+                            byte[] imagenBytes = cliente.DownloadData(txtUrlImagen.Text);
+
+                            if (imagenBytes != null && imagenBytes.Length > 0)
+                            {
+                                using (MemoryStream stream = new MemoryStream(imagenBytes))
+                                {
+                                    Image imagen = Image.FromStream(stream);
+
+                                    pbImagen.Image = imagen;
+                                    pbImagen.Refresh();
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    pbImagen.Image = pbImagen.InitialImage;
+                    pbImagen.Refresh();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Formato de enlace no valido");
+            }
         }
     }
 }
