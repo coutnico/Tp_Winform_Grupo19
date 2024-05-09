@@ -1,12 +1,105 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Programador2\\Desktop\\Proyectos Nico\\tp-winform-equipo-19\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tp\\tp-winform-equipo-19\\models\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\imagennegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tp\\tp-winform-equipo-19\\models\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tp\\tp-winform-equipo-19\\models\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\marcanegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tp\\tp-winform-equipo-19\\models\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\categorianegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|c:\\mariano\\otros\\utn\\tecnicatura programacion\\a\u00F1o 3\\viernes - programacion iii\\tp\\tp-winform-equipo-19\\models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5969DF4F-E0A0-4CCA-80BC-1340563E2106}|Tp_WinForm_Grupo_19.csproj|solutionrelative:models\\articulonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ImagenNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\ImagenNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\ImagenNegocio.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\ImagenNegocio.cs",
+              "RelativeToolTip": "Models\\ImagenNegocio.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwC4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T02:24:40.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MarcaNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\MarcaNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\MarcaNegocio.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\MarcaNegocio.cs",
+              "RelativeToolTip": "Models\\MarcaNegocio.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T02:22:12.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriaNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\CategoriaNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\CategoriaNegocio.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\CategoriaNegocio.cs",
+              "RelativeToolTip": "Models\\CategoriaNegocio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T02:17:45.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArticuloNegocio.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\ArticuloNegocio.cs",
+              "RelativeDocumentMoniker": "Models\\ArticuloNegocio.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\ArticuloNegocio.cs",
+              "RelativeToolTip": "Models\\ArticuloNegocio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T01:59:41.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConexionDB.cs",
+              "DocumentMoniker": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\ConexionDB.cs",
+              "RelativeDocumentMoniker": "Models\\ConexionDB.cs",
+              "ToolTip": "C:\\Mariano\\Otros\\UTN\\Tecnicatura programacion\\A\u00F1o 3\\Viernes - Programacion III\\TP\\tp-winform-equipo-19\\Models\\ConexionDB.cs",
+              "RelativeToolTip": "Models\\ConexionDB.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T01:58:27.145Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -9,9 +9,9 @@ namespace Tp_WinForm_Grupo_19.Models
 {
     public class ImagenNegocio
     {
-        static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
-
-        SqlConnection conexion = new SqlConnection(conexionstring);
+        //static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
+        ConexionDB conexionDB_obj = new ConexionDB();
+        //SqlConnection conexion = new SqlConnection(conexionstring);
         SqlCommand cmd;
         SqlDataReader reader = null;
 
@@ -21,12 +21,12 @@ namespace Tp_WinForm_Grupo_19.Models
 
             try
             {
-                conexion.Open();
+                //conexion.Open();
                 string query = "select Id, IdArticulo, ImagenUrl from IMAGENES\r\n";
-                cmd = new SqlCommand(query, conexion);
+                //cmd = new SqlCommand(query, conexion);
 
 
-                reader = cmd.ExecuteReader();
+                reader = conexionDB_obj.LeerDatos(query); // cmd.ExecuteReader();
 
 
                 while (reader.Read())
@@ -48,16 +48,17 @@ namespace Tp_WinForm_Grupo_19.Models
             {
                 throw ex;
             }
-            finally { conexion.Close(); }
+            finally { conexionDB_obj.CerrarConexion(); }
         }
 
         public void InsertarImagen (int idArticulo, string url)
         {
             try
             {
-                conexion.Open();
+                //conexion.Open();
+                conexionDB_obj.AbrirConexion();
                 string query = "INSERT INTO IMAGENES(IdArticulo, ImagenUrl) VALUES (@valor1, @valor2)";
-                cmd = new SqlCommand (query, conexion);
+                cmd = new SqlCommand (query, conexionDB_obj.conexion);
                 cmd.Parameters.AddWithValue("@valor1", idArticulo);
                 cmd.Parameters.AddWithValue("@valor2", url);
 
@@ -73,7 +74,7 @@ namespace Tp_WinForm_Grupo_19.Models
             }
             finally
             {
-                conexion.Close();
+                conexionDB_obj.CerrarConexion();
             }
         }
 
@@ -81,9 +82,9 @@ namespace Tp_WinForm_Grupo_19.Models
         {
             try
             {
-                conexion.Open();
+                conexionDB_obj.AbrirConexion();
                 string query = "DELETE FROM iMAGENES WHERE IdArticulo = @valor1";
-                cmd = new SqlCommand(query, conexion);
+                cmd = new SqlCommand(query, conexionDB_obj.conexion);
                 cmd.Parameters.AddWithValue("@valor1", idArticulo);
                 cmd.ExecuteNonQuery();
 
@@ -96,7 +97,7 @@ namespace Tp_WinForm_Grupo_19.Models
             }
             finally
             {
-                conexion.Close();
+                conexionDB_obj.CerrarConexion();
             }
         }
 

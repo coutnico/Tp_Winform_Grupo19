@@ -9,10 +9,11 @@ namespace Tp_WinForm_Grupo_19.Models
 {
     public class MarcaNegocio
     {
-        static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
-
-        SqlConnection conexion = new SqlConnection(conexionstring);
-        SqlCommand cmd;
+        //static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
+        ConexionDB conexionDB_obj = new ConexionDB();
+        
+        //SqlConnection conexion = new SqlConnection(conexionstring);
+        //SqlCommand cmd;
         SqlDataReader reader = null;
 
 
@@ -24,12 +25,12 @@ namespace Tp_WinForm_Grupo_19.Models
 
             try
             {
-                conexion.Open();
+                //conexion.Open();
                 string query = "Select Id, Descripcion from MARCAS";  
-                cmd = new SqlCommand(query, conexion);
+                //cmd = new SqlCommand(query, conexion);
+               
 
-
-                reader = cmd.ExecuteReader();
+                reader = conexionDB_obj.LeerDatos(query); ;// cmd.ExecuteReader();
 
 
                 while (reader.Read())
@@ -50,7 +51,7 @@ namespace Tp_WinForm_Grupo_19.Models
             {
                 throw ex;
             }
-            finally { conexion.Close(); }
+            finally { conexionDB_obj.CerrarConexion(); }
 
 
         }
@@ -113,19 +114,16 @@ namespace Tp_WinForm_Grupo_19.Models
         {
             try
             {
-                conexion.Open();
+                //conexion.Open();
                 string query = "Select id, Descripcion from MARCAS";
-                cmd = new SqlCommand(query, conexion);
+                //cmd = new SqlCommand(query, conexion);
 
 
-                reader = cmd.ExecuteReader();
+                reader = conexionDB_obj.LeerDatos(query); ;// cmd.ExecuteReader();
 
                 Marca marca = new Marca();
                 while (reader.Read())
                 {
-
-
-
                     marca.Id = Convert.ToInt32(reader["Id"]);
 
                     if (marca.Id == id_buscado)
@@ -141,7 +139,7 @@ namespace Tp_WinForm_Grupo_19.Models
             {
                 throw ex;
             }
-            finally { conexion.Close(); }
+            finally { conexionDB_obj.CerrarConexion(); }
 
 
         }

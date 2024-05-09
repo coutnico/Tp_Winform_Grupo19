@@ -11,23 +11,24 @@ namespace Tp_WinForm_Grupo_19.Models
     {
         public static string conexionstring = "server=(local); database=CATALOGO_P3_DB; integrated security=true";
 
-        public static SqlConnection conexion = new SqlConnection(conexionstring);
+        public SqlConnection conexion = new SqlConnection(conexionstring);
         public static SqlCommand cmd;
         public static SqlDataReader reader = null;
 
-        public static void AbrirConexion()
+        public void AbrirConexion()
         {
             conexion.Open();
         }
-        public static void CerrarConexion()
+        public void CerrarConexion()
         {
             conexion.Close();
         }
 
-        public static SqlDataReader LeerDatos(string query)
+        public SqlDataReader LeerDatos(string query)
         {
             try
             {
+                AbrirConexion();
                 cmd = new SqlCommand(query, conexion);
                 reader = cmd.ExecuteReader();
                 return reader;
@@ -38,7 +39,7 @@ namespace Tp_WinForm_Grupo_19.Models
             }
             finally
             {
-                CerrarConexion();
+               // CerrarConexion();
             }
             return null;
         }
