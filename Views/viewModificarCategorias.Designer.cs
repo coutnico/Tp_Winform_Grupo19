@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.modificar_Categorias = new FontAwesome.Sharp.IconButton();
-            this.descripcion_Categoria_a_modificar = new System.Windows.Forms.TextBox();
-            this.codigo_Categoria_a_modificar = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.ibClose = new FontAwesome.Sharp.IconButton();
             this.panelSuperior = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cbCategorias = new System.Windows.Forms.ComboBox();
+            this.descripcion_Categoria_a_modificar = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +49,7 @@
             this.modificar_Categorias.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
             this.modificar_Categorias.IconColor = System.Drawing.Color.Gold;
             this.modificar_Categorias.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.modificar_Categorias.Location = new System.Drawing.Point(112, 200);
+            this.modificar_Categorias.Location = new System.Drawing.Point(117, 199);
             this.modificar_Categorias.Name = "modificar_Categorias";
             this.modificar_Categorias.Size = new System.Drawing.Size(145, 48);
             this.modificar_Categorias.TabIndex = 51;
@@ -58,69 +58,18 @@
             this.modificar_Categorias.UseVisualStyleBackColor = false;
             this.modificar_Categorias.Click += new System.EventHandler(this.modificar_Categorias_Click);
             // 
-            // descripcion_Categoria_a_modificar
-            // 
-            this.descripcion_Categoria_a_modificar.BackColor = System.Drawing.Color.BlueViolet;
-            this.descripcion_Categoria_a_modificar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.descripcion_Categoria_a_modificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descripcion_Categoria_a_modificar.ForeColor = System.Drawing.Color.White;
-            this.descripcion_Categoria_a_modificar.Location = new System.Drawing.Point(112, 154);
-            this.descripcion_Categoria_a_modificar.Margin = new System.Windows.Forms.Padding(2);
-            this.descripcion_Categoria_a_modificar.Name = "descripcion_Categoria_a_modificar";
-            this.descripcion_Categoria_a_modificar.Size = new System.Drawing.Size(203, 25);
-            this.descripcion_Categoria_a_modificar.TabIndex = 50;
-            // 
-            // codigo_Categoria_a_modificar
-            // 
-            this.codigo_Categoria_a_modificar.BackColor = System.Drawing.Color.BlueViolet;
-            this.codigo_Categoria_a_modificar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.codigo_Categoria_a_modificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codigo_Categoria_a_modificar.ForeColor = System.Drawing.Color.White;
-            this.codigo_Categoria_a_modificar.Location = new System.Drawing.Point(112, 98);
-            this.codigo_Categoria_a_modificar.Margin = new System.Windows.Forms.Padding(2);
-            this.codigo_Categoria_a_modificar.Name = "codigo_Categoria_a_modificar";
-            this.codigo_Categoria_a_modificar.Size = new System.Drawing.Size(59, 25);
-            this.codigo_Categoria_a_modificar.TabIndex = 49;
-            this.codigo_Categoria_a_modificar.TextChanged += new System.EventHandler(this.codigo_Categoria_a_modificar_TextChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(77, 97);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 21);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "ID";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(74, 41);
+            this.label1.Location = new System.Drawing.Point(57, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(275, 37);
             this.label1.TabIndex = 47;
             this.label1.Text = "Modificar Categoria";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(12, 158);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 21);
-            this.label4.TabIndex = 46;
-            this.label4.Text = "Descripcion";
             // 
             // ibClose
             // 
@@ -131,7 +80,7 @@
             this.ibClose.IconColor = System.Drawing.Color.White;
             this.ibClose.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibClose.IconSize = 30;
-            this.ibClose.Location = new System.Drawing.Point(350, 1);
+            this.ibClose.Location = new System.Drawing.Point(348, 3);
             this.ibClose.Name = "ibClose";
             this.ibClose.Size = new System.Drawing.Size(35, 35);
             this.ibClose.TabIndex = 2;
@@ -149,23 +98,75 @@
             this.panelSuperior.Size = new System.Drawing.Size(386, 38);
             this.panelSuperior.TabIndex = 81;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(1, 165);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 19);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "Descripcion";
+            // 
+            // cbCategorias
+            // 
+            this.cbCategorias.BackColor = System.Drawing.Color.BlueViolet;
+            this.cbCategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbCategorias.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.cbCategorias.ForeColor = System.Drawing.Color.White;
+            this.cbCategorias.FormattingEnabled = true;
+            this.cbCategorias.Location = new System.Drawing.Point(86, 103);
+            this.cbCategorias.Name = "cbCategorias";
+            this.cbCategorias.Size = new System.Drawing.Size(222, 25);
+            this.cbCategorias.TabIndex = 85;
+            this.cbCategorias.SelectedIndexChanged += new System.EventHandler(this.cbMarcas_SelectedIndexChanged);
+            // 
+            // descripcion_Categoria_a_modificar
+            // 
+            this.descripcion_Categoria_a_modificar.BackColor = System.Drawing.Color.BlueViolet;
+            this.descripcion_Categoria_a_modificar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.descripcion_Categoria_a_modificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcion_Categoria_a_modificar.ForeColor = System.Drawing.Color.White;
+            this.descripcion_Categoria_a_modificar.Location = new System.Drawing.Point(86, 162);
+            this.descripcion_Categoria_a_modificar.Margin = new System.Windows.Forms.Padding(2);
+            this.descripcion_Categoria_a_modificar.Name = "descripcion_Categoria_a_modificar";
+            this.descripcion_Categoria_a_modificar.Size = new System.Drawing.Size(222, 25);
+            this.descripcion_Categoria_a_modificar.TabIndex = 84;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(2, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 19);
+            this.label2.TabIndex = 87;
+            this.label2.Text = "Seleccionar";
+            // 
             // viewModificarCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(386, 259);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbCategorias);
+            this.Controls.Add(this.descripcion_Categoria_a_modificar);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.modificar_Categorias);
-            this.Controls.Add(this.descripcion_Categoria_a_modificar);
-            this.Controls.Add(this.codigo_Categoria_a_modificar);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "viewModificarCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.viewModificarCategorias_Load);
             this.panelSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,12 +176,12 @@
         #endregion
 
         private FontAwesome.Sharp.IconButton modificar_Categorias;
-        private System.Windows.Forms.TextBox descripcion_Categoria_a_modificar;
-        private System.Windows.Forms.TextBox codigo_Categoria_a_modificar;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
         private FontAwesome.Sharp.IconButton ibClose;
         private System.Windows.Forms.Panel panelSuperior;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cbCategorias;
+        private System.Windows.Forms.TextBox descripcion_Categoria_a_modificar;
+        private System.Windows.Forms.Label label2;
     }
 }

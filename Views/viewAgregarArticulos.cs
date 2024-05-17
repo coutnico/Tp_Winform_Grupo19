@@ -254,5 +254,10 @@ namespace Tp_WinForm_Grupo_19.Views
                 MessageBox.Show("Formato de enlace no valido");
             }
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -101,5 +101,28 @@ namespace Tp_WinForm_Grupo_19.Models
             }
         }
 
+
+        public void ModificarImagen(int idArticulo, string url)
+        {
+            try
+            {
+                conexionDB_obj.AbrirConexion();
+                string query = "UPDATE IMAGENES SET ImagenUrl = @valor1 WHERE IdArticulo = @valor2";
+                cmd = new SqlCommand(query, conexionDB_obj.conexion);
+                cmd.Parameters.AddWithValue("@valor1", url);
+                cmd.Parameters.AddWithValue("@valor2", idArticulo);
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                conexionDB_obj.CerrarConexion();
+            }
+        }
+
     }
 }

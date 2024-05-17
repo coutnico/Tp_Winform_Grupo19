@@ -13,6 +13,8 @@ namespace Tp_WinForm_Grupo_19.Views
 {
     public partial class viewEliminarMarcas : Form
     {
+        MarcaNegocio marcaNegocio = new MarcaNegocio();
+        private int IdAModificar = -1;
         public viewEliminarMarcas()
         {
             InitializeComponent();
@@ -20,29 +22,47 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void viewEliminarMarcas_Load(object sender, EventArgs e)
         {
-
+            foreach (Marca marca in marcaNegocio.ListarMarcas())
+            {
+                cbMarcas.Items.Add(marca.Descripcion);
+            }
         }
 
         private void eliminar_Marca_Click(object sender, EventArgs e)
         {
-            try
+            if (IdAModificar != -1)
             {
+                try
+                {
 
-                MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
-                marcaNegocio_obj.eliminarMarca(int.Parse(Id_Marca_Eliminar.Text));
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-            catch (Exception)
-            {
+                    MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+                    marcaNegocio_obj.eliminarMarca(IdAModificar);
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+                catch (Exception)
+                {
 
-                throw;
+                    throw;
+                }
             }
         }
 
         private void ibClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbMarcas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (Marca marca in marcaNegocio.ListarMarcas())
+            {
+                if (cbMarcas.SelectedItem.ToString() == marca.Descripcion)
+                {
+                    IdAModificar = marca.Id;
+                    break;
+                }
+            }
         }
     }
 }

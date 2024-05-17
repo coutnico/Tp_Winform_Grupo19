@@ -13,6 +13,9 @@ namespace Tp_WinForm_Grupo_19.Views
 {
     public partial class viewModificarCategorias : Form
     {
+        private CategoriaNegocio CategoriaNegocio = new CategoriaNegocio();
+        private int IdAModificar = -1;
+
         public viewModificarCategorias()
         {
             InitializeComponent();
@@ -22,17 +25,16 @@ namespace Tp_WinForm_Grupo_19.Views
         {
             try
             {
-
                 Categoria Categoria_obj = new Categoria();
 
-                Categoria_obj.Id = int.Parse(codigo_Categoria_a_modificar.Text);
+                Categoria_obj.Id = IdAModificar;
                 Categoria_obj.Descripcion = descripcion_Categoria_a_modificar.Text;
 
 
                 //Cargar en  base de datos.
                 CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
 
-                CategoriaNegocio_obj.modificarCategoria(Categoria_obj, int.Parse(codigo_Categoria_a_modificar.Text));
+                CategoriaNegocio_obj.modificarCategoria(Categoria_obj, IdAModificar);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
@@ -41,26 +43,36 @@ namespace Tp_WinForm_Grupo_19.Views
 
                 throw;
             }
-
         }
 
-        private void codigo_Categoria_a_modificar_TextChanged(object sender, EventArgs e)
-        {
-            CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
-            Categoria Categoria_obj;
 
-            if (!string.IsNullOrEmpty(codigo_Categoria_a_modificar.Text))
-            {
-                Categoria_obj = CategoriaNegocio_obj.Buscar_Categoria_por_ID(int.Parse(codigo_Categoria_a_modificar.Text));
-                descripcion_Categoria_a_modificar.Text = Categoria_obj.Descripcion; ;
-            }
-            else { descripcion_Categoria_a_modificar.Text = ""; }
-
-        }
 
         private void ibClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void cbMarcas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            descripcion_Categoria_a_modificar.Text = cbCategorias.SelectedItem.ToString();
+
+            foreach (Categoria categoria in CategoriaNegocio.ListarCategorias())
+            {
+                if (cbCategorias.SelectedItem.ToString() == categoria.Descripcion)
+                {
+                    IdAModificar = categoria.Id;
+                    break;
+                }
+            }
+
+        }
+
+        private void viewModificarCategorias_Load(object sender, EventArgs e)
+        {
+            foreach (Categoria categoria in CategoriaNegocio.ListarCategorias())
+            {
+                cbCategorias.Items.Add(categoria.Descripcion);
+            }
         }
     }
 }

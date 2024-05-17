@@ -37,6 +37,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelPrincipal = new System.Windows.Forms.Panel();
+            this.ibFlechaIzq = new FontAwesome.Sharp.IconButton();
+            this.ibFlechaDerecha = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.pbImageArticle)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelPrincipal.SuspendLayout();
@@ -51,7 +53,7 @@
             this.pbImageArticle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImageArticle.TabIndex = 0;
             this.pbImageArticle.TabStop = false;
-            this.pbImageArticle.Paint += new System.Windows.Forms.PaintEventHandler(this.pbImageArticle_Paint);
+            this.pbImageArticle.Click += new System.EventHandler(this.pbImageArticle_Click);
             // 
             // lblName
             // 
@@ -107,7 +109,7 @@
             this.lblDesc.BackColor = System.Drawing.Color.Transparent;
             this.lblDesc.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesc.ForeColor = System.Drawing.Color.White;
-            this.lblDesc.Location = new System.Drawing.Point(0, 14);
+            this.lblDesc.Location = new System.Drawing.Point(4, 14);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(101, 25);
             this.lblDesc.TabIndex = 5;
@@ -138,6 +140,8 @@
             // 
             this.panelPrincipal.BackColor = System.Drawing.Color.Transparent;
             this.panelPrincipal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelPrincipal.Controls.Add(this.ibFlechaIzq);
+            this.panelPrincipal.Controls.Add(this.ibFlechaDerecha);
             this.panelPrincipal.Controls.Add(this.label6);
             this.panelPrincipal.Controls.Add(this.pbImageArticle);
             this.panelPrincipal.Controls.Add(this.lblPrice);
@@ -150,6 +154,44 @@
             this.panelPrincipal.Size = new System.Drawing.Size(931, 607);
             this.panelPrincipal.TabIndex = 8;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
+            // 
+            // ibFlechaIzq
+            // 
+            this.ibFlechaIzq.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibFlechaIzq.FlatAppearance.BorderSize = 0;
+            this.ibFlechaIzq.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ibFlechaIzq.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ibFlechaIzq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibFlechaIzq.IconChar = FontAwesome.Sharp.IconChar.ArrowCircleLeft;
+            this.ibFlechaIzq.IconColor = System.Drawing.Color.Black;
+            this.ibFlechaIzq.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibFlechaIzq.Location = new System.Drawing.Point(14, 244);
+            this.ibFlechaIzq.Name = "ibFlechaIzq";
+            this.ibFlechaIzq.Size = new System.Drawing.Size(66, 56);
+            this.ibFlechaIzq.TabIndex = 9;
+            this.ibFlechaIzq.UseVisualStyleBackColor = true;
+            this.ibFlechaIzq.Click += new System.EventHandler(this.ibFlechaIzq_Click);
+            this.ibFlechaIzq.MouseLeave += new System.EventHandler(this.ibFlechaIzq_MouseLeave);
+            this.ibFlechaIzq.MouseHover += new System.EventHandler(this.ibFlechaIzq_MouseHover);
+            // 
+            // ibFlechaDerecha
+            // 
+            this.ibFlechaDerecha.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ibFlechaDerecha.FlatAppearance.BorderSize = 0;
+            this.ibFlechaDerecha.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.ibFlechaDerecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.ibFlechaDerecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibFlechaDerecha.IconChar = FontAwesome.Sharp.IconChar.CircleArrowRight;
+            this.ibFlechaDerecha.IconColor = System.Drawing.Color.Black;
+            this.ibFlechaDerecha.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibFlechaDerecha.Location = new System.Drawing.Point(352, 244);
+            this.ibFlechaDerecha.Name = "ibFlechaDerecha";
+            this.ibFlechaDerecha.Size = new System.Drawing.Size(66, 56);
+            this.ibFlechaDerecha.TabIndex = 8;
+            this.ibFlechaDerecha.UseVisualStyleBackColor = true;
+            this.ibFlechaDerecha.Click += new System.EventHandler(this.ibFlechaDerecha_Click);
+            this.ibFlechaDerecha.MouseLeave += new System.EventHandler(this.ibFlechaDerecha_MouseLeave);
+            this.ibFlechaDerecha.MouseHover += new System.EventHandler(this.ibFlechaDerecha_MouseHover);
             // 
             // viewVistaDetallada
             // 
@@ -181,5 +223,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelPrincipal;
+        private FontAwesome.Sharp.IconButton ibFlechaDerecha;
+        private FontAwesome.Sharp.IconButton ibFlechaIzq;
     }
 }

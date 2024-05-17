@@ -32,23 +32,33 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void ibAgregarMarca_Click(object sender, EventArgs e)
         {
-            try
+
+
+            if (!string.IsNullOrEmpty(txtDescripcion.Text))
             {
 
-                Marca marca_obj = new Marca();
+                try
+                {
 
-                marca_obj.Descripcion = txtDescripcion.Text;
+                    Marca marca_obj = new Marca();
 
-                //Cargar en  base de datos.
-                MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+                    marca_obj.Descripcion = txtDescripcion.Text;
 
-                marcaNegocio_obj.agregarMarca(marca_obj);
-                this.DialogResult = DialogResult.OK;
-                this.Close();
+                    //Cargar en  base de datos.
+                    MarcaNegocio marcaNegocio_obj = new MarcaNegocio();
+
+                    marcaNegocio_obj.agregarMarca(marca_obj);
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
             }
-            catch (Exception)
+            else
             {
-                throw;
+                MessageBox.Show("Rellenar los campos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

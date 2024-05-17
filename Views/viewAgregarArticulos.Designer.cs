@@ -290,7 +290,7 @@
             this.ibTrashMarca.IconColor = System.Drawing.Color.Brown;
             this.ibTrashMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibTrashMarca.IconSize = 32;
-            this.ibTrashMarca.Location = new System.Drawing.Point(354, 3);
+            this.ibTrashMarca.Location = new System.Drawing.Point(413, 3);
             this.ibTrashMarca.Name = "ibTrashMarca";
             this.ibTrashMarca.Size = new System.Drawing.Size(32, 35);
             this.ibTrashMarca.TabIndex = 68;
@@ -306,7 +306,7 @@
             this.ibUpdateMarca.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ibUpdateMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibUpdateMarca.IconSize = 35;
-            this.ibUpdateMarca.Location = new System.Drawing.Point(416, 3);
+            this.ibUpdateMarca.Location = new System.Drawing.Point(357, 3);
             this.ibUpdateMarca.Name = "ibUpdateMarca";
             this.ibUpdateMarca.Size = new System.Drawing.Size(32, 35);
             this.ibUpdateMarca.TabIndex = 67;
@@ -322,7 +322,7 @@
             this.ibTrashCategoria.IconColor = System.Drawing.Color.Brown;
             this.ibTrashCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibTrashCategoria.IconSize = 32;
-            this.ibTrashCategoria.Location = new System.Drawing.Point(354, 4);
+            this.ibTrashCategoria.Location = new System.Drawing.Point(413, 4);
             this.ibTrashCategoria.Name = "ibTrashCategoria";
             this.ibTrashCategoria.Size = new System.Drawing.Size(32, 35);
             this.ibTrashCategoria.TabIndex = 71;
@@ -338,7 +338,7 @@
             this.ibUpdateCategoria.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.ibUpdateCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.ibUpdateCategoria.IconSize = 35;
-            this.ibUpdateCategoria.Location = new System.Drawing.Point(416, 2);
+            this.ibUpdateCategoria.Location = new System.Drawing.Point(358, 3);
             this.ibUpdateCategoria.Name = "ibUpdateCategoria";
             this.ibUpdateCategoria.Size = new System.Drawing.Size(32, 35);
             this.ibUpdateCategoria.TabIndex = 70;
@@ -405,6 +405,7 @@
             this.label7.Size = new System.Drawing.Size(102, 21);
             this.label7.TabIndex = 50;
             this.label7.Text = "Imagen URL:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtUrlImagen
             // 

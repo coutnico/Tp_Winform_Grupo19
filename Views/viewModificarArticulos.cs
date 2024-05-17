@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,12 +21,17 @@ namespace Tp_WinForm_Grupo_19.Views
         private Articulo articulo;
         List<Marca> listademarcas;
         List<Categoria> listadecategorias;
+        private ImagenNegocio ImagenNegocio = new ImagenNegocio();
+        private int IDArticulo = 0;
+        private int IndiceImagen = 0;
+
         public viewModificarArticulos(Articulo articulo)
         {
             InitializeComponent();
 
             this.articulo = articulo;
 
+            this.IDArticulo = articulo.ID;
             ID_Articulo_a_modificar.Text = articulo.ID.ToString();
             codigo_Articulo_a_modificar.Text = articulo.Codigo;
             nombre_Articulo_a_modificar.Text = articulo.Nombre;
@@ -45,6 +53,7 @@ namespace Tp_WinForm_Grupo_19.Views
                     cbCategorias.SelectedItem = categoria.Descripcion;
                 }
             }
+
 
             listademarcas = marcaNegocio.ListarMarcas();
 
@@ -110,7 +119,7 @@ namespace Tp_WinForm_Grupo_19.Views
 
             foreach (Categoria categoria in listadecategorias)
             {
-                if (cbCategorias.SelectedItem == categoria.Descripcion)               
+                if (cbCategorias.SelectedItem == categoria.Descripcion)
                     articulo_obj.IDCategoria = categoria.Id;
             }
             foreach (Marca marca in listademarcas)
@@ -124,6 +133,8 @@ namespace Tp_WinForm_Grupo_19.Views
 
             articuloNegocio_obj.modificarArticulo(articulo_obj, int.Parse(ID_Articulo_a_modificar.Text));
 
+            ImagenNegocio.ModificarImagen(Convert.ToInt32(ID_Articulo_a_modificar.Text), txtUrlImagen.Text);
+
             this.Close();
 
         }
@@ -134,8 +145,110 @@ namespace Tp_WinForm_Grupo_19.Views
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
 
-             
+        }
 
+        private void ibFlechaDerecha_Click(object sender, EventArgs e)
+        {
+            if (IndiceImagen != ListaImagenesXArticulo().Count - 1)
+            {
+                try
+                {
+                    List<Imagen> imagenes = ListaImagenesXArticulo();
+
+
+                    using (HttpClient httpClient = new HttpClient())
+                    {
+                        using (WebClient cliente = new WebClient())
+                        {
+                            IndiceImagen++;
+                            byte[] imagenBytes = cliente.DownloadData(imagenes[IndiceImagen].URL);
+                            txtUrlImagen.Text = imagenes[IndiceImagen].URL;
+
+                            if (imagenBytes != null && imagenBytes.Length > 0)
+                            {
+                                using (MemoryStream stream = new MemoryStream(imagenBytes))
+                                {
+                                    Image imagen = Image.FromStream(stream);
+
+                                    pbImagen.Image = imagen;
+
+                                    txtUrlImagen.Text = imagenes[IndiceImagen].URL;
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Los datos de la imagen están vacíos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                    }
+
+                    ibFlechaDerecha.BackColor = System.Drawing.Color.Transparent;
+                    ibFlechaIzq.BackColor = System.Drawing.Color.Transparent;
+                }
+                catch (Exception)
+                {
+                    //En caso de que no cargue la imagen 
+                }
+            }
+        }
+
+        private void ibFlechaIzq_Click(object sender, EventArgs e)
+        {
+            if (IndiceImagen != 0)
+            {
+                try
+                {
+                    List<Imagen> imagenes = ListaImagenesXArticulo();
+
+
+                    using (HttpClient httpClient = new HttpClient())
+                    {
+                        using (WebClient cliente = new WebClient())
+                        {
+                            IndiceImagen--;
+                            byte[] imagenBytes = cliente.DownloadData(imagenes[IndiceImagen].URL);
+                            txtUrlImagen.Text = imagenes[IndiceImagen].URL;
+
+                            if (imagenBytes != null && imagenBytes.Length > 0)
+                            {
+                                using (MemoryStream stream = new MemoryStream(imagenBytes))
+                                {
+                                    Image imagen = Image.FromStream(stream);
+                                    pbImagen.Image = imagen;
+                                    txtUrlImagen.Text = imagenes[IndiceImagen].URL;
+
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Los datos de la imagen están vacíos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                    }
+                    ibFlechaDerecha.BackColor = System.Drawing.Color.Transparent;
+                    ibFlechaIzq.BackColor = System.Drawing.Color.Transparent;
+                }
+                catch (Exception)
+                {
+                    //En caso de que no cargue la imagen 
+                }
+            }
+        }
+        private List<Imagen> ListaImagenesXArticulo()
+        {
+            ImagenNegocio imagenNegocio = new ImagenNegocio();
+            List<Imagen> imagenes = new List<Imagen>();
+
+
+            foreach (Imagen imagen in imagenNegocio.ListarImagen())
+            {
+                if (imagen.IdArticulo == IDArticulo)
+                {
+                    imagenes.Add(imagen);
+                }
+            }
+
+            return imagenes;
         }
     }
 }

@@ -104,6 +104,7 @@ namespace Tp_WinForm_Grupo_19.UserControls
                 {
                     if (imagen.IdArticulo == idarticulo)
                     {
+                        
                         imagenes.Add(imagen);
                     }
                 }
@@ -143,6 +144,7 @@ namespace Tp_WinForm_Grupo_19.UserControls
         {
             Articulo CardArticulo = new Articulo();
 
+            CardArticulo.ID = articulo.ID;
             CardArticulo.Nombre = lblNombre.Text;
             CardArticulo.Categoria = lblCategoria.Text;
             CardArticulo.Marca = lblMarca.Text;

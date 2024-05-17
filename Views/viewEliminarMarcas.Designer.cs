@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.eliminar_Marca = new System.Windows.Forms.Button();
-            this.Id_Marca_Eliminar = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.ibClose = new FontAwesome.Sharp.IconButton();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbMarcas = new System.Windows.Forms.ComboBox();
             this.panelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,30 +50,6 @@
             this.eliminar_Marca.Text = "Eliminar";
             this.eliminar_Marca.UseVisualStyleBackColor = true;
             this.eliminar_Marca.Click += new System.EventHandler(this.eliminar_Marca_Click);
-            // 
-            // Id_Marca_Eliminar
-            // 
-            this.Id_Marca_Eliminar.BackColor = System.Drawing.Color.BlueViolet;
-            this.Id_Marca_Eliminar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Id_Marca_Eliminar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
-            this.Id_Marca_Eliminar.ForeColor = System.Drawing.Color.White;
-            this.Id_Marca_Eliminar.Location = new System.Drawing.Point(158, 94);
-            this.Id_Marca_Eliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.Id_Marca_Eliminar.Name = "Id_Marca_Eliminar";
-            this.Id_Marca_Eliminar.Size = new System.Drawing.Size(112, 25);
-            this.Id_Marca_Eliminar.TabIndex = 20;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(79, 93);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 21);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "ID Marca";
             // 
             // ibClose
             // 
@@ -116,17 +91,29 @@
             this.label1.TabIndex = 83;
             this.label1.Text = "Eliminar Marca";
             // 
+            // cbMarcas
+            // 
+            this.cbMarcas.BackColor = System.Drawing.Color.BlueViolet;
+            this.cbMarcas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbMarcas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.cbMarcas.ForeColor = System.Drawing.Color.White;
+            this.cbMarcas.FormattingEnabled = true;
+            this.cbMarcas.Location = new System.Drawing.Point(81, 93);
+            this.cbMarcas.Name = "cbMarcas";
+            this.cbMarcas.Size = new System.Drawing.Size(189, 25);
+            this.cbMarcas.TabIndex = 84;
+            this.cbMarcas.SelectedIndexChanged += new System.EventHandler(this.cbMarcas_SelectedIndexChanged);
+            // 
             // viewEliminarMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumPurple;
             this.ClientSize = new System.Drawing.Size(335, 184);
+            this.Controls.Add(this.cbMarcas);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelSuperior);
             this.Controls.Add(this.eliminar_Marca);
-            this.Controls.Add(this.Id_Marca_Eliminar);
-            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "viewEliminarMarcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -141,10 +128,9 @@
         #endregion
 
         private System.Windows.Forms.Button eliminar_Marca;
-        private System.Windows.Forms.TextBox Id_Marca_Eliminar;
-        private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconButton ibClose;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbMarcas;
     }
 }

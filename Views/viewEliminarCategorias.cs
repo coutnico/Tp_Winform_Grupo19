@@ -13,6 +13,8 @@ namespace Tp_WinForm_Grupo_19.Views
 {
     public partial class viewEliminarCategorias : Form
     {
+        private CategoriaNegocio CategoriaNegocio = new CategoriaNegocio();
+        private int IdAModificar = -1;
         public viewEliminarCategorias()
         {
             InitializeComponent();
@@ -20,24 +22,48 @@ namespace Tp_WinForm_Grupo_19.Views
 
         private void eliminar_Categoria_Click(object sender, EventArgs e)
         {
-            try
+            if (IdAModificar != -1)
             {
 
-                CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
-                CategoriaNegocio_obj.eliminarCategoria(int.Parse(Id_Categoria_Eliminar.Text));
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-            catch (Exception)
-            {
+                try
+                {
 
-                throw;
+                    CategoriaNegocio CategoriaNegocio_obj = new CategoriaNegocio();
+                    CategoriaNegocio_obj.eliminarCategoria(IdAModificar);
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
             }
         }
 
         private void ibClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void viewEliminarCategorias_Load(object sender, EventArgs e)
+        {
+            foreach (Categoria categoria in CategoriaNegocio.ListarCategorias())
+            {
+                cbCategorias.Items.Add(categoria.Descripcion);
+            }
+        }
+
+        private void cbCategorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (Categoria categoria in CategoriaNegocio.ListarCategorias())
+            {
+                if (cbCategorias.SelectedItem.ToString() == categoria.Descripcion)
+                {
+                    IdAModificar = categoria.Id;
+                    break;
+                }
+            }
         }
     }
 }
