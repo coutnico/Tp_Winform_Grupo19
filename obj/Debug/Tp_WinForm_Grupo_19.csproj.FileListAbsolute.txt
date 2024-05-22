@@ -118,3 +118,5 @@ C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_
 C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarMarcas.resources
 C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarCategorias.resources
 C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewModificarMarcas.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewBajaModificacionImagenes.resources
+C:\Users\nicoo\OneDrive\Desktop\tp-winform-equipo-19\obj\Debug\Tp_WinForm_Grupo_19.Views.viewAgregarImagen.resources

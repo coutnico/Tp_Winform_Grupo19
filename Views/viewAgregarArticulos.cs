@@ -27,15 +27,6 @@ namespace Tp_WinForm_Grupo_19.Views
         {
             InitializeComponent();
 
-            ActualizarComboBoxs();
-
-            this.BackgroundImage = Properties.Resources.degradadoAzulVioleta;
-            this.BackgroundImageLayout = ImageLayout.Stretch;
-
-        }
-
-        private void ActualizarComboBoxs()
-        {
             cbCategorias.Items.Clear();
             cbMarcas.Items.Clear();
 
@@ -52,6 +43,16 @@ namespace Tp_WinForm_Grupo_19.Views
             {
                 cbMarcas.Items.Add(marca.Descripcion);
             }
+
+            this.BackgroundImage = Properties.Resources.degradadoAzulVioleta;
+            this.BackgroundImageLayout = ImageLayout.Stretch;
+
+        }
+
+        private void ActualizarComboBoxs()
+        {
+            MessageBox.Show("Cerrar y volver a abrir para visualizar cambios");
+            this.Close();
         }
 
 

@@ -39,17 +39,19 @@
             this.codigo_Articulo_a_modificar = new System.Windows.Forms.TextBox();
             this.ID_Articulo_a_modificar = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.modificar_Articulo = new FontAwesome.Sharp.IconButton();
             this.cbMarcas = new System.Windows.Forms.ComboBox();
             this.cbCategorias = new System.Windows.Forms.ComboBox();
-            this.pbImagen = new System.Windows.Forms.PictureBox();
             this.precio_Articulo_a_modificar = new System.Windows.Forms.NumericUpDown();
             this.txtUrlImagen = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.ibModImage = new FontAwesome.Sharp.IconButton();
             this.ibFlechaIzq = new FontAwesome.Sharp.IconButton();
             this.ibFlechaDerecha = new FontAwesome.Sharp.IconButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.modificar_Articulo = new FontAwesome.Sharp.IconButton();
+            this.ibAgregarImagen = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.precio_Articulo_a_modificar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -193,25 +195,6 @@
             this.label8.TabIndex = 43;
             this.label8.Text = "Precio";
             // 
-            // modificar_Articulo
-            // 
-            this.modificar_Articulo.BackColor = System.Drawing.Color.Transparent;
-            this.modificar_Articulo.FlatAppearance.BorderSize = 0;
-            this.modificar_Articulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.modificar_Articulo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.modificar_Articulo.ForeColor = System.Drawing.Color.White;
-            this.modificar_Articulo.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
-            this.modificar_Articulo.IconColor = System.Drawing.Color.Gold;
-            this.modificar_Articulo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.modificar_Articulo.Location = new System.Drawing.Point(631, 544);
-            this.modificar_Articulo.Name = "modificar_Articulo";
-            this.modificar_Articulo.Size = new System.Drawing.Size(145, 48);
-            this.modificar_Articulo.TabIndex = 44;
-            this.modificar_Articulo.Text = "Modificar";
-            this.modificar_Articulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.modificar_Articulo.UseVisualStyleBackColor = false;
-            this.modificar_Articulo.Click += new System.EventHandler(this.modificar_Articulo_Click);
-            // 
             // cbMarcas
             // 
             this.cbMarcas.BackColor = System.Drawing.Color.BlueViolet;
@@ -233,17 +216,6 @@
             this.cbCategorias.Name = "cbCategorias";
             this.cbCategorias.Size = new System.Drawing.Size(156, 25);
             this.cbCategorias.TabIndex = 46;
-            // 
-            // pbImagen
-            // 
-            this.pbImagen.BackColor = System.Drawing.Color.Transparent;
-            this.pbImagen.InitialImage = global::Tp_WinForm_Grupo_19.Properties.Resources.ImagenNoCargada;
-            this.pbImagen.Location = new System.Drawing.Point(45, 76);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(323, 465);
-            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbImagen.TabIndex = 47;
-            this.pbImagen.TabStop = false;
             // 
             // precio_Articulo_a_modificar
             // 
@@ -271,6 +243,7 @@
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(221, 25);
             this.txtUrlImagen.TabIndex = 58;
+            this.txtUrlImagen.TextChanged += new System.EventHandler(this.txtUrlImagen_TextChanged);
             // 
             // label7
             // 
@@ -284,6 +257,24 @@
             this.label7.Size = new System.Drawing.Size(102, 21);
             this.label7.TabIndex = 57;
             this.label7.Text = "Imagen URL:";
+            // 
+            // ibModImage
+            // 
+            this.ibModImage.BackColor = System.Drawing.Color.Transparent;
+            this.ibModImage.FlatAppearance.BorderSize = 0;
+            this.ibModImage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibModImage.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.ibModImage.ForeColor = System.Drawing.Color.White;
+            this.ibModImage.IconChar = FontAwesome.Sharp.IconChar.Images;
+            this.ibModImage.IconColor = System.Drawing.Color.Red;
+            this.ibModImage.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibModImage.Location = new System.Drawing.Point(313, 76);
+            this.ibModImage.Name = "ibModImage";
+            this.ibModImage.Size = new System.Drawing.Size(54, 48);
+            this.ibModImage.TabIndex = 61;
+            this.ibModImage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibModImage.UseVisualStyleBackColor = false;
+            this.ibModImage.Click += new System.EventHandler(this.ibModImage_Click);
             // 
             // ibFlechaIzq
             // 
@@ -321,11 +312,61 @@
             this.ibFlechaDerecha.UseVisualStyleBackColor = true;
             this.ibFlechaDerecha.Click += new System.EventHandler(this.ibFlechaDerecha_Click);
             // 
+            // pbImagen
+            // 
+            this.pbImagen.BackColor = System.Drawing.Color.Transparent;
+            this.pbImagen.InitialImage = global::Tp_WinForm_Grupo_19.Properties.Resources.ImagenNoCargada;
+            this.pbImagen.Location = new System.Drawing.Point(45, 76);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(323, 465);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbImagen.TabIndex = 47;
+            this.pbImagen.TabStop = false;
+            // 
+            // modificar_Articulo
+            // 
+            this.modificar_Articulo.BackColor = System.Drawing.Color.Transparent;
+            this.modificar_Articulo.FlatAppearance.BorderSize = 0;
+            this.modificar_Articulo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificar_Articulo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.modificar_Articulo.ForeColor = System.Drawing.Color.White;
+            this.modificar_Articulo.IconChar = FontAwesome.Sharp.IconChar.PencilAlt;
+            this.modificar_Articulo.IconColor = System.Drawing.Color.Gold;
+            this.modificar_Articulo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.modificar_Articulo.Location = new System.Drawing.Point(631, 544);
+            this.modificar_Articulo.Name = "modificar_Articulo";
+            this.modificar_Articulo.Size = new System.Drawing.Size(145, 48);
+            this.modificar_Articulo.TabIndex = 44;
+            this.modificar_Articulo.Text = "Modificar";
+            this.modificar_Articulo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.modificar_Articulo.UseVisualStyleBackColor = false;
+            this.modificar_Articulo.Click += new System.EventHandler(this.modificar_Articulo_Click);
+            // 
+            // ibAgregarImagen
+            // 
+            this.ibAgregarImagen.BackColor = System.Drawing.Color.Transparent;
+            this.ibAgregarImagen.FlatAppearance.BorderSize = 0;
+            this.ibAgregarImagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ibAgregarImagen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.ibAgregarImagen.ForeColor = System.Drawing.Color.White;
+            this.ibAgregarImagen.IconChar = FontAwesome.Sharp.IconChar.Images;
+            this.ibAgregarImagen.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ibAgregarImagen.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ibAgregarImagen.Location = new System.Drawing.Point(253, 76);
+            this.ibAgregarImagen.Name = "ibAgregarImagen";
+            this.ibAgregarImagen.Size = new System.Drawing.Size(54, 48);
+            this.ibAgregarImagen.TabIndex = 62;
+            this.ibAgregarImagen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ibAgregarImagen.UseVisualStyleBackColor = false;
+            this.ibAgregarImagen.Click += new System.EventHandler(this.ibAgregarImagen_Click);
+            // 
             // viewModificarArticulos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 654);
+            this.Controls.Add(this.ibAgregarImagen);
+            this.Controls.Add(this.ibModImage);
             this.Controls.Add(this.ibFlechaIzq);
             this.Controls.Add(this.ibFlechaDerecha);
             this.Controls.Add(this.txtUrlImagen);
@@ -350,8 +391,8 @@
             this.Name = "viewModificarArticulos";
             this.Text = "viewModificarArticulo";
             this.Load += new System.EventHandler(this.viewModificarArticulos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.precio_Articulo_a_modificar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,5 +419,7 @@
         private System.Windows.Forms.Label label7;
         private FontAwesome.Sharp.IconButton ibFlechaIzq;
         private FontAwesome.Sharp.IconButton ibFlechaDerecha;
+        private FontAwesome.Sharp.IconButton ibModImage;
+        private FontAwesome.Sharp.IconButton ibAgregarImagen;
     }
 }

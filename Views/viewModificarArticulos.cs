@@ -24,6 +24,8 @@ namespace Tp_WinForm_Grupo_19.Views
         private ImagenNegocio ImagenNegocio = new ImagenNegocio();
         private int IDArticulo = 0;
         private int IndiceImagen = 0;
+        List<Imagen> imagenes;
+
 
         public viewModificarArticulos(Articulo articulo)
         {
@@ -71,6 +73,42 @@ namespace Tp_WinForm_Grupo_19.Views
             }
 
             precio_Articulo_a_modificar.Value = articulo.Precio;
+
+            imagenes = ListaImagenesXArticulo();
+
+
+            try
+            {
+
+                using (HttpClient httpClient = new HttpClient())
+                {
+                    using (WebClient cliente = new WebClient())
+                    {
+                        byte[] imagenBytes = cliente.DownloadData(imagenes[IndiceImagen].URL);
+                        txtUrlImagen.Text = imagenes[IndiceImagen].URL;
+
+                        if (imagenBytes != null && imagenBytes.Length > 0)
+                        {
+                            using (MemoryStream stream = new MemoryStream(imagenBytes))
+                            {
+                                Image imagen = Image.FromStream(stream);
+
+                                pbImagen.Image = imagen;
+
+                                txtUrlImagen.Text = imagenes[IndiceImagen].URL;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Los datos de la imagen están vacíos.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
 
         }
 
@@ -133,8 +171,6 @@ namespace Tp_WinForm_Grupo_19.Views
 
             articuloNegocio_obj.modificarArticulo(articulo_obj, int.Parse(ID_Articulo_a_modificar.Text));
 
-            ImagenNegocio.ModificarImagen(Convert.ToInt32(ID_Articulo_a_modificar.Text), txtUrlImagen.Text);
-
             this.Close();
 
         }
@@ -153,9 +189,6 @@ namespace Tp_WinForm_Grupo_19.Views
             {
                 try
                 {
-                    List<Imagen> imagenes = ListaImagenesXArticulo();
-
-
                     using (HttpClient httpClient = new HttpClient())
                     {
                         using (WebClient cliente = new WebClient())
@@ -198,9 +231,6 @@ namespace Tp_WinForm_Grupo_19.Views
             {
                 try
                 {
-                    List<Imagen> imagenes = ListaImagenesXArticulo();
-
-
                     using (HttpClient httpClient = new HttpClient())
                     {
                         using (WebClient cliente = new WebClient())
@@ -249,6 +279,35 @@ namespace Tp_WinForm_Grupo_19.Views
             }
 
             return imagenes;
+        }
+
+        private void txtUrlImagen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ibModImage_Click(object sender, EventArgs e)
+        {
+            viewBajaModificacionImagenes bmImagenes = new viewBajaModificacionImagenes(imagenes);
+            DialogResult result = bmImagenes.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                MessageBox.Show("Reinicio para aplicar cambios");
+                this.Close();
+            }
+        }
+
+        private void ibAgregarImagen_Click(object sender, EventArgs e)
+        {
+            viewAgregarImagen agregarImagenes = new viewAgregarImagen(this.articulo.ID);
+            DialogResult result = agregarImagenes.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                MessageBox.Show("Reinicio para aplicar cambios");
+                this.Close();
+            }
         }
     }
 }

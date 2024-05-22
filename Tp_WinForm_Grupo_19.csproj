@@ -76,6 +76,18 @@
     <Compile Include="UserControls\CardArticulos.Designer.cs">
       <DependentUpon>CardArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\viewAgregarImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewAgregarImagen.Designer.cs">
+      <DependentUpon>viewAgregarImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\viewBajaModificacionImagenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\viewBajaModificacionImagenes.Designer.cs">
+      <DependentUpon>viewBajaModificacionImagenes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\viewModificarCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +177,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewAgregarCategorias.resx">
       <DependentUpon>viewAgregarCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewAgregarImagen.resx">
+      <DependentUpon>viewAgregarImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\viewBajaModificacionImagenes.resx">
+      <DependentUpon>viewBajaModificacionImagenes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\viewEliminarCategorias.resx">
       <DependentUpon>viewEliminarCategorias.cs</DependentUpon>
